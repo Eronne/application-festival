@@ -83,6 +83,7 @@
 				B565C1901FDEA0430037D567 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		B565C1901FDEA0430037D567 /* Products */ = {
 			isa = PBXGroup;
