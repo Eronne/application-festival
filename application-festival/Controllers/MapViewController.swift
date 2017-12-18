@@ -19,11 +19,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 		
 		mapView.delegate = self
 		mapView.showsUserLocation = true
+		
+		locationManager.delegate = self
 		locationManager.desiredAccuracy = kCLLocationAccuracyBest
 		locationManager.requestWhenInUseAuthorization()
-		locationManager.delegate = self
-		
-		// TODO: Zoom on current user location
 		
 		DispatchQueue.main.async {
 			self.locationManager.startUpdatingLocation()
@@ -42,15 +41,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 		region.center = mapView.userLocation.coordinate
 		mapView.setRegion(region, animated: true)
 	}
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	
+	func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+		mapView.showAnnotations([userLocation], animated: true)
+	}
 }
