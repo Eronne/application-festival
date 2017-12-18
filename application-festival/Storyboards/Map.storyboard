@@ -13,28 +13,33 @@
         <!--Map-->
         <scene sceneID="6O4-w1-ott">
             <objects>
-                <viewController id="hY1-HL-n3W" sceneMemberID="viewController">
+                <viewController id="hY1-HL-n3W" customClass="MapViewController" customModule="application_festival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihu-CG-AYo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34J-O4-2Cj">
-                                <rect key="frame" x="166" y="323" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHa-s7-zX4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sHa-s7-zX4" secondAttribute="bottom" id="8QA-Ru-pYC"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="leading" secondItem="2LD-NA-wyH" secondAttribute="leading" id="a1B-qV-7dt"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="trailing" secondItem="2LD-NA-wyH" secondAttribute="trailing" id="a5a-jW-GTJ"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="top" secondItem="ihu-CG-AYo" secondAttribute="top" id="cz7-Wv-jKM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2LD-NA-wyH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="Wj3-CN-k11"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="sHa-s7-zX4" id="Rvu-aX-bSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgz-pF-SkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="106"/>
+            <point key="canvasLocation" x="-367.19999999999999" y="105.69715142428787"/>
         </scene>
     </scenes>
 </document>

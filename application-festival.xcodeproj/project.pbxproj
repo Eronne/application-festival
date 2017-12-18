@@ -19,6 +19,7 @@
 		B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B565C19B1FDEA0430037D567 /* LaunchScreen.storyboard */; };
 		B565C1A81FDEA0430037D567 /* application_festivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1A71FDEA0430037D567 /* application_festivalTests.swift */; };
 		B565C1B31FDEA0430037D567 /* application_festivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */; };
+		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B565C1AE1FDEA0430037D567 /* application-festivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "application-festivalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application_festivalUITests.swift; sourceTree = "<group>"; };
 		B565C1B41FDEA0430037D567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				B541748B1FE41C4900842B38 /* Storyboards */,
+				B5AAEAD91FE7C54600FB3345 /* Models */,
+				B5AAEADA1FE7C5B700FB3345 /* Controllers */,
 				B565C1991FDEA0430037D567 /* Assets.xcassets */,
 				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
-				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B565C19E1FDEA0430037D567 /* Info.plist */,
 			);
 			path = "application-festival";
@@ -147,6 +150,22 @@
 				B565C1B41FDEA0430037D567 /* Info.plist */,
 			);
 			path = "application-festivalUITests";
+			sourceTree = "<group>";
+		};
+		B5AAEAD91FE7C54600FB3345 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B565C1941FDEA0430037D567 /* ViewController.swift */,
+				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
+				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
