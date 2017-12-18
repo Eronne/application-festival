@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B541748A1FE415B100842B38 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174891FE415B100842B38 /* Agenda.storyboard */; };
+		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
+		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
+		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
+		B53F689F1FE869F200650440 /* Now-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68961FE8696700650440 /* Now-Medium.otf */; };
+		B53F68A01FE869F200650440 /* Now-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68971FE8696700650440 /* Now-Regular.otf */; };
+		B53F68A11FE869F200650440 /* Now-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68981FE8696700650440 /* Now-Thin.otf */; };
+		B53F68A31FE86EA500650440 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F68A21FE86EA500650440 /* CalendarViewController.swift */; };
+		B541748A1FE415B100842B38 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174891FE415B100842B38 /* Calendar.storyboard */; };
 		B541748D1FE41D0C00842B38 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748C1FE41D0C00842B38 /* Map.storyboard */; };
 		B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748E1FE41D2E00842B38 /* Search.storyboard */; };
 		B54174931FE41D5500842B38 /* Infos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174921FE41D5500842B38 /* Infos.storyboard */; };
@@ -40,7 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B54174891FE415B100842B38 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
+		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
+		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
+		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
+		B53F68991FE8696700650440 /* Now-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Bold.otf"; sourceTree = "<group>"; };
+		B53F689A1FE8696700650440 /* Now-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Black.otf"; sourceTree = "<group>"; };
+		B53F689B1FE8696700650440 /* Now-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Light.otf"; sourceTree = "<group>"; };
+		B53F68A21FE86EA500650440 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B54174891FE415B100842B38 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B541748C1FE41D0C00842B38 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		B541748E1FE41D2E00842B38 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B54174921FE41D5500842B38 /* Infos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infos.storyboard; sourceTree = "<group>"; };
@@ -86,12 +100,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B53F68861FE867DF00650440 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B53F68881FE8683C00650440 /* Fonts */,
+				B565C1991FDEA0430037D567 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B53F68881FE8683C00650440 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B53F68951FE8696700650440 /* Now */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B53F68951FE8696700650440 /* Now */ = {
+			isa = PBXGroup;
+			children = (
+				B53F689A1FE8696700650440 /* Now-Black.otf */,
+				B53F68991FE8696700650440 /* Now-Bold.otf */,
+				B53F689B1FE8696700650440 /* Now-Light.otf */,
+				B53F68961FE8696700650440 /* Now-Medium.otf */,
+				B53F68971FE8696700650440 /* Now-Regular.otf */,
+				B53F68981FE8696700650440 /* Now-Thin.otf */,
+			);
+			path = Now;
+			sourceTree = "<group>";
+		};
 		B541748B1FE41C4900842B38 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				B565C19B1FDEA0430037D567 /* LaunchScreen.storyboard */,
 				B565C1961FDEA0430037D567 /* Main.storyboard */,
-				B54174891FE415B100842B38 /* Agenda.storyboard */,
+				B54174891FE415B100842B38 /* Calendar.storyboard */,
 				B541748C1FE41D0C00842B38 /* Map.storyboard */,
 				B541748E1FE41D2E00842B38 /* Search.storyboard */,
 				B54174921FE41D5500842B38 /* Infos.storyboard */,
@@ -124,10 +168,10 @@
 		B565C1911FDEA0430037D567 /* application-festival */ = {
 			isa = PBXGroup;
 			children = (
+				B53F68861FE867DF00650440 /* Resources */,
 				B541748B1FE41C4900842B38 /* Storyboards */,
 				B5AAEAD91FE7C54600FB3345 /* Models */,
 				B5AAEADA1FE7C5B700FB3345 /* Controllers */,
-				B565C1991FDEA0430037D567 /* Assets.xcassets */,
 				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
 				B565C19E1FDEA0430037D567 /* Info.plist */,
 			);
@@ -164,6 +208,7 @@
 			children = (
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
+				B53F68A21FE86EA500650440 /* CalendarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,7 +320,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B541748A1FE415B100842B38 /* Agenda.storyboard in Resources */,
+				B53F689C1FE869F200650440 /* Now-Black.otf in Resources */,
+				B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */,
+				B53F689E1FE869F200650440 /* Now-Light.otf in Resources */,
+				B53F689F1FE869F200650440 /* Now-Medium.otf in Resources */,
+				B53F68A01FE869F200650440 /* Now-Regular.otf in Resources */,
+				B53F68A11FE869F200650440 /* Now-Thin.otf in Resources */,
+				B541748A1FE415B100842B38 /* Calendar.storyboard in Resources */,
 				B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */,
 				B54174951FE41D6800842B38 /* Fav.storyboard in Resources */,
 				B565C19A1FDEA0430037D567 /* Assets.xcassets in Resources */,
@@ -307,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53F68A31FE86EA500650440 /* CalendarViewController.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,

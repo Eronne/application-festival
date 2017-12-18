@@ -38,5 +38,14 @@
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Nous utilisons la localisation pour vous faciliter l&apos;accès aux événements.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Now-Black.otf</string>
+		<string>Now-Bold.otf</string>
+		<string>Now-Light.otf</string>
+		<string>Now-Medium.otf</string>
+		<string>Now-Regular.otf</string>
+		<string>Now-Thin.otf</string>
+	</array>
 </dict>
 </plist>
