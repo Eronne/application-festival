@@ -26,6 +26,10 @@
 		B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B565C19B1FDEA0430037D567 /* LaunchScreen.storyboard */; };
 		B565C1A81FDEA0430037D567 /* application_festivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1A71FDEA0430037D567 /* application_festivalTests.swift */; };
 		B565C1B31FDEA0430037D567 /* application_festivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */; };
+		B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580216D1FEBB11B00E8D882 /* InfosViewController.swift */; };
+		B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580216F1FEBB16000E8D882 /* WebView.storyboard */; };
+		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
+		B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021731FEBB83200E8D882 /* FavViewController.swift */; };
 		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,10 @@
 		B565C1AE1FDEA0430037D567 /* application-festivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "application-festivalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application_festivalUITests.swift; sourceTree = "<group>"; };
 		B565C1B41FDEA0430037D567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B580216D1FEBB11B00E8D882 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
+		B580216F1FEBB16000E8D882 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		B58021731FEBB83200E8D882 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +148,7 @@
 				B541748E1FE41D2E00842B38 /* Search.storyboard */,
 				B54174921FE41D5500842B38 /* Infos.storyboard */,
 				B54174941FE41D6800842B38 /* Fav.storyboard */,
+				B580216F1FEBB16000E8D882 /* WebView.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -209,6 +218,9 @@
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
 				B53F68A21FE86EA500650440 /* CalendarViewController.swift */,
+				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
+				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
+				B58021731FEBB83200E8D882 /* FavViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +342,7 @@
 				B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */,
 				B54174951FE41D6800842B38 /* Fav.storyboard in Resources */,
 				B565C19A1FDEA0430037D567 /* Assets.xcassets in Resources */,
+				B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */,
 				B565C1981FDEA0430037D567 /* Main.storyboard in Resources */,
 				B54174931FE41D5500842B38 /* Infos.storyboard in Resources */,
 				B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */,
@@ -358,9 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
 				B53F68A31FE86EA500650440 /* CalendarViewController.swift in Sources */,
+				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
+				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
