@@ -2,13 +2,27 @@
 //  CalendarViewController.swift
 //  application-festival
 //
-//  Created by Erwann Letue on 18/12/2017.
+//  Created by Erwann Letue on 26/12/2017.
 //  Copyright © 2017 Gobelins. All rights reserved.
 //
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	var imageArray = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
+	
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return imageArray.count
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
+		
+		cell.image.image = imageArray[indexPath.row]
+		
+		return cell
+	}
+	
 
     override func viewDidLoad() {
         super.viewDidLoad()

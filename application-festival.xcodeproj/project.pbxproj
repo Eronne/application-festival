@@ -13,12 +13,13 @@
 		B53F689F1FE869F200650440 /* Now-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68961FE8696700650440 /* Now-Medium.otf */; };
 		B53F68A01FE869F200650440 /* Now-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68971FE8696700650440 /* Now-Regular.otf */; };
 		B53F68A11FE869F200650440 /* Now-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68981FE8696700650440 /* Now-Thin.otf */; };
-		B53F68A31FE86EA500650440 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F68A21FE86EA500650440 /* CalendarViewController.swift */; };
 		B541748A1FE415B100842B38 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174891FE415B100842B38 /* Calendar.storyboard */; };
 		B541748D1FE41D0C00842B38 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748C1FE41D0C00842B38 /* Map.storyboard */; };
 		B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748E1FE41D2E00842B38 /* Search.storyboard */; };
 		B54174931FE41D5500842B38 /* Infos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174921FE41D5500842B38 /* Infos.storyboard */; };
 		B54174951FE41D6800842B38 /* Fav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174941FE41D6800842B38 /* Fav.storyboard */; };
+		B55B9BC71FF2DD1A00618339 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC61FF2DD1A00618339 /* ImageCollectionViewCell.swift */; };
+		B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */; };
 		B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1921FDEA0430037D567 /* AppDelegate.swift */; };
 		B565C1951FDEA0430037D567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1941FDEA0430037D567 /* ViewController.swift */; };
 		B565C1981FDEA0430037D567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B565C1961FDEA0430037D567 /* Main.storyboard */; };
@@ -57,12 +58,13 @@
 		B53F68991FE8696700650440 /* Now-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Bold.otf"; sourceTree = "<group>"; };
 		B53F689A1FE8696700650440 /* Now-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Black.otf"; sourceTree = "<group>"; };
 		B53F689B1FE8696700650440 /* Now-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Light.otf"; sourceTree = "<group>"; };
-		B53F68A21FE86EA500650440 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B54174891FE415B100842B38 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B541748C1FE41D0C00842B38 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		B541748E1FE41D2E00842B38 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B54174921FE41D5500842B38 /* Infos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infos.storyboard; sourceTree = "<group>"; };
 		B54174941FE41D6800842B38 /* Fav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fav.storyboard; sourceTree = "<group>"; };
+		B55B9BC61FF2DD1A00618339 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = "application-festival/Controllers/Calendar/ImageCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B565C18F1FDEA0430037D567 /* application-festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "application-festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B565C1921FDEA0430037D567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B565C1941FDEA0430037D567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B55B9BCB1FF2EDD100618339 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */,
+				B55B9BC61FF2DD1A00618339 /* ImageCollectionViewCell.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		B565C1861FDEA0430037D567 = {
 			isa = PBXGroup;
 			children = (
@@ -215,9 +226,9 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B55B9BCB1FF2EDD100618339 /* Calendar */,
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
-				B53F68A21FE86EA500650440 /* CalendarViewController.swift */,
 				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
 				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
 				B58021731FEBB83200E8D882 /* FavViewController.swift */,
@@ -371,10 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
-				B53F68A31FE86EA500650440 /* CalendarViewController.swift in Sources */,
 				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
+				B55B9BC71FF2DD1A00618339 /* ImageCollectionViewCell.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
