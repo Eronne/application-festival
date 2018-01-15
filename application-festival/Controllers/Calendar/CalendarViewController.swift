@@ -22,7 +22,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 
 		// Todo: add singleton
 		let place = DataMapper().places[indexPath.row]
-		cell.title.text = place.name
+		let event = DataMapper().events[indexPath.row]
+		cell.title.text = event.excerpt
 		
 		return cell
 	}

@@ -19,13 +19,23 @@ class DataMapper {
 		}
 	}
 	
+	var events: [Event] {
+		get{
+			guard let filePath = Bundle.main.url(forResource: "events", withExtension: "json") else {
+				return []
+			}
+			let data = try! Data(contentsOf: filePath);
+			return try! JSONDecoder().decode([Event].self, from: data);
+		}
+	}
+	
 	var places: [Place]{
 		get{
 			guard let filePath = Bundle.main.url(forResource: "places", withExtension: "json") else {
 				return []
 			}
 			let data = try! Data(contentsOf: filePath);
-			return try! JSONDecoder().decode([Place].self, from: data)
+			return try! JSONDecoder().decode([Place].self, from: data);
 		}
 	}
 }
