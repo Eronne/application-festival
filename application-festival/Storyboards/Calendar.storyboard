@@ -13,7 +13,6 @@
         <!--Calendar-->
         <scene sceneID="v9z-x4-8pp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kn3-7G-tnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController modalTransitionStyle="crossDissolve" id="Wvn-F9-yTG" userLabel="Calendar" customClass="CalendarViewController" customModule="application_festival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tzv-xo-9mu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -48,10 +47,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9m-DW-BLM">
+                                                    <rect key="frame" x="20" y="264" width="301" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="image" destination="7Zz-mO-4DH" id="9tv-RH-kSg"/>
+                                            <outlet property="title" destination="N9m-DW-BLM" id="sIE-Rg-ugA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -74,6 +81,7 @@
                     <tabBarItem key="tabBarItem" title="Calendar" id="eFC-JI-RUr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kn3-7G-tnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="85.599999999999994" y="132.68365817091455"/>
         </scene>

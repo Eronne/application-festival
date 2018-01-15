@@ -35,6 +35,8 @@
 		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
 		B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021731FEBB83200E8D882 /* FavViewController.swift */; };
 		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
+		B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6B200CFCD4004B9B7F /* Place.swift */; };
+		B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6D200CFD78004B9B7F /* DataMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		B58021731FEBB83200E8D882 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B5D14F6B200CFCD4004B9B7F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B5D14F6D200CFD78004B9B7F /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 		B5AAEAD91FE7C54600FB3345 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5D14F6B200CFCD4004B9B7F /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
 				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
 				B58021731FEBB83200E8D882 /* FavViewController.swift */,
+				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,6 +406,8 @@
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* ImageCollectionViewCell.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
+				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
+				B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */,
 				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);

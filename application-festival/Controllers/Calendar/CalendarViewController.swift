@@ -19,6 +19,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
 		
 		cell.image.image = imageArray[indexPath.row]
+
+		// Todo: add singleton
+		let place = DataMapper().places[indexPath.row]
+		cell.title.text = place.name
 		
 		return cell
 	}
