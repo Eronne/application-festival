@@ -11,5 +11,4 @@ import UIKit
 class CalendarCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
-    
 }

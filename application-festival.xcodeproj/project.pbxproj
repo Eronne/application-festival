@@ -30,6 +30,7 @@
 		B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B565C19B1FDEA0430037D567 /* LaunchScreen.storyboard */; };
 		B565C1A81FDEA0430037D567 /* application_festivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1A71FDEA0430037D567 /* application_festivalTests.swift */; };
 		B565C1B31FDEA0430037D567 /* application_festivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */; };
+		B5666647200D686F00B57389 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5666646200D686F00B57389 /* Category.swift */; };
 		B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580216D1FEBB11B00E8D882 /* InfosViewController.swift */; };
 		B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580216F1FEBB16000E8D882 /* WebView.storyboard */; };
 		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
@@ -86,6 +87,7 @@
 		B565C1AE1FDEA0430037D567 /* application-festivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "application-festivalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B565C1B21FDEA0430037D567 /* application_festivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application_festivalUITests.swift; sourceTree = "<group>"; };
 		B565C1B41FDEA0430037D567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5666646200D686F00B57389 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B580216D1FEBB11B00E8D882 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		B580216F1FEBB16000E8D882 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D14F6B200CFCD4004B9B7F /* Place.swift */,
+				B5666646200D686F00B57389 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			files = (
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
+				B5666647200D686F00B57389 /* Category.swift in Sources */,
 				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,
