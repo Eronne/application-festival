@@ -29,7 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2OH-Cd-D5b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="vJR-WP-TRc"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Icon_recherche" id="vJR-WP-TRc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1I-b3-WIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,4 +37,7 @@
             <point key="canvasLocation" x="-47" y="18"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon_recherche" width="30" height="33"/>
+    </resources>
 </document>

@@ -37,7 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Sl0-1D-DTb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Infos" id="0ah-f3-miZ"/>
+                    <tabBarItem key="tabBarItem" title="Infos" image="Icon_infos" id="0ah-f3-miZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9u-rj-HqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -45,4 +45,7 @@
             <point key="canvasLocation" x="-6" y="320"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon_infos" width="30" height="32"/>
+    </resources>
 </document>
