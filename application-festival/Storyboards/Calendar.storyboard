@@ -23,15 +23,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="npy-G2-vbp">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="npy-G2-vbp">
                                 <rect key="frame" x="0.0" y="98" width="375" height="399"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fMV-mr-M0L">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="399" id="Fgc-WQ-wEy"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fMV-mr-M0L" customClass="UPCarouselFlowLayout" customModule="application_festival" customModuleProvider="target">
                                     <size key="itemSize" width="376" height="296"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                            <real key="value" value="0.80000000000000004"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                            <real key="value" value="0.59999999999999998"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCollectionViewCell" id="Cuf-kc-Ro0" customClass="CalendarCollectionViewCell" customModule="application_festival" customModuleProvider="target">
@@ -41,19 +51,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="296"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-mO-4DH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="214"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-mO-4DH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="376" id="6qA-A2-fqr"/>
+                                                        <constraint firstAttribute="height" constant="214" id="yfL-nQ-OZB"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="•  •  •  •  •" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRM-14-6Zu">
-                                                    <rect key="frame" x="140" y="228" width="96" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="•  •  •  •  •" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRM-14-6Zu">
+                                                    <rect key="frame" x="105" y="228" width="96" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="4QZ-dd-QEK"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9m-DW-BLM">
-                                                    <rect key="frame" x="47" y="257" width="282" height="21"/>
+                                                    <rect key="frame" x="7" y="257" width="282" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -73,9 +88,12 @@
                                     <outlet property="delegate" destination="Wvn-F9-yTG" id="omP-Pk-lph"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Que voulez-vous voir aujourd'hui ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEp-ja-spC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que voulez-vous voir aujourd'hui ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEp-ja-spC">
                                 <rect key="frame" x="78" y="520" width="218" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="G87-Pu-Mst"/>
+                                    <constraint firstAttribute="height" constant="52" id="kH8-aw-vpP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Now-Black" family="Now" pointSize="20"/>
                                 <color key="textColor" red="0.19215686274509802" green="0.27058823529411763" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -83,6 +101,13 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="npy-G2-vbp" firstAttribute="top" secondItem="ghX-Fw-wS1" secondAttribute="top" constant="78" id="G6K-sn-U5V"/>
+                            <constraint firstItem="npy-G2-vbp" firstAttribute="leading" secondItem="ghX-Fw-wS1" secondAttribute="leading" id="gyn-xR-uzb"/>
+                            <constraint firstItem="npy-G2-vbp" firstAttribute="trailing" secondItem="ghX-Fw-wS1" secondAttribute="trailing" id="iXE-5W-C98"/>
+                            <constraint firstItem="CEp-ja-spC" firstAttribute="top" secondItem="npy-G2-vbp" secondAttribute="bottom" constant="23" id="jYt-RK-lIN"/>
+                            <constraint firstItem="npy-G2-vbp" firstAttribute="centerX" secondItem="CEp-ja-spC" secondAttribute="centerX" id="p29-Po-W3f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ghX-Fw-wS1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="Icon_agend" id="eFC-JI-RUr"/>

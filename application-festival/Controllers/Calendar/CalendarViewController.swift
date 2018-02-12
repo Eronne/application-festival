@@ -7,25 +7,28 @@
 //
 
 import UIKit
+import UPCarouselFlowLayout
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-	var imageArray = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
+	var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return imageArray.count
+		return backgroundArray.count
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as! CalendarCollectionViewCell
 		
-		cell.image.image = imageArray[indexPath.row]
+		cell.image.image = backgroundArray[indexPath.row]
 
 		// Todo: add singleton
-		let place = DataMapper().places[indexPath.row]
+//		let place = DataMapper().places[indexPath.row]
 		let event = DataMapper().events[indexPath.row]
 		cell.title.text = event.excerpt
-		
+ 
 		return cell
+		
+		
 	}
 	
 
