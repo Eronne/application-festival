@@ -6,8 +6,8 @@
 	"placeIds": [5],
 	"categoryId": 6,
 	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour":  14, "minute": 30},
-	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 18, "minute": 00},
-	"duration": {"hour": 4, "minute": 00 }
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 18, "minute": 0},
+	"duration": {"hour": 4, "minute": 0 }
 	},
 	{
 	"id": 2,
@@ -15,7 +15,7 @@
 	"excerpt": "",
 	"placeIds": [16],
 	"categoryId": 6,
-	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  10, "minute": 00},
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  10, "minute": 0},
 	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 18, "minute": 30},
 	"duration": {"hour": 8, "minute": 30 }
 	},
@@ -27,7 +27,7 @@
 	"categoryId": 6,
 	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour":  14, "minute": 30},
 	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 16, "minute": 30},
-	"duration": {"hour": 2, "minute": 00 }
+	"duration": {"hour": 2, "minute": 0 }
 	},
 	{
 	"id": 4,
@@ -35,7 +35,7 @@
 	"excerpt": "",
 	"placeIds": [4],
 	"categoryId": 6,
-	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  14, "minute": 00},
+	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  14, "minute": 0},
 	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 16, "minute": 30},
 	"duration": {"hour": 2, "minute": 30 }
 	},
@@ -45,7 +45,7 @@
 	"excerpt": "",
 	"placeIds": [9],
 	"categoryId": 5,
-	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour":  14, "minute": 07},
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour":  14, "minute": 7},
 	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 15, "minute": 32},
 	"duration": {"hour": 1, "minute": 25 }
 	},
@@ -55,7 +55,7 @@
 	"excerpt": "",
 	"placeIds": [9],
 	"categoryId": 5,
-	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  14, "minute": 07},
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  14, "minute": 7},
 	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 15, "minute": 20},
 	"duration": {"hour": 1, "minute": 13 }
 	},
@@ -65,7 +65,7 @@
 	"excerpt": "",
 	"placeIds": [9],
 	"categoryId": 5,
-	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  16, "minute": 07},
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  16, "minute": 7},
 	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 17, "minute": 24},
 	"duration": {"hour": 1, "minute": 17 }
 	},
@@ -86,7 +86,7 @@
 	"placeIds": [9],
 	"categoryId": 5,
 	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  20, "minute": 37},
-	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 22, "minute": 07},
+	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 22, "minute": 7},
 	"duration": {"hour": 1, "minute": 30 }
 	},
 	{
@@ -95,8 +95,8 @@
 	"excerpt": "",
 	"placeIds": [9],
 	"categoryId": 3,
-	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour":  14, "minute": 07},
-	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 15, "minute": 00},
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour":  14, "minute": 7},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 15, "minute": 0},
 	"duration": {"hour": 0, "minute": 53 }
 	},
 	{
@@ -116,8 +116,8 @@
 	"placeIds": [9],
 	"categoryId": 3,
 	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour":  11, "minute": 37},
-	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": "", "minute": ""},
-	"duration": {"hour": "", "minute": "" }
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 0, "minute": 0},
+	"duration": {"hour": 0, "minute": 0}
 	},
 	{
 	"id": 13,
@@ -126,7 +126,7 @@
 	"placeIds": [9],
 	"categoryId": 5,
 	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour":  16, "minute": 37},
-	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 18, "minute": 02},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 18, "minute": 2},
 	"duration": {"hour": 1, "minute": 25 }
 	},
 	{
@@ -136,7 +136,7 @@
 	"placeIds": [9],
 	"categoryId": 4,
 	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  11, "minute": 15},
-	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 13, "minute": 00},
+	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 13, "minute": 0},
 	"duration": {"hour": 1, "minute": 45 }
 	},
 	{
@@ -146,7 +146,7 @@
 	"placeIds": [9],
 	"categoryId": 4,
 	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  11, "minute": 15},
-	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 13, "minute": 00},
+	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 13, "minute": 0},
 	"duration": {"hour": 1, "minute": 45 }
-	},
+	}
 ]
