@@ -8,42 +8,32 @@
 
 import UIKit
 
-class FavViewController: UIViewController {
+class FavViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var labelName: UILabel!
+	
+	var imageArrayTest = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
+	
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return imageArrayTest.count
+	}
+
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
+		
+		cell.thumbnail.image = imageArrayTest[indexPath.row]
+		
+		// Todo: add singleton
+		let event = DataMapper().events[indexPath.row]
+		cell.title.text = event.name
+	
+		
+		return cell
+	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-		
-		if let path = Bundle.main.path(forResource: "categories", ofType: "json") {
-			do {
-				let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-				do{
-					
-					let json =  try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-
-					let jsonDictionary =  json as! Dictionary<String,Any>
-					
-					//e.g to get person
-					let categoryArr = jsonDictionary["categories"] as! Array<Dictionary<String,Any>>
-					
-					for category in categoryArr {
-						
-						print(category)
-						
-					}
-				}catch let error{
-					
-					print(error.localizedDescription)
-				}
-				
-			} catch let error {
-				print(error.localizedDescription)
-			}
-		} else {
-			print("Invalid filename/path.")
-		}
     }
 
     override func didReceiveMemoryWarning() {

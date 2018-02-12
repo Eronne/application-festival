@@ -10,6 +10,7 @@
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
+		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -62,6 +63,7 @@
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
+		5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewCell.swift; sourceTree = "<group>"; };
 		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
 		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
 		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5026E79A203194040064F2DB /* Favoris */ = {
+			isa = PBXGroup;
+			children = (
+				B58021731FEBB83200E8D882 /* FavViewController.swift */,
+				5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */,
+			);
+			path = Favoris;
+			sourceTree = "<group>";
+		};
 		B53F68861FE867DF00650440 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,12 +257,12 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5026E79A203194040064F2DB /* Favoris */,
 				B55B9BCB1FF2EDD100618339 /* Calendar */,
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
 				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
 				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
-				B58021731FEBB83200E8D882 /* FavViewController.swift */,
 				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
 			path = Controllers;
@@ -416,6 +427,7 @@
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
 				B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */,
+				5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */,
 				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);

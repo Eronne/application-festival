@@ -24,8 +24,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		let place = DataMapper().places[indexPath.row]
 		let event = DataMapper().events[indexPath.row]
 		cell.title.text = event.excerpt
-		
+ 
 		return cell
+		
+		
 	}
 	
 
