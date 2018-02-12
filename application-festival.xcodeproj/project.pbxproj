@@ -39,6 +39,10 @@
 		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
 		B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6B200CFCD4004B9B7F /* Place.swift */; };
 		B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6D200CFD78004B9B7F /* DataMapper.swift */; };
+		DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997B82031AE54004A4607 /* SearchViewController.swift */; };
+		DF5997BB2031AEF9004A4607 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */; };
+		DF5997BD2031E50E004A4607 /* filters.json in Resources */ = {isa = PBXBuildFile; fileRef = DF5997BC2031E50E004A4607 /* filters.json */; };
+		DF5997C12031EC1F004A4607 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997C02031EC1F004A4607 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5D14F6B200CFCD4004B9B7F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B5D14F6D200CFD78004B9B7F /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		DF5997B82031AE54004A4607 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF5997BC2031E50E004A4607 /* filters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = filters.json; sourceTree = "<group>"; };
+		DF5997C02031EC1F004A4607 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 				2375BC7A200BC29400483678 /* categories.json */,
 				2375BC7B200BC29500483678 /* events.json */,
 				2375BC7C200BC29500483678 /* places.json */,
+				DF5997BC2031E50E004A4607 /* filters.json */,
 				B53F68881FE8683C00650440 /* Fonts */,
 				B565C1991FDEA0430037D567 /* Assets.xcassets */,
 			);
@@ -239,6 +248,7 @@
 				B5D14F6B200CFCD4004B9B7F /* Place.swift */,
 				B5666646200D686F00B57389 /* Category.swift */,
 				B5666648200D6BC200B57389 /* Event.swift */,
+				DF5997C02031EC1F004A4607 /* Filter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +256,7 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF5997B52031AD90004A4607 /* Search */,
 				B55B9BCB1FF2EDD100618339 /* Calendar */,
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
@@ -255,6 +266,15 @@
 				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF5997B52031AD90004A4607 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DF5997B82031AE54004A4607 /* SearchViewController.swift */,
+				DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +397,7 @@
 				B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */,
 				B54174951FE41D6800842B38 /* Fav.storyboard in Resources */,
 				B565C19A1FDEA0430037D567 /* Assets.xcassets in Resources */,
+				DF5997BD2031E50E004A4607 /* filters.json in Resources */,
 				B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */,
 				B565C1981FDEA0430037D567 /* Main.storyboard in Resources */,
 				B54174931FE41D5500842B38 /* Infos.storyboard in Resources */,
@@ -407,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5666649200D6BC200B57389 /* Event.swift in Sources */,
+				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
 				B5666647200D686F00B57389 /* Category.swift in Sources */,
@@ -414,9 +436,11 @@
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
+				DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */,
 				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
 				B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */,
 				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
+				DF5997BB2031AEF9004A4607 /* SearchCollectionViewCell.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

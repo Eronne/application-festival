@@ -1,0 +1,104 @@
+[
+ {
+ "id": 1,
+ "name": "enfant",
+ "img": "",
+ "filterType" : "age"
+ },
+ {
+ "id": 2,
+ "name": "adulte",
+ "img": "",
+ "filterType" : "age"
+ },
+ {
+ "id": 3,
+ "name": "mercredi",
+ "img": "",
+ "filterType" : "day"
+ },
+ {
+ "id": 4,
+ "name": "jeudi",
+ "img": "",
+ "filterType" : "day"
+ },
+ {
+ "id": 5,
+ "name": "vendredi",
+ "img": "",
+ "filterType" : "day"
+ },
+ {
+ "id": 6,
+ "name": "samedi",
+ "img": "",
+ "filterType" : "day"
+ },
+ {
+ "id": 7,
+ "name": "dimanche",
+ "img": "",
+ "filterType" : "day"
+ },
+ {
+ "id": 8,
+ "name": "matin",
+ "img": "",
+ "filterType" : "time"
+ },
+ {
+ "id": 9,
+ "name": "après-midi",
+ "img": "",
+ "filterType" : "time"
+ },
+ {
+ "id": 10,
+ "name": "soir",
+ "img": "",
+ "filterType" : "time"
+ },
+ {
+ "id": 11,
+ "name": "bruz",
+ "img": "",
+ "filterType" : "place"
+ },
+ {
+ "id": 12,
+ "name": "rennes",
+ "img": "",
+ "filterType" : "place"
+ },
+ {
+ "id": 13,
+ "name": "atelier",
+ "img": "",
+ "filterType" : "type"
+ },
+ {
+ "id": 14,
+ "name": "projection",
+ "img": "",
+ "filterType" : "type"
+ },
+ {
+ "id": 15,
+ "name": "rencontre",
+ "img": "",
+ "filterType" : "type"
+ },
+ {
+ "id": 16,
+ "name": "scolaire",
+ "img": "",
+ "filterType" : "type"
+ },
+ {
+ "id": 17,
+ "name": "professionnel",
+ "img": "",
+ "filterType" : "type"
+ }
+]

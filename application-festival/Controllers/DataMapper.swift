@@ -38,4 +38,14 @@ class DataMapper {
 			return try! JSONDecoder().decode([Place].self, from: data);
 		}
 	}
+	
+	var filters: [Filter]{
+		get {
+			guard let filePath = Bundle.main.url(forResource: "filters", withExtension: "json") else {
+				return []
+			}
+			let data = try! Data(contentsOf: filePath);
+			return try! JSONDecoder().decode([Filter].self, from: data);
+		}
+	}
 }
