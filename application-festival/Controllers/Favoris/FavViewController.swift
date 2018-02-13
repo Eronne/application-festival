@@ -11,22 +11,44 @@ import UIKit
 class FavViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var labelName: UILabel!
-	
-	var imageArrayTest = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
+
+//	var imageArrayTest = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return imageArrayTest.count
+		return 10
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		
-		cell.thumbnail.image = imageArrayTest[indexPath.row]
+		cell.thumbnail.image = UIImage(named:"placeholder")
 		
 		// Todo: add singleton
 		let event = DataMapper().events[indexPath.row]
 		cell.title.text = event.name
-	
+		
+		if(event.excerpt != "" ) {
+			cell.author.text = event.excerpt
+		} else {
+			cell.author.text = "Pas d'informations supplémentaires"
+		}
+
+		cell.place.text = event.place?.name
+		
+		var minutes = ""
+		
+		if((event.duration?.minute)! < 10) {
+			print("test duration minutes")
+			minutes = "0" + (event.duration?.minute?.description)!
+		}
+		else {
+			minutes = (event.duration?.minute?.description)!
+		}
+		
+		let hours = (event.duration?.hour?.description)! + "h" + minutes
+		cell.hours.text = hours
+		
+		print(hours)
 		
 		return cell
 	}

@@ -14,6 +14,6 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var thumbnail: UIImageView!
 	@IBOutlet weak var author: UILabel!
 	@IBOutlet weak var hours: UILabel!
-	
+	@IBOutlet weak var place: UILabel!
 }
 

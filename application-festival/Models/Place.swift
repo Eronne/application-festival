@@ -9,7 +9,7 @@
 import Foundation
 
 class Place: Decodable {
-	var id: Int?;
+//	var id: Int?;
 	var name: String?;
 	var seats: String?;
 }

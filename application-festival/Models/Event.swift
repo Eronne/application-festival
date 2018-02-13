@@ -12,9 +12,15 @@ class Event: Decodable {
 	var id: Int?;
 	var name: String?;
 	var excerpt: String?;
-	var place: [Place]?;
+	var place: Place?;
 	var category: String?;
 	var startingDate: [String: Int]?;
 	var endingDate: [String: Int]?;
-	var duration: [String: Int]?;
+	var duration: Duration?;
 }
+
+class Duration: Decodable {
+	var hour: Int?;
+	var minute: Int?;
+}
+
