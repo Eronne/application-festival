@@ -9,7 +9,6 @@
 import UIKit
 
 class SearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-	var imageArray = [UIImage(named: "age"), UIImage(named: "day"), UIImage(named: "time"), UIImage(named: "place"), UIImage(named: "type")]
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -32,10 +31,12 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		cell.filterButton.layer.borderWidth = 2
 		cell.filterButton.layer.borderColor = UIColor.black.cgColor
 		cell.filterButton.layer.cornerRadius = CGFloat(20)
+        cell.filterButton.tag = indexPath.row;
+		
 
 		return cell
 	}
-	
+    
 }
 
 
