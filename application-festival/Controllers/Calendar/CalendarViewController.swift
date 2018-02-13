@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import UPCarouselFlowLayout
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-	var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
+    @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
+	
+    var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return backgroundArray.count
@@ -19,22 +20,23 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as! CalendarCollectionViewCell
 		
+		let daysArray = ["4", "5", "6", "7", "8"]
+		cell.day.text = daysArray[indexPath.row]
+		cell.day.layer.shadowColor = UIColor.black.cgColor
+		cell.day.layer.shadowRadius = 3.0
+		cell.day.layer.shadowOpacity = 0.45
+		cell.day.layer.shadowOffset = CGSize(width: 4, height: 4)
+		cell.day.layer.masksToBounds = false
+		
 		cell.image.image = backgroundArray[indexPath.row]
-
-		// Todo: add singleton
-//		let place = DataMapper().places[indexPath.row]
-		let event = DataMapper().events[indexPath.row]
-		cell.title.text = event.excerpt
  
 		return cell
-		
-		
 	}
 	
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		flowLayout.spacingMode = .overlap(visibleOffset: 20)
         // Do any additional setup after loading the view.
     }
 

@@ -11,9 +11,9 @@
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
+		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
 		6CEBC5ED3A614FE15E2BE858 /* Pods_application_festival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */; };
-		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -48,6 +48,7 @@
 		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
 		B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6B200CFCD4004B9B7F /* Place.swift */; };
 		B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6D200CFD78004B9B7F /* DataMapper.swift */; };
+		B5D876E220331CE900C5FD87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D876E120331CE900C5FD87 /* Extensions.swift */; };
 		DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997B82031AE54004A4607 /* SearchViewController.swift */; };
 		DF5997BB2031AEF9004A4607 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */; };
 		DF5997BD2031E50E004A4607 /* filters.json in Resources */ = {isa = PBXBuildFile; fileRef = DF5997BC2031E50E004A4607 /* filters.json */; };
@@ -90,9 +91,9 @@
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
-		5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewCell.swift; sourceTree = "<group>"; };
 		2459763EE6FCC42D816C516F /* Pods-application-festivalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B31B2FCFBD70724F172294C /* Pods-application-festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festival.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festival/Pods-application-festival.release.xcconfig"; sourceTree = "<group>"; };
 		9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B96D8BCD719B4D43D26F3 /* Pods-application-festivalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,12 +137,13 @@
 		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5D14F6B200CFCD4004B9B7F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B5D14F6D200CFD78004B9B7F /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		B5D876E120331CE900C5FD87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C64CE87CEBC7CCA3C914566D /* Pods-application-festivalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AEFCEDAD3F542300811CD9 /* Pods-application-festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festival/Pods-application-festival.debug.xcconfig"; sourceTree = "<group>"; };
 		DF5997B82031AE54004A4607 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		DF5997BC2031E50E004A4607 /* filters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = filters.json; sourceTree = "<group>"; };
 		DF5997C02031EC1F004A4607 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
-		C64CE87CEBC7CCA3C914566D /* Pods-application-festivalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D3AEFCEDAD3F542300811CD9 /* Pods-application-festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festival/Pods-application-festival.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,15 +175,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5026E79A203194040064F2DB /* Favoris */ = {
-			isa = PBXGroup;
-			children = (
-				B58021731FEBB83200E8D882 /* FavViewController.swift */,
-				5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */,
-			);
-			path = Favoris;
-			sourceTree = "<group>";
-		};
 		107F651615A2C4B6C05F63DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +196,15 @@
 				2459763EE6FCC42D816C516F /* Pods-application-festivalUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5026E79A203194040064F2DB /* Favoris */ = {
+			isa = PBXGroup;
+			children = (
+				B58021731FEBB83200E8D882 /* FavViewController.swift */,
+				5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */,
+			);
+			path = Favoris;
 			sourceTree = "<group>";
 		};
 		B53F68861FE867DF00650440 /* Resources */ = {
@@ -291,12 +293,13 @@
 		B565C1911FDEA0430037D567 /* application-festival */ = {
 			isa = PBXGroup;
 			children = (
+				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
+				B5D876E120331CE900C5FD87 /* Extensions.swift */,
+				B565C19E1FDEA0430037D567 /* Info.plist */,
 				B53F68861FE867DF00650440 /* Resources */,
 				B541748B1FE41C4900842B38 /* Storyboards */,
 				B5AAEAD91FE7C54600FB3345 /* Models */,
 				B5AAEADA1FE7C5B700FB3345 /* Controllers */,
-				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
-				B565C19E1FDEA0430037D567 /* Info.plist */,
 			);
 			path = "application-festival";
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
 				B5666647200D686F00B57389 /* Category.swift in Sources */,
 				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
+				B5D876E220331CE900C5FD87 /* Extensions.swift in Sources */,
 				B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,

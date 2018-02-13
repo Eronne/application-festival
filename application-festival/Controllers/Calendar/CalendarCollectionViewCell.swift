@@ -9,13 +9,12 @@
 import UIKit
 
 class CalendarCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var title: UILabel!
+	@IBOutlet weak var day: UILabel!
+	@IBOutlet weak var image: UIImageView!
 	
 	static let identifier = "CalendarCollectionViewCell"
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		self.layer.cornerRadius = 90
 	}
 }
