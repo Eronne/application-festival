@@ -514,9 +514,269 @@
 	"name": "Inauguration et cocktail d'ouverture",
 	"excerpt": "",
 	"place": [{"name": "Hôtel de ville","seats":""}],
-	"category": "Séance scolaire",
+	"category": "Inconnu",
 	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour":  19, "minute": 0},
 	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 21, "minute": 30},
 	"duration": {"hour": 2, "minute": 30 }
+	},
+	{
+	"id": 53,
+	"name": "Soirée",
+	"excerpt": "",
+	"place": [{"name": "Bar TNB","seats":""}],
+	"category": "Inconnu",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour": 23, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 0, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 54,
+	"name": "Discussion autour des métiers du volume",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour": 11, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 12, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 55,
+	"name": "Cantine professionnelle",
+	"excerpt": "",
+	"place": [{"name": "Bar TNB","seats":""}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour": 12, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 14, "minute": 0},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 56,
+	"name": "Petit-déjeuner des producteurs",
+	"excerpt": "",
+	"place": [{"name": "Bar TNB","seats":""}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 9, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 10, "minute": 30},
+	"duration": {"hour": 1, "minute": 0 }
+ 	},
+	{
+	"id": 57,
+	"name": "Animer avec Wacom",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 10, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 11, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 58,
+	"name": "Regards croisés du collectif des Résidences",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 11, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 12, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 59,
+	"name": "L'Appel de Folimage",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 12, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 12, "minute": 30},
+	"duration": {"hour": 0, "minute": 30 }
+	},
+	{
+	"id": 60,
+	"name": "Le renouveau de la Fabrique",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 12, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 13, "minute": 0},
+	"duration": {"hour": 0, "minute": 30 }
+	},
+	{
+	"id": 61,
+	"name": "Line-up des diffuseurs",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Piccoli","seats":"96"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 16, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 17, "minute": 0},
+	"duration": {"hour": 0, "minute": 30 }
+	},
+	{
+	"id": 62,
+	"name": "Remise des prix",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats":"400"}],
+	"category": "Volet professionnel",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 19, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 20, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 63,
+	"name": "Cocktail de clôture",
+	"excerpt": "",
+	"place": [{"name": "Bar TNB","seats":""}],
+	"category": "Séance spéciale",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 20, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 21, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 64,
+	"name": "Soirée de clôture",
+	"excerpt": "",
+	"place": [{"name": "Bar TNB","seats":""}],
+	"category": "Séance spéciale",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 22, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 0, "minute": 30},
+	"duration": {"hour": 2, "minute": 0 }
+	},
+	{
+	"id": 65,
+	"name": "Compétition 1",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 15, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 66,
+	"name": "Sahara",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Longs métrages et rencontres",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour": 15, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 17, "minute": 0},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 67,
+	"name": "Compétion 5",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour": 18, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 19, "minute": 40},
+	"duration": {"hour": 1, "minute": 10 }
+	},
+	{
+	"id": 68,
+	"name": "Film d'ouverture",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour": 21, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 23, "minute": 0},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 69,
+	"name": "Compétition 2",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Séance scolaire",
+	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 15, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 70,
+	"name": "Les As de la Jungle",
+	"excerpt": "en présence de David Alaux",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Séance scolaire",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 15, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 71,
+	"name": "Clips animés et DRUM Animation",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour": 21, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 22, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 72,
+	"name": "Zombillénium",
+	"excerpt": "en présence d'Alexis Ducord",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Longs métrages et rencontres",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 15, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 73,
+	"name": "Le Quatuor à Cornes",
+	"excerpt": "en présence de Benjamin Bottela, Yves Cotten et Emmanuelle Gorgiard",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 16, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 17, "minute": 0},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 74,
+	"name": "Projection du palmarès",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 21, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 22, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 75,
+	"name": "Drôles de petites bêtes",
+	"excerpt": "en présence d'Antoon Krings",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 15, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 76,
+	"name": "Ciné concert 'Lotte, mon amour'",
+	"excerpt": "",
+	"place": [{"name": "Ciné TNB Jouvet","seats": "400"}],
+	"category": "Compétitions et sélections",
+	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour": 16, "minute": 30},
+	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 17, "minute": 30},
+	"duration": {"hour": 1, "minute": 0 }
+	},
+	{
+	"id": 77,
+	"name": "Gaugin je suis un sauvage",
+	"excerpt": "",
+	"place": [{"name": "Les champs libres - Musée de Bretagne","seats": ""}],
+	"category": "Séance spéciale",
+	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour": 16, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 17, "minute": 30},
+	"duration": {"hour": 1, "minute": 30 }
+	},
+	{
+	"id": 78,
+	"name": "Montgolfière Dimitri",
+	"excerpt": "",
+	"place": [{"name": "Esplanade Charles de Gaulle","seats": ""}],
+	"category": "Séance spéciale",
+	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour": 14, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 20, "minute": 0},
+	"duration": {"hour": 6, "minute": 0 }
 	}
 ]
