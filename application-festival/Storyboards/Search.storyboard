@@ -72,6 +72,9 @@
                                                     <state key="normal" title="Maman">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="filterButtonAction:" destination="iPo-KI-2vb" eventType="touchUpInside" id="fVb-hD-0CL"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
