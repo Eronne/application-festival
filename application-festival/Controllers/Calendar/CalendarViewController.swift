@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import UPCarouselFlowLayout
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-	var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
+    @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
+	
+    var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return backgroundArray.count
@@ -35,7 +36,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		flowLayout.spacingMode = .overlap(visibleOffset: 20)
         // Do any additional setup after loading the view.
     }
 
