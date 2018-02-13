@@ -12,8 +12,9 @@ class Event: Decodable {
 	var id: Int?;
 	var name: String?;
 	var excerpt: String?;
-	var placeIds: [Int]?;
-	var categoryId: Int?;
+	var place: [Place]?;
+	var category: String?;
 	var startingDate: [String: Int]?;
 	var endingDate: [String: Int]?;
+	var duration: [String: Int]?;
 }

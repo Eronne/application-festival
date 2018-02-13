@@ -11,5 +11,5 @@ import Foundation
 class Place: Decodable {
 	var id: Int?;
 	var name: String?;
-	var seats: Int?;
+	var seats: String?;
 }
