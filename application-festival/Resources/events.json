@@ -114,7 +114,7 @@
 	"name": "Le film 'Pachanama' en chantier",
 	"excerpt": "en présence de Juan Antin et Céline Hermann",
 	"placeIds": [{"name": "Arvor - Salle Bozzuffi (salle n°2)","seats":"158"}],
-	"categoryId": "Séance scolaire",,
+	"categoryId": "Séance scolaire",
 	"startingDate": {"year": 2018, "month": 4, "day": 7, "hour":  11, "minute": 37},
 	"endingDate":   {"year": 2018, "month": 4, "day": 7, "hour": 0, "minute": 0},
 	"duration": {"hour": 0, "minute": 0}
@@ -178,7 +178,7 @@
 	"startingDate": {"year": 2018, "month": 4, "day": 5, "hour":  16, "minute": 30},
 	"endingDate":   {"year": 2018, "month": 4, "day": 5, "hour": 17, "minute": 32},
 	"duration": {"hour": 1, "minute": 2 }
-	}
+	},
 	{
 	"id": 19,
 	"name": "Dans les coulisses de Série Athlecticus",
@@ -435,7 +435,7 @@
 	"excerpt": "",
 	"placeIds": [{"name": "Arvor - Salle Dubost (salle n°1)","seats":"215"}],
 	"categoryId": "Compétitions et sélections",
-	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  11, "minute": 00},
+	"startingDate": {"year": 2018, "month": 4, "day": 8, "hour":  11, "minute": 0},
 	"endingDate":   {"year": 2018, "month": 4, "day": 8, "hour": 12, "minute": 7},
 	"duration": {"hour": 1, "minute": 7 }
 	},
@@ -505,8 +505,18 @@
 	"excerpt": "",
 	"placeIds": [{"name": "ESRA","seats":""}],
 	"categoryId": "Séance scolaire",
-	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour":  10 "minute": 30},
+	"startingDate": {"year": 2018, "month": 4, "day": 6, "hour":  10, "minute": 30},
 	"endingDate":   {"year": 2018, "month": 4, "day": 6, "hour": 12, "minute": 14},
 	"duration": {"hour": 1, "minute": 45 }
+	},
+	{
+	"id": 52,
+	"name": "Inauguration et cocktail d'ouverture",
+	"excerpt": "",
+	"placeIds": [{"name": "Hôtel de ville","seats":""}],
+	"categoryId": "Séance scolaire",
+	"startingDate": {"year": 2018, "month": 4, "day": 4, "hour":  19, "minute": 0},
+	"endingDate":   {"year": 2018, "month": 4, "day": 4, "hour": 21, "minute": 30},
+	"duration": {"hour": 2, "minute": 30 }
 	}
 ]
