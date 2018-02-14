@@ -13,4 +13,5 @@ class Filter: Decodable {
 	var name: String?;
 	var img: String?;
 	var filterType: Int?;
+
 }

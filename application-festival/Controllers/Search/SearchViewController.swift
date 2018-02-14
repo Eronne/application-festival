@@ -9,10 +9,13 @@
 import UIKit
 
 class SearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	@IBOutlet weak var submitButton: UIButton!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		submitButton.backgroundColor = UIColor(hue: 0.6056, saturation: 0.02, brightness: 0.88, alpha: 1.0)
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -26,16 +29,21 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchCollectionViewCell", for: indexPath) as! SearchCollectionViewCell
-		
-		cell.filterButton.setTitle(DataMapper().filters[indexPath.row].name, for: .normal)
+		let filter = DataMapper().filters[indexPath.row]
+		cell.filterButton.setTitle(filter.name, for: .normal)
 		cell.filterButton.layer.borderWidth = 2
 		cell.filterButton.layer.borderColor = UIColor.black.cgColor
 		cell.filterButton.layer.cornerRadius = CGFloat(20)
         cell.filterButton.tag = indexPath.row;
-		
+		cell.filter = filter
 
 		return cell
 	}
+	
+	@IBAction func validateButtonAction(_ sender: UIButton) {
+		print("tap");
+	}
+	
     
 }
 

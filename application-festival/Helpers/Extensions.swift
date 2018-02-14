@@ -55,3 +55,23 @@ extension UIView {
 		superview?.insertSubview(shadowView, belowSubview: self)
 	}
 }
+
+extension Array where Element == Event {
+	func findBy(id: Int) -> [Event]? {
+		return self.filter({ (event) -> Bool in
+			return (event.id == id)
+		})
+	}
+	
+	func findOneBy(id: Int) -> Event? {
+		return self.filter({ (event) -> Bool in
+			return (event.id! == id)
+		}).first
+	}
+	
+//	func findBy(category: Category) -> [Event]? {
+//		return self.filter({ (event) -> Bool in
+//			return event.category == category
+//		})
+//	}
+}

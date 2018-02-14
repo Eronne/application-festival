@@ -33,13 +33,13 @@
  "id": 6,
  "name": "samedi",
  "img": "",
- "filterType" : 2
+ "filterType" : 1
  },
  {
  "id": 7,
  "name": "dimanche",
  "img": "",
- "filterType" : 2
+ "filterType" : 1
  },
  {
  "id": 8,
