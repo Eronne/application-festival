@@ -1,104 +1,135 @@
-[
- {
- "id": 1,
- "name": "enfant",
- "img": "",
- "filterType" : 0
- },
- {
- "id": 2,
- "name": "adulte",
- "img": "",
- "filterType" : 0
- },
- {
- "id": 3,
- "name": "mercredi",
- "img": "",
- "filterType" : 1
- },
- {
- "id": 4,
- "name": "jeudi",
- "img": "",
- "filterType" : 1
- },
- {
- "id": 5,
- "name": "vendredi",
- "img": "",
- "filterType" : 1
- },
- {
- "id": 6,
- "name": "samedi",
- "img": "",
- "filterType" : 1
- },
- {
- "id": 7,
- "name": "dimanche",
- "img": "",
- "filterType" : 1
- },
- {
- "id": 8,
- "name": "matin",
- "img": "",
- "filterType" : 2
- },
- {
- "id": 9,
- "name": "après-midi",
- "img": "",
- "filterType" : 2
- },
- {
- "id": 10,
- "name": "soir",
- "img": "",
- "filterType" : 2
- },
- {
- "id": 11,
- "name": "bruz",
- "img": "",
- "filterType" : 3
- },
- {
- "id": 12,
- "name": "rennes",
- "img": "",
- "filterType" : 3
- },
- {
- "id": 13,
- "name": "atelier",
- "img": "",
- "filterType" : 4
- },
- {
- "id": 14,
- "name": "projection",
- "img": "",
- "filterType" : 4
- },
- {
- "id": 15,
- "name": "rencontre",
- "img": "",
- "filterType" : 4
- },
- {
- "id": 16,
- "name": "scolaire",
- "img": "",
- "filterType" : 4
- },
- {
- "id": 17,
- "name": "professionnel",
- "img": "",
- "filterType" : 4
- }
+ [
+  {
+  "id": 1,
+  "name": "enfant",
+  "img": "",
+  "filterType" : 0,
+  "isSelected": false
+  },
+  {
+  "id": 2,
+  "name": "adulte",
+  "img": "",
+  "filterType" : 0,
+  "isSelected": false
+  },
+  {
+  "id": 3,
+  "name": "mercredi",
+  "img": "",
+  "filterType" : 1,
+  "isSelected": false
+  },
+  {
+  "id": 4,
+  "name": "jeudi",
+  "img": "",
+  "filterType" : 1,
+  "isSelected": false
+  },
+  {
+  "id": 5,
+  "name": "vendredi",
+  "img": "",
+  "filterType" : 1,
+  "isSelected": false
+  },
+  {
+  "id": 6,
+  "name": "samedi",
+  "img": "",
+  "filterType" : 1,
+  "isSelected": false
+  },
+  {
+  "id": 7,
+  "name": "dimanche",
+  "img": "",
+  "filterType" : 1,
+  "isSelected": false
+  },
+  {
+  "id": 8,
+  "name": "matin",
+  "img": "",
+  "filterType" : 2,
+  "isSelected": false
+  },
+  {
+  "id": 9,
+  "name": "après-midi",
+  "img": "",
+  "filterType" : 2,
+  "isSelected": false
+  },
+  {
+  "id": 10,
+  "name": "soir",
+  "img": "",
+  "filterType" : 2,
+  "isSelected": false
+  },
+  {
+  "id": 11,
+  "name": "bruz",
+  "img": "",
+  "filterType" : 3,
+  "isSelected": false
+  },
+  {
+  "id": 12,
+  "name": "rennes",
+  "img": "",
+  "filterType" : 3,
+  "isSelected": false
+  },
+  {
+  "id": 13,
+  "name": "atelier",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 14,
+  "name": "projection",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 15,
+  "name": "rencontre",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 16,
+  "name": "scolaire",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 17,
+  "name": "professionnel",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 18,
+  "name": "salon",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  },
+  {
+  "id": 19,
+  "name": "competition",
+  "img": "",
+  "filterType" : 4,
+  "isSelected": false
+  }
 ]

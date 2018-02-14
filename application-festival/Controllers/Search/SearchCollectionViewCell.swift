@@ -10,24 +10,11 @@ import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
 	
-	var filter: Filter?
-	var imageArray = [UIImage(named: "age"), UIImage(named: "day"), UIImage(named: "time"), UIImage(named: "place"), UIImage(named: "type")]
-	var filterSelected = false;
-	
 	@IBOutlet weak var filterButton: UIButton!
 	
 	@IBAction func buttonTouchUp(_ sender: UIButton) {
-		let imageIndex = filter?.filterType
-		if filterButton.titleColor(for: .normal) == UIColor.white {
-			print(filterButton.isTouchInside);
-			filterButton.setBackgroundImage(nil, for: .normal);
-			filterButton.setTitleColor(UIColor.black, for: .normal)
-			filterSelected = false;
-		} else {
-			filterButton.setBackgroundImage(imageArray[imageIndex!], for: .normal);
-			filterButton.setTitleColor(UIColor.white, for: .normal)
-			filterSelected = true;
-		}
+		let index = filterButton.tag
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filterButtonTouched"), object: nil, userInfo: ["row":index])
 	}
 	
 }
