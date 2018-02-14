@@ -17,4 +17,6 @@ class Event: Decodable {
 	var startingDate: [String: Int]?;
 	var endingDate: [String: Int]?;
 	var duration: [String: Int]?;
+	
+
 }
