@@ -21,11 +21,12 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		
-		cell.thumbnail.image = UIImage(named:"placeholder")
-		
 		// Todo: add singleton
 		let event = DataMapper().events[indexPath.row]
-		cell.title.text = event.name
+	
+		
+		cell.thumbnail.image = UIImage(named:event.img!)
+		cell.title.text = event.name?.uppercased()
 		
 		if(event.excerpt != "" ) {
 			cell.author.text = event.excerpt
@@ -33,6 +34,18 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 			cell.author.text = "Pas d'informations supplémentaires"
 		}
 
+		
+		let eventStartingDate = event.startingDate.getDateEvents()
+		let now = Date()
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+		let nowDateString = dateFormatter.string(from: now)
+		let nowDate = dateFormatter.date(from: nowDateString)
+		
+		let components = Calendar.current.dateComponents([.month, .day, .hour, .minute], from: nowDate!, to: eventStartingDate)
+		let countdown = "Débute dans \(components.month ?? 0)m \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
+		
+		cell.countdown.text = countdown
 		cell.place.text = event.place?.name
 		
 		var minutes = ""
@@ -47,8 +60,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		
 		let hours = (event.duration?.hour?.description)! + "h" + minutes
 		cell.hours.text = hours
-		
-		print(hours)
+
 		
 		return cell
 	}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0685BC3861622791869B824A /* Pods_application_festivalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */; };
+		236B1E45203436D000CAB129 /* DateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1E44203436D000CAB129 /* DateEvents.swift */; };
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
@@ -86,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		05626ADAA2B6DCF27176A7E4 /* Pods-application-festivalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.release.xcconfig"; sourceTree = "<group>"; };
+		236B1E44203436D000CAB129 /* DateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEvents.swift; sourceTree = "<group>"; };
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				B5666646200D686F00B57389 /* Category.swift */,
 				B5666648200D6BC200B57389 /* Event.swift */,
 				DF5997C02031EC1F004A4607 /* Filter.swift */,
+				236B1E44203436D000CAB129 /* DateEvents.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,
+				236B1E45203436D000CAB129 /* DateEvents.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */,
 				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
