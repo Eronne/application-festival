@@ -13,7 +13,6 @@
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
-		6CEBC5ED3A614FE15E2BE858 /* Pods_application_festival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -25,6 +24,8 @@
 		B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748E1FE41D2E00842B38 /* Search.storyboard */; };
 		B54174931FE41D5500842B38 /* Infos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174921FE41D5500842B38 /* Infos.storyboard */; };
 		B54174951FE41D6800842B38 /* Fav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174941FE41D6800842B38 /* Fav.storyboard */; };
+		B548A920203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */; };
+		B548A921203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */; };
 		B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */; };
 		B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1921FDEA0430037D567 /* AppDelegate.swift */; };
@@ -39,8 +40,6 @@
 		B57439B82031DFCA008FE158 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57439B72031DFCA008FE158 /* Character.swift */; };
 		B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */; };
 		B57439BD2031E043008FE158 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57439BB2031E042008FE158 /* Info.plist */; };
-		B57439C32031E06D008FE158 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57439BE2031E059008FE158 /* UPCarouselFlowLayout.framework */; };
-		B57439C42031E06D008FE158 /* UPCarouselFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B57439BE2031E059008FE158 /* UPCarouselFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580216D1FEBB11B00E8D882 /* InfosViewController.swift */; };
 		B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580216F1FEBB16000E8D882 /* WebView.storyboard */; };
 		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
@@ -79,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B57439C42031E06D008FE158 /* UPCarouselFlowLayout.framework in Embed Frameworks */,
+				B548A921203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +108,7 @@
 		B541748E1FE41D2E00842B38 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B54174921FE41D5500842B38 /* Infos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infos.storyboard; sourceTree = "<group>"; };
 		B54174941FE41D6800842B38 /* Fav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fav.storyboard; sourceTree = "<group>"; };
+		B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPCarouselFlowLayout.framework; path = "application-festival/Helpers/UPCarouselFlowLayout.framework"; sourceTree = SOURCE_ROOT; };
 		B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarCollectionViewCell.swift; path = "application-festival/Controllers/Calendar/CalendarCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B565C18F1FDEA0430037D567 /* application-festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "application-festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +129,6 @@
 		B57439B72031DFCA008FE158 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		B57439BB2031E042008FE158 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B57439BE2031E059008FE158 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
 		B580216D1FEBB11B00E8D882 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		B580216F1FEBB16000E8D882 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
@@ -151,8 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57439C32031E06D008FE158 /* UPCarouselFlowLayout.framework in Frameworks */,
-				6CEBC5ED3A614FE15E2BE858 /* Pods_application_festival.framework in Frameworks */,
+				B548A920203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +208,6 @@
 		B53F68861FE867DF00650440 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B57439BE2031E059008FE158 /* UPCarouselFlowLayout.framework */,
-				B57439B92031E042008FE158 /* UPCarouselFlowLayout */,
 				2375BC7A200BC29400483678 /* categories.json */,
 				2375BC7B200BC29500483678 /* events.json */,
 				2375BC7C200BC29500483678 /* places.json */,
@@ -293,13 +289,12 @@
 		B565C1911FDEA0430037D567 /* application-festival */ = {
 			isa = PBXGroup;
 			children = (
-				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
-				B5D876E120331CE900C5FD87 /* Extensions.swift */,
-				B565C19E1FDEA0430037D567 /* Info.plist */,
+				B57124A4203475F700D2CEE9 /* Bundle files */,
 				B53F68861FE867DF00650440 /* Resources */,
-				B541748B1FE41C4900842B38 /* Storyboards */,
 				B5AAEAD91FE7C54600FB3345 /* Models */,
+				B541748B1FE41C4900842B38 /* Storyboards */,
 				B5AAEADA1FE7C5B700FB3345 /* Controllers */,
+				B57124A3203475E700D2CEE9 /* Helpers */,
 			);
 			path = "application-festival";
 			sourceTree = "<group>";
@@ -320,6 +315,25 @@
 				B565C1B41FDEA0430037D567 /* Info.plist */,
 			);
 			path = "application-festivalUITests";
+			sourceTree = "<group>";
+		};
+		B57124A3203475E700D2CEE9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */,
+				B57439B92031E042008FE158 /* UPCarouselFlowLayout */,
+				B5D876E120331CE900C5FD87 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B57124A4203475F700D2CEE9 /* Bundle files */ = {
+			isa = PBXGroup;
+			children = (
+				B565C1921FDEA0430037D567 /* AppDelegate.swift */,
+				B565C19E1FDEA0430037D567 /* Info.plist */,
+			);
+			path = "Bundle files";
 			sourceTree = "<group>";
 		};
 		B57439B92031E042008FE158 /* UPCarouselFlowLayout */ = {
@@ -868,8 +882,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/application-festival/Resources",
+					"$(PROJECT_DIR)/application-festival/Helpers",
 				);
-				INFOPLIST_FILE = "application-festival/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/application-festival/Bundle files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gobelins.application-festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -888,8 +903,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/application-festival/Resources",
+					"$(PROJECT_DIR)/application-festival/Helpers",
 				);
-				INFOPLIST_FILE = "application-festival/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/application-festival/Bundle files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gobelins.application-festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
