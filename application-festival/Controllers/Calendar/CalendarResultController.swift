@@ -6,4 +6,12 @@
 //  Copyright © 2018 Gobelins. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CalendarResultController: UIViewController {
+    var day: String = ""
+    
+    @IBAction func closeAction(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "closeCalendarResult"), object: nil)
+    }
+}

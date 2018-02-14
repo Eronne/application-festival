@@ -11,10 +11,15 @@ import UIKit
 class CalendarCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var day: UILabel!
 	@IBOutlet weak var image: UIImageView!
+	@IBOutlet weak var cellButton: UIButton!
 	
 	static let identifier = "CalendarCollectionViewCell"
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
+	}
+	
+	@IBAction func calendarCellTouched(_ sender: Any) {
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CellTouched"), object: nil, userInfo: ["day" : "\(cellButton.tag)"])
 	}
 }

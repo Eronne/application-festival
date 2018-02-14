@@ -19,15 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-	// Controller
-	//    @IBAction func clickAction(_ sender: Any) {
-	//        let sb = UIStoryboard.init(name: "Storyboard2", bundle: nil)
-	//		if let vc = sb.instantiateInitialViewController() {
-	//			self.present(vc, animated: true, completion: nil)
-	//		}
-	//    }
 	
 	@IBAction func backAction(_ segue: UIStoryboardSegue) {
 		print("Coucou")
