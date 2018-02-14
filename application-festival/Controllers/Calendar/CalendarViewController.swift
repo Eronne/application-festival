@@ -10,8 +10,12 @@ import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
+	var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
 	
-    var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		flowLayout.spacingMode = .overlap(visibleOffset: 20)
+	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return backgroundArray.count
@@ -29,16 +33,17 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		cell.day.layer.masksToBounds = false
 		
 		cell.image.image = backgroundArray[indexPath.row]
+
+//		let touch = UITapGestureRecognizer(target: cell, action: Selector(("tap:")))
+//		touch.numberOfTapsRequired = 1
+//		cell.addGestureRecognizer(touch)
  
 		return cell
 	}
 	
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		flowLayout.spacingMode = .overlap(visibleOffset: 20)
-        // Do any additional setup after loading the view.
-    }
+	func tap(t: UITapGestureRecognizer) {
+		print("TAP")
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
