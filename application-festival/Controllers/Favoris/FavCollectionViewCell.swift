@@ -15,5 +15,9 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var author: UILabel!
 	@IBOutlet weak var hours: UILabel!
 	@IBOutlet weak var place: UILabel!
+	@IBOutlet weak var countdown: UILabel!
+	@IBOutlet weak var buttonFav: UIButton!
+	
+	
 }
 

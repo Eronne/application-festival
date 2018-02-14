@@ -33,9 +33,9 @@
                                     <segue destination="S0f-r3-w31" kind="embed" id="UY8-HT-1RI"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-lg-RJO">
-                                <rect key="frame" x="329" y="20" width="30" height="30"/>
-                                <state key="normal" title="♥️"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-lg-RJO">
+                                <rect key="frame" x="307" y="40" width="40" height="35"/>
+                                <state key="normal" backgroundImage="picto_favoris"/>
                                 <connections>
                                     <segue destination="9Yx-4K-yuf" kind="show" id="tON-7O-dAZ"/>
                                 </connections>
@@ -114,4 +114,7 @@
             <point key="canvasLocation" x="354" y="371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="picto_favoris" width="37" height="33"/>
+    </resources>
 </document>
