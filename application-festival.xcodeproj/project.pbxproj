@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0685BC3861622791869B824A /* Pods_application_festivalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */; };
+		236B1E45203436D000CAB129 /* DateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1E44203436D000CAB129 /* DateEvents.swift */; };
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
+		B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */; };
+		B5350ECB20348E7600436BF3 /* CalendarResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350ECA20348E7600436BF3 /* CalendarResultController.swift */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -24,8 +27,6 @@
 		B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541748E1FE41D2E00842B38 /* Search.storyboard */; };
 		B54174931FE41D5500842B38 /* Infos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174921FE41D5500842B38 /* Infos.storyboard */; };
 		B54174951FE41D6800842B38 /* Fav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54174941FE41D6800842B38 /* Fav.storyboard */; };
-		B548A920203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */; };
-		B548A921203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */; };
 		B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */; };
 		B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C1921FDEA0430037D567 /* AppDelegate.swift */; };
@@ -78,7 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B548A921203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		05626ADAA2B6DCF27176A7E4 /* Pods-application-festivalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.release.xcconfig"; sourceTree = "<group>"; };
+		236B1E44203436D000CAB129 /* DateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEvents.swift; sourceTree = "<group>"; };
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
@@ -97,6 +98,8 @@
 		9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B96D8BCD719B4D43D26F3 /* Pods-application-festivalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
+		B5350ECA20348E7600436BF3 /* CalendarResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultController.swift; sourceTree = "<group>"; };
 		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
 		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
 		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
@@ -108,7 +111,6 @@
 		B541748E1FE41D2E00842B38 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B54174921FE41D5500842B38 /* Infos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infos.storyboard; sourceTree = "<group>"; };
 		B54174941FE41D6800842B38 /* Fav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fav.storyboard; sourceTree = "<group>"; };
-		B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPCarouselFlowLayout.framework; path = "application-festival/Helpers/UPCarouselFlowLayout.framework"; sourceTree = SOURCE_ROOT; };
 		B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarCollectionViewCell.swift; path = "application-festival/Controllers/Calendar/CalendarCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B565C18F1FDEA0430037D567 /* application-festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "application-festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B548A920203476BD009B3BC9 /* UPCarouselFlowLayout.framework in Frameworks */,
+				B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +256,21 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B548A92220347BBE009B3BC9 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */,
+				B57439B92031E042008FE158 /* UPCarouselFlowLayout */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
 		B55B9BCB1FF2EDD100618339 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */,
 				B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */,
+				B5350ECA20348E7600436BF3 /* CalendarResultController.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -295,6 +307,7 @@
 				B541748B1FE41C4900842B38 /* Storyboards */,
 				B5AAEADA1FE7C5B700FB3345 /* Controllers */,
 				B57124A3203475E700D2CEE9 /* Helpers */,
+				B548A92220347BBE009B3BC9 /* Vendors */,
 			);
 			path = "application-festival";
 			sourceTree = "<group>";
@@ -320,8 +333,6 @@
 		B57124A3203475E700D2CEE9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B548A91E203476A0009B3BC9 /* UPCarouselFlowLayout.framework */,
-				B57439B92031E042008FE158 /* UPCarouselFlowLayout */,
 				B5D876E120331CE900C5FD87 /* Extensions.swift */,
 			);
 			path = Helpers;
@@ -353,6 +364,7 @@
 				B5666646200D686F00B57389 /* Category.swift */,
 				B5666648200D6BC200B57389 /* Event.swift */,
 				DF5997C02031EC1F004A4607 /* Filter.swift */,
+				236B1E44203436D000CAB129 /* DateEvents.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -694,6 +706,7 @@
 			files = (
 				B57439B82031DFCA008FE158 /* Character.swift in Sources */,
 				B5666649200D6BC200B57389 /* Event.swift in Sources */,
+				B5350ECB20348E7600436BF3 /* CalendarResultController.swift in Sources */,
 				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
@@ -703,6 +716,7 @@
 				B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,
+				236B1E45203436D000CAB129 /* DateEvents.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
 				DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */,
 				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
@@ -883,6 +897,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/application-festival/Resources",
 					"$(PROJECT_DIR)/application-festival/Helpers",
+					"$(PROJECT_DIR)/application-festival/Vendors",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/application-festival/Bundle files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -904,6 +919,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/application-festival/Resources",
 					"$(PROJECT_DIR)/application-festival/Helpers",
+					"$(PROJECT_DIR)/application-festival/Vendors",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/application-festival/Bundle files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

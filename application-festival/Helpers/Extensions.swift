@@ -68,7 +68,13 @@ extension Array where Element == Event {
 			return (event.id! == id)
 		}).first
 	}
-		
+	
+	func findByDay(day: Int) -> [Event]? {
+		return self.filter({ (event) -> Bool in
+			return (event.startingDate.day! == day)
+		})
+	}
+
 //	func findBy(category: Category) -> [Event]? {
 //		return self.filter({ (event) -> Bool in
 //			return event.category == category
