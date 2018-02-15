@@ -20,9 +20,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "CellTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let day = userInfo["day"] as? String {
-					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? CalendarResultController {
+					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? CalendarResultViewController {
 						resultController.day = day
-						print(resultController.day)
 						self.present(resultController, animated: true, completion: nil)
 					}
 				}
@@ -55,10 +54,6 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		cell.cellButton.tag = Int(daysArray[indexPath.row])!
  
 		return cell
-	}
-	
-	func tap(t: UITapGestureRecognizer) {
-		print("TAP")
 	}
 
     override func didReceiveMemoryWarning() {

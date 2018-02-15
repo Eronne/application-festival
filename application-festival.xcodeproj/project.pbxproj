@@ -14,8 +14,9 @@
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
+		B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */; };
 		B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */; };
-		B5350ECB20348E7600436BF3 /* CalendarResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350ECA20348E7600436BF3 /* CalendarResultController.swift */; };
+		B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -97,9 +98,10 @@
 		6B31B2FCFBD70724F172294C /* Pods-application-festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festival.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festival/Pods-application-festival.release.xcconfig"; sourceTree = "<group>"; };
 		9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B96D8BCD719B4D43D26F3 /* Pods-application-festivalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
-		B5350ECA20348E7600436BF3 /* CalendarResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultController.swift; sourceTree = "<group>"; };
+		B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultViewController.swift; sourceTree = "<group>"; };
 		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
 		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
 		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
@@ -270,7 +272,8 @@
 			children = (
 				B55B9BC91FF2DE1900618339 /* CalendarViewController.swift */,
 				B55B9BC61FF2DD1A00618339 /* CalendarCollectionViewCell.swift */,
-				B5350ECA20348E7600436BF3 /* CalendarResultController.swift */,
+				B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */,
+				B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -706,9 +709,10 @@
 			files = (
 				B57439B82031DFCA008FE158 /* Character.swift in Sources */,
 				B5666649200D6BC200B57389 /* Event.swift in Sources */,
-				B5350ECB20348E7600436BF3 /* CalendarResultController.swift in Sources */,
+				B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */,
 				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
+				B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */,
 				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
 				B5666647200D686F00B57389 /* Category.swift in Sources */,
 				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
