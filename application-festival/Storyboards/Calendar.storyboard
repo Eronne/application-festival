@@ -13,6 +13,9 @@
         <array key="Now-Black.otf">
             <string>Now-Black</string>
         </array>
+        <array key="Now-Medium.otf">
+            <string>Now-Medium</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Calendar-->
@@ -74,6 +77,13 @@
                                                             <nil key="highlightedColor"/>
                                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mp-Ud-dMV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="321"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <connections>
+                                                                <action selector="calendarCellTouched:" destination="Cuf-kc-Ro0" eventType="touchUpInside" id="pUV-sh-orO"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
@@ -89,6 +99,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <outlet property="cellButton" destination="4Mp-Ud-dMV" id="MZA-8b-KRp"/>
                                             <outlet property="day" destination="3Ql-dH-Q5t" id="lYh-tx-LPH"/>
                                             <outlet property="image" destination="7Zz-mO-4DH" id="9tv-RH-kSg"/>
                                         </connections>
@@ -100,7 +111,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que voulez-vous voir aujourd'hui ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEp-ja-spC">
-                                <rect key="frame" x="78" y="520" width="218" height="52"/>
+                                <rect key="frame" x="78.5" y="520" width="218" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="G87-Pu-Mst"/>
                                     <constraint firstAttribute="height" constant="52" id="kH8-aw-vpP"/>
@@ -121,7 +132,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghX-Fw-wS1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="Icon_agend" id="eFC-JI-RUr"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Icon_agend" id="qXm-Lh-ae5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="flowLayout" destination="fMV-mr-M0L" id="b2T-mh-uFX"/>
@@ -129,10 +140,168 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kn3-7G-tnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="132.68365817091455"/>
+            <point key="canvasLocation" x="424.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--CalendarResult-->
+        <scene sceneID="GYG-Go-UWV">
+            <objects>
+                <viewController storyboardIdentifier="resultId" id="Afd-Wb-lVl" userLabel="CalendarResult" customClass="CalendarResultViewController" customModule="application_festival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rs3-KP-V97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="day2" translatesAutoresizingMaskIntoConstraints="NO" id="a8e-B8-rYa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AwW-iN-jFE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r5Y-YG-9GB" customClass="UPCarouselFlowLayout" customModule="application_festival" customModuleProvider="target">
+                                    <size key="itemSize" width="310" height="285"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                            <real key="value" value="0.80000000000000004"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                            <real key="value" value="0.59999999999999998"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarResultCollectionViewCell" id="R9R-MR-dYi" customClass="CalendarResultCollectionViewCell" customModule="application_festival" customModuleProvider="target">
+                                        <rect key="frame" x="32.5" y="0.0" width="310" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="285"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16h" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhR-4b-c36">
+                                                    <rect key="frame" x="72" y="6" width="135" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Now-Black" family="Now" pointSize="65"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-Na-1oK">
+                                                    <rect key="frame" x="0.0" y="60" width="310" height="225"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-2a-3PM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="35b-AD-m6G">
+                                                                <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YV9-Qo-6Vi">
+                                                                        <rect key="frame" x="110" y="20" width="90" height="90"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <blurEffect style="light"/>
+                                                        </visualEffectView>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZq-K5-9Ee">
+                                                            <rect key="frame" x="0.0" y="128" width="310" height="97"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMp-I2-YkQ">
+                                                                    <rect key="frame" x="8" y="25" width="135" height="22"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Now-Black" family="Now" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmD-gh-QBB">
+                                                                    <rect key="frame" x="167" y="25" width="135" height="24"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Now-Medium" family="Now" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00h00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nd-Ys-LQJ">
+                                                                    <rect key="frame" x="8" y="56" width="135" height="24"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Now-Medium" family="Now" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IV-8r-qUt">
+                                                    <rect key="frame" x="256.5" y="169" width="40" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="picto_favoris"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-fE-R1a">
+                                                    <rect key="frame" x="206" y="22" width="91" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Now-Black" family="Now" pointSize="65"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="2" height="2"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="310" height="285"/>
+                                        <connections>
+                                            <outlet property="backgroundImage" destination="YV9-Qo-6Vi" id="c2H-ov-Si0"/>
+                                            <outlet property="durationLabel" destination="1nd-Ys-LQJ" id="JTs-dt-gi3"/>
+                                            <outlet property="favButton" destination="6IV-8r-qUt" id="FmT-RX-Gi6"/>
+                                            <outlet property="nameLabel" destination="XMp-I2-YkQ" id="G8D-O4-MlK"/>
+                                            <outlet property="placeLabel" destination="NmD-gh-QBB" id="FYx-TF-MjW"/>
+                                            <outlet property="startingDateHourLabel" destination="OhR-4b-c36" id="vQR-Fy-Ep7"/>
+                                            <outlet property="startingDateMinuteLabel" destination="HbV-fE-R1a" id="6bH-w3-7zN"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Afd-Wb-lVl" id="Eyg-UU-0HZ"/>
+                                    <outlet property="delegate" destination="Afd-Wb-lVl" id="pDI-qm-vTz"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x46-2h-Zyn">
+                                <rect key="frame" x="16" y="43" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="Afd-Wb-lVl" eventType="touchUpInside" id="8T2-pl-fzk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qdy-3S-YQ9" firstAttribute="bottom" secondItem="AwW-iN-jFE" secondAttribute="bottom" id="3vW-eW-wHv"/>
+                            <constraint firstItem="qdy-3S-YQ9" firstAttribute="trailing" secondItem="AwW-iN-jFE" secondAttribute="trailing" id="Sct-X2-fak"/>
+                            <constraint firstItem="AwW-iN-jFE" firstAttribute="top" secondItem="qdy-3S-YQ9" secondAttribute="top" id="Tbh-pj-o5V"/>
+                            <constraint firstItem="AwW-iN-jFE" firstAttribute="leading" secondItem="qdy-3S-YQ9" secondAttribute="leading" id="x68-Hw-hAb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qdy-3S-YQ9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7Z-6J-QBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287.2" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
         <image name="Icon_agend" width="24" height="32"/>
+        <image name="close" width="27" height="27"/>
+        <image name="day2" width="375" height="667"/>
+        <image name="picto_favoris" width="37" height="33"/>
     </resources>
 </document>

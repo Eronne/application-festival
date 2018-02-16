@@ -15,6 +15,23 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		flowLayout.spacingMode = .overlap(visibleOffset: 20)
+		
+		// Install observers
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "CellTouched"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let day = userInfo["day"] as? String {
+					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? CalendarResultViewController {
+						resultController.day = day
+						self.present(resultController, animated: true, completion: nil)
+					}
+				}
+			}
+		}
+		
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "closeCalendarResult"), object: nil, queue: nil) { (notif) in
+			self.dismiss(animated: true, completion: nil)
+		}
+
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -33,16 +50,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		cell.day.layer.masksToBounds = false
 		
 		cell.image.image = backgroundArray[indexPath.row]
-
-//		let touch = UITapGestureRecognizer(target: cell, action: Selector(("tap:")))
-//		touch.numberOfTapsRequired = 1
-//		cell.addGestureRecognizer(touch)
+		
+		cell.cellButton.tag = Int(daysArray[indexPath.row])!
  
 		return cell
-	}
-	
-	func tap(t: UITapGestureRecognizer) {
-		print("TAP")
 	}
 
     override func didReceiveMemoryWarning() {
