@@ -10,6 +10,7 @@ import UIKit
 
 class FavViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var labelName: UILabel!
 
 //	var imageArrayTest = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
@@ -51,7 +52,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		var minutes = ""
 		
 		if((event.duration?.minute)! < 10) {
-			print("test duration minutes")
 			minutes = "0" + (event.duration?.minute?.description)!
 		}
 		else {
@@ -67,6 +67,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		flowLayout.spacingMode = .overlap(visibleOffset: 20)
         // Do any additional setup after loading the view.
     }
 
