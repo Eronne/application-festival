@@ -12,7 +12,9 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var startingDateHourLabel: UILabel!
 	@IBOutlet weak var startingDateMinuteLabel: UILabel!
 	@IBOutlet weak var backgroundImage: UIImageView!
-	@IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bottomContent: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+	@IBOutlet weak var excerptLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var favButton: UIButton!
