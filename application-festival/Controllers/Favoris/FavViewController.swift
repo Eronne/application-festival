@@ -11,11 +11,25 @@ import UIKit
 class FavViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
-    @IBOutlet weak var labelName: UILabel!
-
-//	var imageArrayTest = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
+    @IBOutlet weak var favTitle: UILabel!
 	
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	var lastContentOffset: CGFloat = 0
+	
+	
+	
+	func scrollViewDidScroll(scrollView: UIScrollView) {
+		if (self.lastContentOffset < scrollView.contentOffset.y) {
+			// moved to top
+			print("moved to top")
+		} else if (self.lastContentOffset > scrollView.contentOffset.y) {
+			// moved to bottom
+			print("moved to bottom")
+		} else {
+			// didn't move
+		}
+	}
+	
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return 10
 	}
 
@@ -67,7 +81,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		flowLayout.spacingMode = .overlap(visibleOffset: 20)
+		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
     }
 
