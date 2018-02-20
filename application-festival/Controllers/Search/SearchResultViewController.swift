@@ -11,7 +11,7 @@ import UIKit
 class SearchResultViewController: UIViewController {
 
 	var filterBy: String = ""
-	var filters: [String] = []
+	var selectedFilters: [String: [String]] = [:]
 	
 	@IBOutlet weak var filterList: UILabel!
 	

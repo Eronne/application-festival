@@ -37,7 +37,6 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 					self.filters[index].isSelected = !self.filters[index].isSelected
 					let indexPath = IndexPath.init(row: index, section: 0)
 					self.collectionView.reloadItems(at: [indexPath])
-					print(indexPath, self.filters[index].isSelected)
 					
 					//Check if at least a filter is selected
 					for i in 0...self.filters.count-1 {
@@ -58,10 +57,10 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let filterBy = userInfo["filterBy"] as? String {
-					if let filters = userInfo["filters"] as? [String] {
-						if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? SearchResultViewController {
+					if let selectedFilters = userInfo["selectedFilters"]  {
+						if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "searchResultId") as? SearchResultViewController {
 							resultController.filterBy = filterBy
-							resultController.filters = filters
+							resultController.selectedFilters = selectedFilters as! [String : [String]]
 							self.present(resultController, animated: true, completion: nil)
 						}
 					}
@@ -140,24 +139,26 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	
 	//Handles submit action
 	@IBAction func submitAction(_ sender: UIButton) {
+		
 		//Creates array with values
-		var selectedFilters : [String: [String]]
-
+		var selectedFilters : [String: [String]] = [
+			"name" : [searchField.text!],
+			"age" : [],
+			"category" : [],
+			"time" : [],
+			"day" : [],
+			"location" : []
+		];
+		
 		for i in 0...self.filters.count-1 {
 			let activeFilter = filters[i];
 			if (activeFilter.isSelected) {
 				filterBy = "filters";
-
-//				if(selectedFilters[activeFilter.filterType]) {
-//
-//				}
-
+				selectedFilters[activeFilter.filterType!]?.append(activeFilter.name!)
 			}
 		}
 		
-		
-		
-//		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "filters": selectedFilters]);
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "selectedFilters": selectedFilters]);
 	}
 	
     
