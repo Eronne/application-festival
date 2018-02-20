@@ -74,6 +74,12 @@ extension Array where Element == Event {
 			return (event.startingDate.day! == day)
 		})
 	}
+	
+	func searchByName(name: String) -> [Event]? {
+		return self.filter({ (event) -> Bool in
+			return (event.name?.lowercased().contains(name.lowercased()))!
+		})
+	}
 
 //	func findBy(category: Category) -> [Event]? {
 //		return self.filter({ (event) -> Bool in

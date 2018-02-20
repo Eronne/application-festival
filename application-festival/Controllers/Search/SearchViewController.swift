@@ -8,20 +8,28 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
 	
-	@IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
 	
 	var filters = DataMapper().filters;
 	var imageArray = [UIImage(named: "age"), UIImage(named: "day"), UIImage(named: "time"), UIImage(named: "place"), UIImage(named: "type")];
+	var isFilled = false;
+	var filterBy = "filters";
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
 		
-		submitButton.backgroundColor = UIColor(hue: 0.6056, saturation: 0.02, brightness: 0.88, alpha: 1.0)
+		//Add round borders to searchField
+        searchField.layer.borderWidth = 2;
+        searchField.layer.borderColor = UIColor.black.cgColor;
 		
+		//Prevents submitButton from being tapped
+		validateForm(valid: false);
+
+		//Notification on one filter touched
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filterButtonTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let row = userInfo["row"]	{
@@ -30,9 +38,39 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 					let indexPath = IndexPath.init(row: index, section: 0)
 					self.collectionView.reloadItems(at: [indexPath])
 					print(indexPath, self.filters[index].isSelected)
+					
+					//Check if at least a filter is selected
+					for i in 0...self.filters.count-1 {
+						if (self.filters[i].isSelected) {
+							self.filterBy = "filters";
+							self.isFilled = true;
+							self.validateForm(valid: true);
+							break
+						} else {
+							self.isFilled = false;
+							self.filterBy = "search";
+							self.validateForm(valid: false);
+						}
+					}
 				}
 			}
 		}
+		
+		//Open searchResultViewController if form is validated
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filtersFormValidated"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let filterBy = userInfo["filterBy"] as? String {
+					if let filters = userInfo["filters"] as? [String] {
+						if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? SearchResultViewController {
+							resultController.filterBy = filterBy
+							resultController.filters = filters
+							self.present(resultController, animated: true, completion: nil)
+						}
+					}
+				}
+			}
+		}
+		
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -52,8 +90,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		cell.filterButton.layer.borderColor = UIColor.black.cgColor
         cell.filterButton.tag = indexPath.row;
 		
-		print(indexPath.row)
-		
+		//If filter is selected change appearance
 		if filter.isSelected == true {
 			cell.filterButton.setBackgroundImage(imageArray[filter.filterType!], for: .normal);
 			cell.filterButton.setTitleColor(UIColor.white, for: .normal)
@@ -64,16 +101,51 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		
 		return cell
 	}
-	
-	@IBAction func validateButtonAction(_ sender: UIButton) {
-		var i: Int;
-		for i in 0...filters.count-1 {
-			print(filters[i].name!, filters[i].isSelected);
-		}
-		
-		submitButton.backgroundColor = UIColor(hue: 0.4611, saturation: 1, brightness: 0.66, alpha: 1.0)
-		submitButton.setTitleColor(UIColor.white, for: .normal)
 
+	//Closes keyboard on return and handles search
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		validateSearchName()
+		return true
+	}
+	
+	//Close keyboard on screen tap and handles search
+	override func touchesBegan(_: Set<UITouch>, with event: UIEvent?) {
+		searchField.resignFirstResponder()
+		self.view.endEditing(true)
+		validateSearchName();
+	}
+	
+	//If search is filled, handles it
+	func validateSearchName() {
+		if (!(searchField.text?.isEmpty)!) {
+			isFilled = true
+			filterBy = "search"
+			print("validSearch")
+			validateForm(valid: true)
+		} else {
+			validateForm(valid: false)
+		}
+	}
+	
+	//Changes submit button color if is valid and allows touch action
+	func validateForm(valid: Bool) {
+		print(valid)
+		if valid {
+			print("ayo")
+			submitButton.backgroundColor = UIColor(hue: 0.4611, saturation: 1, brightness: 0.66, alpha: 1.0)
+			submitButton.setTitleColor(UIColor.white, for: .normal)
+			submitButton.isUserInteractionEnabled = true
+		} else {
+			submitButton.backgroundColor = UIColor(hue: 0.475, saturation: 0, brightness: 0.61, alpha: 1.0)
+			submitButton.setTitleColor(UIColor(hue: 0.4861, saturation: 0, brightness: 0.36, alpha: 1.0), for: .normal)
+			submitButton.isUserInteractionEnabled = false
+		}
+    }
+	
+	//Handles submit action
+	@IBAction func submitAction(_ sender: UIButton) {
+		print("will submit");
 	}
 	
     

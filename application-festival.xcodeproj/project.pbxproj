@@ -50,6 +50,7 @@
 		B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6B200CFCD4004B9B7F /* Place.swift */; };
 		B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6D200CFD78004B9B7F /* DataMapper.swift */; };
 		B5D876E220331CE900C5FD87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D876E120331CE900C5FD87 /* Extensions.swift */; };
+		D8555C65203B51C80062CE7F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8555C64203B51C80062CE7F /* SearchResultViewController.swift */; };
 		DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997B82031AE54004A4607 /* SearchViewController.swift */; };
 		DF5997BB2031AEF9004A4607 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */; };
 		DF5997BD2031E50E004A4607 /* filters.json in Resources */ = {isa = PBXBuildFile; fileRef = DF5997BC2031E50E004A4607 /* filters.json */; };
@@ -143,6 +144,7 @@
 		B5D876E120331CE900C5FD87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C64CE87CEBC7CCA3C914566D /* Pods-application-festivalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3AEFCEDAD3F542300811CD9 /* Pods-application-festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-application-festival/Pods-application-festival.debug.xcconfig"; sourceTree = "<group>"; };
+		D8555C64203B51C80062CE7F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		DF5997B82031AE54004A4607 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		DF5997BC2031E50E004A4607 /* filters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = filters.json; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			children = (
 				DF5997B82031AE54004A4607 /* SearchViewController.swift */,
 				DF5997BA2031AEF9004A4607 /* SearchCollectionViewCell.swift */,
+				D8555C64203B51C80062CE7F /* SearchResultViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57439B82031DFCA008FE158 /* Character.swift in Sources */,
+				D8555C65203B51C80062CE7F /* SearchResultViewController.swift in Sources */,
 				B5666649200D6BC200B57389 /* Event.swift in Sources */,
 				B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */,
 				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
