@@ -2,134 +2,134 @@
   {
   "id": 1,
   "name": "enfant",
-  "img": "",
-  "filterType" : 0,
+  "imageIndex": 0,
+  "filterType" : "age",
   "isSelected": false
   },
   {
   "id": 2,
   "name": "adulte",
-  "img": "",
-  "filterType" : 0,
+  "imageIndex": 0,
+  "filterType" : "age",
   "isSelected": false
   },
   {
   "id": 3,
   "name": "mercredi",
-  "img": "",
-  "filterType" : 1,
+  "imageIndex": 1,
+  "filterType" : "day",
   "isSelected": false
   },
   {
   "id": 4,
   "name": "jeudi",
-  "img": "",
-  "filterType" : 1,
+  "imageIndex": 1,
+  "filterType" : "day",
   "isSelected": false
   },
   {
   "id": 5,
   "name": "vendredi",
-  "img": "",
-  "filterType" : 1,
+  "imageIndex": 1,
+  "filterType" : "day",
   "isSelected": false
   },
   {
   "id": 6,
   "name": "samedi",
-  "img": "",
-  "filterType" : 1,
+  "imageIndex": 1,
+  "filterType" : "day",
   "isSelected": false
   },
   {
   "id": 7,
   "name": "dimanche",
-  "img": "",
-  "filterType" : 1,
+  "imageIndex": 1,
+  "filterType" : "day",
   "isSelected": false
   },
   {
   "id": 8,
   "name": "matin",
-  "img": "",
-  "filterType" : 2,
+  "imageIndex": 2,
+  "filterType" : "time",
   "isSelected": false
   },
   {
   "id": 9,
   "name": "après-midi",
-  "img": "",
-  "filterType" : 2,
+  "imageIndex": 2,
+  "filterType" : "time",
   "isSelected": false
   },
   {
   "id": 10,
   "name": "soir",
-  "img": "",
-  "filterType" : 2,
+  "imageIndex": 2,
+  "filterType" : "time",
   "isSelected": false
   },
   {
   "id": 11,
   "name": "bruz",
-  "img": "",
-  "filterType" : 3,
+  "imageIndex": 3,
+  "filterType" : "location",
   "isSelected": false
   },
   {
   "id": 12,
   "name": "rennes",
-  "img": "",
-  "filterType" : 3,
+  "imageIndex": 3,
+  "filterType" : "location",
   "isSelected": false
   },
   {
   "id": 13,
   "name": "atelier",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 14,
   "name": "projection",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 15,
   "name": "rencontre",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 16,
   "name": "scolaire",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 17,
   "name": "professionnel",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 18,
   "name": "salon",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   },
   {
   "id": 19,
   "name": "competition",
-  "img": "",
-  "filterType" : 4,
+  "imageIndex": 4,
+  "filterType" : "category",
   "isSelected": false
   }
 ]

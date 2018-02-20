@@ -90,7 +90,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		
 		//If filter is selected change appearance
 		if filter.isSelected == true {
-			cell.filterButton.setBackgroundImage(imageArray[filter.filterType!], for: .normal);
+			cell.filterButton.setBackgroundImage(imageArray[filter.imageIndex!], for: .normal);
 			cell.filterButton.setTitleColor(UIColor.white, for: .normal)
 		} else {
 			cell.filterButton.setBackgroundImage(nil, for: .normal)
@@ -141,19 +141,19 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	//Handles submit action
 	@IBAction func submitAction(_ sender: UIButton) {
 		//Creates array with values
-//		var selectedFilters : [String: [String]]
+		var selectedFilters : [String: [String]]
+
+		for i in 0...self.filters.count-1 {
+			let activeFilter = filters[i];
+			if (activeFilter.isSelected) {
+				filterBy = "filters";
+
+//				if(selectedFilters[activeFilter.filterType]) {
 //
-//		for i in 0...self.filters.count-1 {
-//			let activeFilter = filters[i];
-//			if (activeFilter.isSelected) {
-//				filterBy = "filters";
-//
-////				if(selectedFilters[activeFilter.filterType]) {
-////
-////				}
-//
-//			}
-//		}
+//				}
+
+			}
+		}
 		
 		
 		

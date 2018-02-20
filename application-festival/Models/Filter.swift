@@ -11,7 +11,7 @@ import Foundation
 class Filter: Decodable {
 	var id: Int?
 	var name: String?
-	var img: String?
-	var filterType: Int?
+	var imageIndex: Int?
+	var filterType: String?
 	var isSelected = false
 }
