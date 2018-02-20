@@ -42,13 +42,11 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 					//Check if at least a filter is selected
 					for i in 0...self.filters.count-1 {
 						if (self.filters[i].isSelected) {
-							self.filterBy = "filters";
-							self.isFilled = true;
+							isFilled = true;
 							self.validateForm(valid: true);
 							break
 						} else {
-							self.isFilled = false;
-							self.filterBy = "search";
+							isFilled = false;
 							self.validateForm(valid: false);
 						}
 					}
@@ -57,7 +55,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		}
 		
 		//Open searchResultViewController if form is validated
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filtersFormValidated"), object: nil, queue: nil) { (notif) in
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let filterBy = userInfo["filterBy"] as? String {
 					if let filters = userInfo["filters"] as? [String] {
@@ -121,7 +119,6 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		if (!(searchField.text?.isEmpty)!) {
 			isFilled = true
 			filterBy = "search"
-			print("validSearch")
 			validateForm(valid: true)
 		} else {
 			validateForm(valid: false)
@@ -130,9 +127,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	
 	//Changes submit button color if is valid and allows touch action
 	func validateForm(valid: Bool) {
-		print(valid)
 		if valid {
-			print("ayo")
 			submitButton.backgroundColor = UIColor(hue: 0.4611, saturation: 1, brightness: 0.66, alpha: 1.0)
 			submitButton.setTitleColor(UIColor.white, for: .normal)
 			submitButton.isUserInteractionEnabled = true
@@ -145,7 +140,19 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	
 	//Handles submit action
 	@IBAction func submitAction(_ sender: UIButton) {
-		print("will submit");
+		//Creates array with values
+		var selectedFilters : [String: [String]]
+		
+		for i in 0...self.filters.count-1 {
+			if (self.filters[i].isSelected) {
+				self.filterBy = "filters";
+				
+			}
+		}
+		
+		
+		
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "filters": selectedFilters]);
 	}
 	
     
