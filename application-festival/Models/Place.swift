@@ -12,4 +12,5 @@ class Place: Decodable {
 //	var id: Int?;
 	var name: String?;
 	var seats: String?;
+	var location: String?;
 }

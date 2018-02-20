@@ -42,11 +42,11 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 					//Check if at least a filter is selected
 					for i in 0...self.filters.count-1 {
 						if (self.filters[i].isSelected) {
-							isFilled = true;
+							self.isFilled = true;
 							self.validateForm(valid: true);
 							break
 						} else {
-							isFilled = false;
+							self.isFilled = false;
 							self.validateForm(valid: false);
 						}
 					}
@@ -141,18 +141,23 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	//Handles submit action
 	@IBAction func submitAction(_ sender: UIButton) {
 		//Creates array with values
-		var selectedFilters : [String: [String]]
+//		var selectedFilters : [String: [String]]
+//
+//		for i in 0...self.filters.count-1 {
+//			let activeFilter = filters[i];
+//			if (activeFilter.isSelected) {
+//				filterBy = "filters";
+//
+////				if(selectedFilters[activeFilter.filterType]) {
+////
+////				}
+//
+//			}
+//		}
 		
-		for i in 0...self.filters.count-1 {
-			if (self.filters[i].isSelected) {
-				self.filterBy = "filters";
-				
-			}
-		}
 		
 		
-		
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "filters": selectedFilters]);
+//		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "filters": selectedFilters]);
 	}
 	
     
