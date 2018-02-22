@@ -14,4 +14,5 @@ class Filter: Decodable {
 	var imageIndex: Int?
 	var filterType: String?
 	var isSelected = false
+	var filterValue: String?
 }

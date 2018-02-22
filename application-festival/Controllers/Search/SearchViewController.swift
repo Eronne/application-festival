@@ -31,7 +31,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 
 		//Notification on one filter touched
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filterButtonTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
+			if let userInfo = notif.userInfo {
 				if let row = userInfo["row"]	{
 					let index = row as! Int
 					self.filters[index].isSelected = !self.filters[index].isSelected
@@ -56,16 +56,19 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 		//Open searchResultViewController if form is validated
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
-				if let filterBy = userInfo["filterBy"] as? String {
-					if let selectedFilters = userInfo["selectedFilters"]  {
-						if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "searchResultId") as? SearchResultViewController {
-							resultController.filterBy = filterBy
-							resultController.selectedFilters = selectedFilters as! [String : [String]]
-							self.present(resultController, animated: true, completion: nil)
-						}
-					}
+				if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "searchResultId") as? SearchResultViewController {
+					resultController.filterBy = userInfo["filterBy"] as! String
+					resultController.selectedFilters = userInfo["selectedFilters"] as! [String: [String]]
+					resultController.searchInName = userInfo["searchInName"] as! String
+					resultController.filterListText = userInfo["filtersList"] as! String
+					self.present(resultController, animated: true, completion: nil)
 				}
 			}
+		}
+		
+		//Close searchResultViewController when button close is taped
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "closeSearchResult"), object: nil, queue: nil) { (notif) in
+			self.dismiss(animated: true, completion: nil)
 		}
 		
 	}
@@ -140,9 +143,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 	//Handles submit action
 	@IBAction func submitAction(_ sender: UIButton) {
 		
-		//Creates array with values
 		var selectedFilters : [String: [String]] = [
-			"name" : [searchField.text!],
 			"age" : [],
 			"category" : [],
 			"time" : [],
@@ -150,15 +151,19 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 			"location" : []
 		];
 		
+		var filtersList : String = "";
+		
+		//Retrieve selected filters Ids
 		for i in 0...self.filters.count-1 {
 			let activeFilter = filters[i];
 			if (activeFilter.isSelected) {
 				filterBy = "filters";
-				selectedFilters[activeFilter.filterType!]?.append(activeFilter.name!)
+				selectedFilters[activeFilter.filterType!]?.append(activeFilter.filterValue!)
+				filtersList += activeFilter.name! + ", "
 			}
 		}
-		
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "selectedFilters": selectedFilters]);
+
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "searchInName" : searchField.text!, "selectedFilters": selectedFilters, "filtersList": filtersList]);
 	}
 	
     
