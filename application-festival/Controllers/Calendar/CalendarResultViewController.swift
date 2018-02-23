@@ -18,7 +18,22 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 	private var favorites : [Event] = []
     
     override func viewDidLoad() {
+		flowLayout.spacingMode = .overlap(visibleOffset: 80)
+		
 		events = DataMapper().events.findByDay(day: Int(day)!)
+
+		// Install observers
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let url = userInfo["url"] as? String {
+					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as? WebViewViewController {
+						print(url)
+//						resultController.day = day
+						self.present(resultController, animated: true, completion: nil)
+					}
+				}
+			}
+		}
 
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
@@ -40,9 +55,6 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 				}
 			}
 		}
-
-    flowLayout.spacingMode = .overlap(visibleOffset: 80)
-
 	}
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
