@@ -29,10 +29,11 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 					if DataMapper().isFav(event: self.events![indexPath.row]) {
 						print("remove fav")
 							DataMapper().removeFav(event: self.events![indexPath.row])
-					} else {
-						print("add fav")
-							DataMapper().addFav(event: self.events![indexPath.row])
 					}
+//					else {
+//						print("add fav")
+//							DataMapper().addFav(event: self.events![indexPath.row])
+//					}
 					
 					self.collectionView.reloadItems(at: [indexPath])
 

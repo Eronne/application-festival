@@ -15,31 +15,31 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 	
 	var lastContentOffset: CGFloat = 0
 	
+	let events = DataMapper().getFav()
 	
-	func scrollViewDidScroll(_ scrollView: UIScrollView) {
-		if (self.lastContentOffset < scrollView.contentOffset.y) {
-			// moved to top
-			print("moved to top")
-		} else if (self.lastContentOffset > scrollView.contentOffset.y) {
-			// moved to bottom
-			print("moved to bottom")
-		} else {
-			// didn't move
-		}
-	}
+	
+//	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//		if (self.lastContentOffset < scrollView.contentOffset.y) {
+//			// moved to top
+//			print("moved to top")
+//		} else if (self.lastContentOffset > scrollView.contentOffset.y) {
+//			// moved to bottom
+//			print("moved to bottom")
+//		} else {
+//			// didn't move
+//		}
+//	}
 	
 	
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 10
+		return events.count ?? 0
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		
-		// Todo: add singleton
-		let event = DataMapper().events[indexPath.row]
-	
+		let event = events[indexPath.row]
 		
 		cell.thumbnail.image = UIImage(named:event.img!)
 		cell.title.text = event.name?.uppercased()
@@ -65,16 +65,16 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		cell.place.text = event.place?.name
 		
 		var minutes = ""
-		
-		if((event.duration?.minute)! < 10) {
-			minutes = "0" + (event.duration?.minute?.description)!
-		}
-		else {
-			minutes = (event.duration?.minute?.description)!
-		}
-		
-		let hours = (event.duration?.hour?.description)! + "h" + minutes
-		cell.hours.text = hours
+
+//		print(event.duration?.minute!)
+//		if (event.duration?.minute!) < 10 {
+//			minutes = "0" + (event.duration?.minute?.description)!
+//		}
+//		else {
+//			minutes = (event.duration?.minute?.description)!
+//		}
+//		let hours = (event.duration?.hour?.description)! + "h" + minutes
+//		cell.hours.text = hours
 	
 		
 		return cell
@@ -86,15 +86,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
         super.viewDidLoad()
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
-		
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
-				if let row = userInfo["row"]	{
-					print(row)
-				}
-			}
-		}
-
 		
     }
 
