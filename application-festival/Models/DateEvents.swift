@@ -8,13 +8,29 @@
 
 import Foundation
 
-class DateEvents: Decodable {
+class DateEvents: NSObject, NSCoding, Decodable {
 	
 	var year: Int!
 	var month: Int!
 	var day: Int!
 	var hour: Int!
 	var minute: Int!
+	
+	required init?(coder aDecoder: NSCoder) {
+		self.year = aDecoder.decodeObject(forKey: "year") as! Int?
+		self.month = aDecoder.decodeObject(forKey: "month") as! Int?
+		self.day = aDecoder.decodeObject(forKey: "day") as! Int?
+		self.hour = aDecoder.decodeObject(forKey: "hour") as! Int?
+		self.minute = aDecoder.decodeObject(forKey: "minute") as! Int?
+	}
+	
+	func encode(with aCoder: NSCoder) {
+		aCoder.encode(year, forKey: "year")
+		aCoder.encode(month, forKey: "month")
+		aCoder.encode(day, forKey: "day")
+		aCoder.encode(hour, forKey: "hour")
+		aCoder.encode(minute, forKey: "minute")
+	}
 	
 	func getDateEvents() -> Foundation.Date {
 		let formatter = DateFormatter()

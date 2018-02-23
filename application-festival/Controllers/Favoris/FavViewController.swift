@@ -16,8 +16,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 	var lastContentOffset: CGFloat = 0
 	
 	
-	
-	func scrollViewDidScroll(scrollView: UIScrollView) {
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		if (self.lastContentOffset < scrollView.contentOffset.y) {
 			// moved to top
 			print("moved to top")
@@ -29,11 +28,13 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		}
 	}
 	
+	
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return 10
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		
 		// Todo: add singleton
@@ -74,15 +75,27 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		
 		let hours = (event.duration?.hour?.description)! + "h" + minutes
 		cell.hours.text = hours
-
+	
 		
 		return cell
+	
+		
 	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
+		
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let row = userInfo["row"]	{
+					print(row)
+				}
+			}
+		}
+
+		
     }
 
     override func didReceiveMemoryWarning() {

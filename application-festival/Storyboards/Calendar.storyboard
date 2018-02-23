@@ -135,7 +135,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghX-Fw-wS1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="Icon_agend" id="qXm-Lh-ae5"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="icon-agenda" id="qXm-Lh-ae5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="flowLayout" destination="fMV-mr-M0L" id="b2T-mh-uFX"/>
@@ -273,7 +273,10 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IV-8r-qUt">
                                                     <rect key="frame" x="256.5" y="169" width="40" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" backgroundImage="picto_favoris"/>
+                                                    <state key="normal" backgroundImage="fav"/>
+                                                    <connections>
+                                                        <action selector="favButtonTouch:" destination="R9R-MR-dYi" eventType="touchUpInside" id="7pc-ju-ugO"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-fE-R1a">
                                                     <rect key="frame" x="206" y="22" width="91" height="78"/>
@@ -344,9 +347,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon_agend" width="24" height="32"/>
         <image name="close" width="27" height="27"/>
         <image name="day2" width="375" height="667"/>
-        <image name="picto_favoris" width="37" height="33"/>
+        <image name="fav" width="40" height="35"/>
+        <image name="icon-agenda" width="34" height="34"/>
     </resources>
 </document>

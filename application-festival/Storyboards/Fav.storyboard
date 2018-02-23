@@ -81,7 +81,10 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-Mr-Xjk">
                                                                     <rect key="frame" x="25" y="25" width="40" height="38"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <state key="normal" backgroundImage="picto_favoris_actif"/>
+                                                                    <state key="normal" backgroundImage="fav_actif"/>
+                                                                    <connections>
+                                                                        <action selector="favButtonTouchUp:" destination="PEz-Uk-R5g" eventType="touchUpInside" id="5b2-1W-1O1"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </view>
@@ -186,6 +189,6 @@
     </scenes>
     <resources>
         <image name="close" width="27" height="27"/>
-        <image name="picto_favoris_actif" width="37" height="33"/>
+        <image name="fav_actif" width="40" height="35"/>
     </resources>
 </document>

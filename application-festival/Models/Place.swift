@@ -8,8 +8,18 @@
 
 import Foundation
 
-class Place: Decodable {
-//	var id: Int?;
+class Place: NSObject, NSCoding, Decodable {
+	
 	var name: String?;
 	var seats: String?;
+	
+	required init?(coder aDecoder: NSCoder) {
+		self.name = aDecoder.decodeObject(forKey: "name") as! String?
+		self.seats = aDecoder.decodeObject(forKey: "seats") as! String?
+	}
+	
+	func encode(with aCoder: NSCoder) {
+		aCoder.encode(name, forKey: "name")
+		aCoder.encode(seats, forKey: "seats")
+	}
 }

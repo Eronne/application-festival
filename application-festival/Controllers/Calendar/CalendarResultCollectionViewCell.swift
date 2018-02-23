@@ -18,4 +18,11 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var favButton: UIButton!
+	
+	@IBAction func favButtonTouch(_ sender: Any) {
+		let index = favButton.tag
+		print(index)
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, userInfo: ["row":index])
+	}
+	
 }

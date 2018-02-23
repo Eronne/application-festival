@@ -31,7 +31,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2LD-NA-wyH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="Icon_map" id="Wj3-CN-k11"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="icon-map" id="Wj3-CN-k11"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="sHa-s7-zX4" id="Rvu-aX-bSf"/>
@@ -43,6 +43,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon_map" width="16" height="16"/>
+        <image name="icon-map" width="34" height="34"/>
     </resources>
 </document>

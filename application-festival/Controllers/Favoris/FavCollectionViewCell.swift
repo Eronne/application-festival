@@ -18,6 +18,11 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var countdown: UILabel!
 	@IBOutlet weak var buttonFav: UIButton!
 	
+	@IBAction func favButtonTouchUp(_ sender: Any) {
+		print("test test test")
+		let index = buttonFav.tag
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, userInfo: ["row":index])
+	}
 	
 }
 

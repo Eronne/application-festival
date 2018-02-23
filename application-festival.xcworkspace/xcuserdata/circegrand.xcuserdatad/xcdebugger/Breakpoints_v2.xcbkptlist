@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "application-festival/Controllers/Calendar/CalendarResultCollectionViewCell.swift"
+            timestampString = "541071511.296561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CalendarResultCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "application_festival.CalendarResultCollectionViewCell.placeLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "application-festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/MAMP/htdocs/projets-scolaires/GOBELINS/BDDI/application-festival/application-festival/Controllers/Calendar/CalendarResultCollectionViewCell.swift"
+                  timestampString = "541071511.977405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "application_festival.CalendarResultCollectionViewCell.placeLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "application-festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/MAMP/htdocs/projets-scolaires/GOBELINS/BDDI/application-festival/application-festival/Controllers/Calendar/CalendarResultCollectionViewCell.swift"
+                  timestampString = "541071511.97992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "application_festival.CalendarResultCollectionViewCell.init(frame: __C.CGRect) -&gt; application_festival.CalendarResultCollectionViewCell"
+                  moduleName = "application-festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/MAMP/htdocs/projets-scolaires/GOBELINS/BDDI/application-festival/application-festival/Controllers/Calendar/CalendarResultCollectionViewCell.swift"
+                  timestampString = "541071511.981813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1041">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "application_festival.CalendarResultCollectionViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;application_festival.CalendarResultCollectionViewCell&gt;"
+                  moduleName = "application-festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/MAMP/htdocs/projets-scolaires/GOBELINS/BDDI/application-festival/application-festival/Controllers/Calendar/CalendarResultCollectionViewCell.swift"
+                  timestampString = "541071511.985028"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "870">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
