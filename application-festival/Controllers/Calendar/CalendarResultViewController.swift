@@ -9,12 +9,14 @@
 import UIKit
 
 class CalendarResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-	
+    @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
+    
 	var day: String = ""
 	private var events: [Event]? = nil
 	
 	override func viewDidLoad() {
 		events = DataMapper().events.findByDay(day: Int(day)!)
+		flowLayout.spacingMode = .overlap(visibleOffset: 80)
 	}
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
