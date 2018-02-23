@@ -30,7 +30,10 @@ class DataMapper {
 	}
 	
 	func removeFav(event: Event) {
-		
+		let favorites = getFav().filter { (e) -> Bool in
+			return e.id != event.id
+		}
+		saveFav(favorites: favorites)
 	}
 	
 	func isFav(event: Event) -> Bool {

@@ -80,10 +80,81 @@ extension Array where Element == Event {
 			return (event.name?.lowercased().contains(name.lowercased()))!
 		})
 	}
+	
+	func filterBy(locations: [String]) -> [Event]? {
+		if (locations.count > 0){
+			var result: [Event] = []
+			locations.forEach { (location) in
+				let results = self.filter({ (event) -> Bool in
+					return event.place!.location?.lowercased() == location.lowercased()
+				})
+				result.append(contentsOf: results)
+			}
+			return result
+		}
+		return self
+	}
+	
+	func filterBy(categories: [String]) -> [Event]? {
+		if (categories.count > 0) {
+			var result: [Event] = []
+			categories.forEach { (category) in
+				let results = self.filter({ (event) -> Bool in
+					return event.category?.lowercased() == category.lowercased()
+				})
+				result.append(contentsOf: results)
+			}
+			return result
+		}
+		return self
+	}
+	
+	func filterBy(times: [String]) -> [Event]? {
+		if (times.count > 0) {
+			var result: [Event] = []
+			times.forEach { (time) in
+				let results = self.filter({ (event) -> Bool in
+					switch time {
+						case "afternoon" :
+							return event.startingDate.hour > 12 && event.startingDate.hour < 17
+						case "night" :
+							return event.startingDate.hour > 17
+						default:
+							return event.startingDate.hour < 12
+					}
+				})
+				result.append(contentsOf: results)
+			}
+			return result
+		}
+		return self
+	}
+	
+	func filterBy(days: [String]) -> [Event]? {
+		if (days.count > 0) {
+			var result: [Event] = []
+			days.forEach { (day) in
+				let results = self.filter({ (event) -> Bool in
+					return event.startingDate.day == Int(day)
+				})
+				result.append(contentsOf: results)
+			}
+			return result
+		}
+		return self
+	}
 
 //	func findBy(category: Category) -> [Event]? {
 //		return self.filter({ (event) -> Bool in
 //			return event.category == category
 //		})
 //	}
+}
+
+extension Array where Element == Filter {
+	func findBy(id: Int) -> [Filter]? {
+		return self.filter({ (filter) -> Bool in
+			return (filter.id == id)
+		})
+	}
 }
