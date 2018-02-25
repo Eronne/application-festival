@@ -340,7 +340,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-search" width="34" height="34"/>
         <image name="close" width="27" height="27"/>
+        <image name="icon-search" width="34" height="34"/>
     </resources>
 </document>

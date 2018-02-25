@@ -9,7 +9,7 @@
 import UIKit
 
 class CalendarResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -17,37 +17,47 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 	private var events: [Event]? = nil
 	private var favorites : [Event] = []
 
-    
+
     override func viewDidLoad() {
-		
+		flowLayout.spacingMode = .overlap(visibleOffset: 80)
+
 		events = DataMapper().events.findByDay(day: Int(day)!)
-		
-//		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "calendarButtonTouched"), object: nil, queue: nil) { (notif) in
-//			if let userInfo = notif.userInfo	{
-//				if let row = userInfo["row"]	{
-//					let indexRow = row as! Int
-//					let indexPath = IndexPath.init(row: indexRow, section: 0)
-//					
-//					print(userInfo)
-//					if DataMapper().isFav(event: self.events![indexPath.row]) {
-//						print("remove fav")
-//						DataMapper().removeFav(event: self.events![indexPath.row])
-//					}
-//					else if !DataMapper().isFav(event: self.events![indexPath.row]) {
+
+		// Install observers
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let url = userInfo["url"] as? String {
+					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as? WebViewViewController {
+						print(url)
+//						resultController.day = day
+						self.present(resultController, animated: true, completion: nil)
+					}
+				}
+			}
+		}
+
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
+			if let userInfo = notif.userInfo	{
+				if let row = userInfo["row"]	{
+					let indexRow = row as! Int
+					let indexPath = IndexPath.init(row: indexRow, section: 0)
+
+					if DataMapper().isFav(event: self.events![indexPath.row]) {
+						print("remove fav")
+							DataMapper().removeFav(event: self.events![indexPath.row])
+					}
+//					else {
 //						print("add fav")
 //						DataMapper().addFav(event: self.events![indexPath.row])
 //					}
-//					print("2")
-//					self.collectionView.reloadItems(at: [indexPath])
-//
-//				}
-//			}
-//		}
 
-    flowLayout.spacingMode = .overlap(visibleOffset: 80)
+					self.collectionView.reloadItems(at: [indexPath])
 
+				}
+			}
+		}
 	}
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return events?.count ?? 0
     }
