@@ -18,6 +18,21 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var countdown: UILabel!
 	@IBOutlet weak var buttonFav: UIButton!
 	
+	@IBAction func favButtonTouchUp(_ sender: Any) {
+		let index = buttonFav.tag
+		let event = DataMapper().events.findOneBy(id:index)
+		if DataMapper().isFav(event: event!) {
+			print("remove fav")
+			DataMapper().removeFav(event: event!)
+			buttonFav.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		else if !DataMapper().isFav(event: event!) {
+			print("add fav")
+			DataMapper().addFav(event: event!)
+			buttonFav.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
+		
+	}
 	
 }
 

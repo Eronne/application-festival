@@ -9,6 +9,43 @@
 import Foundation
 
 class DataMapper {
+	
+	let defaults = UserDefaults.standard //can save data of the user
+	
+	func saveFav(favorites: [Event]) {
+		let data = NSKeyedArchiver.archivedData(withRootObject: favorites)
+		defaults.set(data, forKey: "favorites")
+	}
+	
+	func getFav() -> [Event] {
+		guard let datas = defaults.data(forKey: "favorites") else { return [] }
+		return NSKeyedUnarchiver.unarchiveObject(with: datas) as! [Event]
+	}
+	
+	func addFav(event: Event) {
+		var favorites = getFav()
+		favorites.append(event)
+		saveFav(favorites: favorites)
+		print(favorites)
+	}
+	
+	func removeFav(event: Event) {
+		let favorites = getFav().filter { (e) -> Bool in
+			return e.id != event.id
+		}
+		saveFav(favorites: favorites)
+	}
+	
+	func isFav(event: Event) -> Bool {
+		if (getFav().count == 0) {
+			return false
+		}
+		return getFav().filter({
+			(e) -> Bool in
+				e.id == event.id
+			}).count > 0
+	}
+	
 //	var categories: [Category]{
 //		get{
 //			guard let filePath = Bundle.main.url(forResource: "categories", withExtension: "json") else {

@@ -18,4 +18,24 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var favButton: UIButton!
+
+    @IBAction func CalendarResultCellTouched(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, userInfo: ["url" : "http://festival-film-animation.fr/"])
+    }
+
+    @IBAction func favButtonTouch(_ sender: Any) {
+		let index = favButton.tag
+		let event = DataMapper().events.findOneBy(id:index)
+		if DataMapper().isFav(event: event!) {
+			print("remove fav")
+			DataMapper().removeFav(event: event!)
+			favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		else if !DataMapper().isFav(event: event!) {
+			print("add fav")
+			DataMapper().addFav(event: event!)
+			favButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
+	}
+
 }

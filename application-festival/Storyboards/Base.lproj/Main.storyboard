@@ -33,9 +33,13 @@
                                     <segue destination="S0f-r3-w31" kind="embed" id="UY8-HT-1RI"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-lg-RJO">
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-lg-RJO">
                                 <rect key="frame" x="307" y="40" width="40" height="35"/>
-                                <state key="normal" backgroundImage="picto_favoris"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FAB-Tb-DUs"/>
+                                    <constraint firstAttribute="height" constant="35" id="sSN-bT-GyB"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fav"/>
                                 <connections>
                                     <segue destination="9Yx-4K-yuf" kind="show" id="tON-7O-dAZ"/>
                                 </connections>
@@ -43,8 +47,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="30" id="3gu-Po-vay"/>
+                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="20" id="Gnx-JT-jLh"/>
                             <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="16" id="aNA-7q-sbZ"/>
                             <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" id="mZc-mQ-xjM"/>
+                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="28" id="wNI-jJ-ebe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGw-3b-qHJ"/>
                     </view>
@@ -115,6 +122,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="picto_favoris" width="37" height="33"/>
+        <image name="fav" width="1238" height="1080"/>
     </resources>
 </document>
