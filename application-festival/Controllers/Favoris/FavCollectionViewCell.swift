@@ -20,7 +20,18 @@ class FavCollectionViewCell: UICollectionViewCell {
 	
 	@IBAction func favButtonTouchUp(_ sender: Any) {
 		let index = buttonFav.tag
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, userInfo: ["row":index])
+		let event = DataMapper().events.findOneBy(id:index)
+		if DataMapper().isFav(event: event!) {
+			print("remove fav")
+			DataMapper().removeFav(event: event!)
+			buttonFav.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		else if !DataMapper().isFav(event: event!) {
+			print("add fav")
+			DataMapper().addFav(event: event!)
+			buttonFav.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
+		
 	}
 	
 }

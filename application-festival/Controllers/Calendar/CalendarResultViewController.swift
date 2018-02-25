@@ -16,30 +16,33 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 	var day: String = ""
 	private var events: [Event]? = nil
 	private var favorites : [Event] = []
+
     
     override func viewDidLoad() {
+		
 		events = DataMapper().events.findByDay(day: Int(day)!)
-
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
-				if let row = userInfo["row"]	{
-					let indexRow = row as! Int
-					let indexPath = IndexPath.init(row: indexRow, section: 0)
-					
-					if DataMapper().isFav(event: self.events![indexPath.row]) {
-						print("remove fav")
-							DataMapper().removeFav(event: self.events![indexPath.row])
-					}
-//					else {
-//						print("add fav")
-//							DataMapper().addFav(event: self.events![indexPath.row])
+		
+//		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "calendarButtonTouched"), object: nil, queue: nil) { (notif) in
+//			if let userInfo = notif.userInfo	{
+//				if let row = userInfo["row"]	{
+//					let indexRow = row as! Int
+//					let indexPath = IndexPath.init(row: indexRow, section: 0)
+//					
+//					print(userInfo)
+//					if DataMapper().isFav(event: self.events![indexPath.row]) {
+//						print("remove fav")
+//						DataMapper().removeFav(event: self.events![indexPath.row])
 //					}
-					
-					self.collectionView.reloadItems(at: [indexPath])
-
-				}
-			}
-		}
+//					else if !DataMapper().isFav(event: self.events![indexPath.row]) {
+//						print("add fav")
+//						DataMapper().addFav(event: self.events![indexPath.row])
+//					}
+//					print("2")
+//					self.collectionView.reloadItems(at: [indexPath])
+//
+//				}
+//			}
+//		}
 
     flowLayout.spacingMode = .overlap(visibleOffset: 80)
 
@@ -60,7 +63,7 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 			cell.favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
 
-		cell.favButton.tag = indexPath.row
+		cell.favButton.tag = events![indexPath.row].id!
 		cell.startingDateHourLabel.text = (events![indexPath.row].startingDate.hour?.description)! + "h"
 		cell.startingDateMinuteLabel.text = events![indexPath.row].startingDate.minute?.description
 		cell.backgroundImage.image = UIImage(named: events![indexPath.row].img!)

@@ -114,7 +114,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Aa-q0O">
-                                                                    <rect key="frame" x="55" y="78" width="244" height="24"/>
+                                                                    <rect key="frame" x="55" y="78" width="243" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Now-Bold" family="Now" pointSize="15"/>
                                                                     <nil key="textColor"/>
@@ -172,11 +172,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vous n'avez aucun programme en favoris" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXb-V3-MgK">
+                                <rect key="frame" x="0.0" y="268" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="Now-Regular" family="Now" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fRv-JR-Af4"/>
                     </view>
                     <connections>
+                        <outlet property="favPlaceholder" destination="HXb-V3-MgK" id="B15-4u-8yl"/>
                         <outlet property="favTitle" destination="F8f-rd-DSv" id="CXM-mt-vnI"/>
                         <outlet property="flowLayout" destination="2IZ-4R-Uft" id="m4V-qg-g43"/>
                     </connections>

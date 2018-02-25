@@ -12,23 +12,18 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var favTitle: UILabel!
+	@IBOutlet weak var favPlaceholder: UILabel!
 	
 	var lastContentOffset: CGFloat = 0
-	
 	let events = DataMapper().getFav()
 	
-	
-//	func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//		if (self.lastContentOffset < scrollView.contentOffset.y) {
-//			// moved to top
-//			print("moved to top")
-//		} else if (self.lastContentOffset > scrollView.contentOffset.y) {
-//			// moved to bottom
-//			print("moved to bottom")
-//		} else {
-//			// didn't move
-//		}
-//	}
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		if (self.lastContentOffset < scrollView.contentOffset.y) {
+			favTitle.isHidden = true
+		} else if (self.lastContentOffset > scrollView.contentOffset.y) {
+			favTitle.isHidden = false
+		}
+	}
 	
 	
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,6 +36,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		
 		let event = events[indexPath.row]
 		
+		cell.buttonFav.tag = event.id!
 		cell.thumbnail.image = UIImage(named:event.img!)
 		cell.title.text = event.name?.uppercased()
 		
@@ -65,25 +61,28 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		cell.place.text = event.place?.name
 		
 		var minutes = ""
-
-//		print(event.duration?.minute!)
-//		if (event.duration?.minute!) < 10 {
-//			minutes = "0" + (event.duration?.minute?.description)!
-//		}
-//		else {
-//			minutes = (event.duration?.minute?.description)!
-//		}
-//		let hours = (event.duration?.hour?.description)! + "h" + minutes
-//		cell.hours.text = hours
 	
-		
+		if (event.duration?.minute!)! < 10 {
+			minutes = "0" + (event.duration?.minute?.description)!
+		}
+		else {
+			minutes = (event.duration?.minute?.description)!
+		}
+		let hours = (event.duration?.hour?.description)! + "h" + minutes
+		cell.hours.text = hours
+	
 		return cell
 	
-		
 	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		if events.count == 0 {
+			print("pas de favoris")
+			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
+		} else {
+			favPlaceholder.isHidden = true;
+		}
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
 		

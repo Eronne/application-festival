@@ -19,10 +19,19 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var favButton: UIButton!
 	
-	@IBAction func favButtonTouch(_ sender: Any) {
+	@IBAction func favButtonTouch(_ sender: UIButton) {
 		let index = favButton.tag
-		print(index)
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, userInfo: ["row":index])
+		let event = DataMapper().events.findOneBy(id:index)
+		if DataMapper().isFav(event: event!) {
+			print("remove fav")
+			DataMapper().removeFav(event: event!)
+			favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		else if !DataMapper().isFav(event: event!) {
+			print("add fav")
+			DataMapper().addFav(event: event!)
+			favButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
 	}
 	
 }

@@ -28,6 +28,7 @@ class Event: NSObject, NSCoding, Decodable {
 		self.category = aDecoder.decodeObject(forKey: "category") as! String?
 		self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! DateEvents
 		self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! DateEvents
+		self.duration = aDecoder.decodeObject(forKey: "duration") as! Duration?
 	}
 	
 	func encode(with aCoder: NSCoder) {
@@ -39,13 +40,25 @@ class Event: NSObject, NSCoding, Decodable {
 		aCoder.encode(category, forKey: "category")
 		aCoder.encode(startingDate, forKey: "startingDate")
 		aCoder.encode(endingDate, forKey: "endingDate")
+		aCoder.encode(duration, forKey: "duration")
 	}
 }
 
 
 
-class Duration: Decodable {
+class Duration: NSObject, NSCoding, Decodable {
+	
 	var hour: Int?;
 	var minute: Int?;
+	
+	required init?(coder aDecoder: NSCoder) {
+		self.hour = aDecoder.decodeObject(forKey: "hour") as! Int?
+		self.minute = aDecoder.decodeObject(forKey: "minute") as! Int?
+	}
+	
+	func encode(with aCoder: NSCoder) {
+		aCoder.encode(hour, forKey: "hour")
+		aCoder.encode(minute, forKey: "minute")
+	}
 }
 
