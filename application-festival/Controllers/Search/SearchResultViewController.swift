@@ -15,10 +15,14 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 	var filterListText: String = ""
 	var events: [Event]? = nil
 	
+	@IBOutlet weak var noEventsView: UIView!
 	@IBOutlet weak var filterList: UILabel!
+	@IBOutlet weak var newSearchButton: UIButton!
+	@IBOutlet weak var collectionView: UICollectionView!
 	
     override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		if (filterBy == "search") {
 			filterList.text = searchInName
 			events = DataMapper().events.searchByName(name: searchInName)!
@@ -29,6 +33,14 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 				.filterBy(categories: selectedFilters["category"]!)?
 				.filterBy(times: selectedFilters["time"]!)?
 				.filterBy(days: selectedFilters["day"]!);
+		}
+		
+		if events?.count != 0 {
+			noEventsView.isHidden = true;
+		} else {
+			collectionView.isHidden = true;
+			newSearchButton.layer.borderWidth = 2
+			newSearchButton.layer.borderColor = UIColor.black.cgColor
 		}
 	}
 
@@ -46,8 +58,14 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		
 		let event = events?[indexPath.row]
 		cell.eventName.text = event?.name
-		cell.excerpt.text = events?[indexPath.row].excerpt
-		cell.time.text = event?.startingDate.hour.description
+		
+		if event?.excerpt != "" {
+			cell.excerpt.text = event?.excerpt
+		} else {
+			cell.excerpt.text = "Pas d'informations supplémentaires"
+		}
+		
+		cell.time.text = (event?.startingDate.hour.description)! + "h" + (event?.startingDate.minute?.description)!
 		cell.place.text = event?.place?.name
 		cell.thumbnail.image = UIImage(named:(event?.img)!)
 		
@@ -57,4 +75,9 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 	@IBAction func closeAction(_ sender: UIButton) {
 		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "closeSearchResult"), object: nil)
 	}
+	
+	@IBAction func newSearch(_ sender: UIButton) {
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "closeSearchResult"), object: nil)
+	}
+	
 }
