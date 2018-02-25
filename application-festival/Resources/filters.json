@@ -1,7 +1,7 @@
  [
   {
   "id": 1,
-  "name": "enfant",
+  "name": "> 3 ans",
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
@@ -9,14 +9,54 @@
   },
   {
   "id": 2,
-  "name": "adulte",
+  "name": "> 4 ans",
+  "imageIndex": 0,
+  "filterType" : "age",
+  "isSelected": false,
+  "filterValue" : "child"
+  },
+  {
+  "id": 3,
+  "name": "> 5 ans",
+  "imageIndex": 0,
+  "filterType" : "age",
+  "isSelected": false,
+  "filterValue" : "child"
+  },
+  {
+  "id": 4,
+  "name": "> 6 ans",
+  "imageIndex": 0,
+  "filterType" : "age",
+  "isSelected": false,
+  "filterValue" : "child"
+  },
+  {
+  "id": 5,
+  "name": "> 7 ans",
+  "imageIndex": 0,
+  "filterType" : "age",
+  "isSelected": false,
+  "filterValue" : "child"
+  },
+  {
+  "id": 6,
+  "name": "> 8 ans",
+  "imageIndex": 0,
+  "filterType" : "age",
+  "isSelected": false,
+  "filterValue" : "child"
+  },
+  {
+  "id": 7,
+  "name": "> 10 ans",
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
    "filterValue" : "adult"
   },
   {
-  "id": 3,
+  "id": 8,
   "name": "mercredi",
   "imageIndex": 1,
   "filterType" : "day",
@@ -24,7 +64,7 @@
    "filterValue" : "4"
   },
   {
-  "id": 4,
+  "id": 9,
   "name": "jeudi",
   "imageIndex": 1,
   "filterType" : "day",
@@ -32,7 +72,7 @@
   "filterValue" : "5"
   },
   {
-  "id": 5,
+  "id": 10,
   "name": "vendredi",
   "imageIndex": 1,
   "filterType" : "day",
@@ -40,7 +80,7 @@
    "filterValue" : "6"
   },
   {
-  "id": 6,
+  "id": 11,
   "name": "samedi",
   "imageIndex": 1,
   "filterType" : "day",
@@ -48,7 +88,7 @@
    "filterValue" : "7"
   },
   {
-  "id": 7,
+  "id": 12,
   "name": "dimanche",
   "imageIndex": 1,
   "filterType" : "day",
@@ -56,7 +96,7 @@
    "filterValue" : "8"
   },
   {
-  "id": 8,
+  "id": 13,
   "name": "matin",
   "imageIndex": 2,
   "filterType" : "time",
@@ -64,7 +104,7 @@
   "filterValue" : "morning"
   },
   {
-  "id": 9,
+  "id": 14,
   "name": "après-midi",
   "imageIndex": 2,
   "filterType" : "time",
@@ -72,7 +112,7 @@
    "filterValue" : "afternoon"
   },
   {
-  "id": 10,
+  "id": 15,
   "name": "soir",
   "imageIndex": 2,
   "filterType" : "time",
@@ -80,7 +120,7 @@
    "filterValue" : "night"
   },
   {
-  "id": 11,
+  "id": 16,
   "name": "bruz",
   "imageIndex": 3,
   "filterType" : "location",
@@ -88,7 +128,7 @@
    "filterValue" : "bruz"
   },
   {
-  "id": 12,
+  "id": 17,
   "name": "rennes",
   "imageIndex": 3,
   "filterType" : "location",
@@ -96,7 +136,7 @@
    "filterValue" : "rennes"
   },
   {
-  "id": 13,
+  "id": 18,
   "name": "atelier",
   "imageIndex": 4,
   "filterType" : "category",
@@ -104,7 +144,7 @@
    "filterValue" : "Atelier secret Fab"
   },
   {
-  "id": 14,
+  "id": 19,
   "name": "Spécial",
   "imageIndex": 4,
   "filterType" : "category",
@@ -112,7 +152,7 @@
    "filterValue" : "Séance spéciale"
   },
   {
-  "id": 15,
+  "id": 20,
   "name": "rencontre",
   "imageIndex": 4,
   "filterType" : "category",
@@ -120,7 +160,7 @@
    "filterValue" : "Longs métrages et rencontres"
   },
   {
-  "id": 16,
+  "id": 22,
   "name": "scolaire",
   "imageIndex": 4,
   "filterType" : "category",
@@ -128,7 +168,7 @@
    "filterValue" : "Séance scolaire"
   },
   {
-  "id": 17,
+  "id": 23,
   "name": "professionnel",
   "imageIndex": 4,
   "filterType" : "category",
@@ -136,7 +176,7 @@
    "filterValue" : "Volet professionnel"
   },
   {
-  "id": 18,
+  "id": 24,
   "name": "salon",
   "imageIndex": 4,
   "filterType" : "category",
@@ -144,7 +184,7 @@
    "filterValue" : "Salon des nouvelles écritures"
   },
   {
-  "id": 19,
+  "id": 25,
   "name": "competition",
   "imageIndex": 4,
   "filterType" : "category",
