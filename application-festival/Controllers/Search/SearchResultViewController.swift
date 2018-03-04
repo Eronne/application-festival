@@ -59,6 +59,14 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		let event = events?[indexPath.row]
 		cell.eventName.text = event?.name
 		
+		cell.searchFavButton.tag = (event?.id!)!
+		if DataMapper().isFav(event: events![indexPath.row]) {
+			print("etre fav")
+			cell.searchFavButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		} else {
+			cell.searchFavButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		
 		if event?.excerpt != "" {
 			cell.excerpt.text = event?.excerpt
 		} else {

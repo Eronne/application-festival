@@ -77,6 +77,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//		self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-favorite.png")!)
 		if events.count == 0 {
 			print("pas de favoris")
 			favPlaceholder.text = "Vous n'avez aucun programme en favoris"

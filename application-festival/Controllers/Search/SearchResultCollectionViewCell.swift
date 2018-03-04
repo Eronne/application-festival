@@ -19,4 +19,22 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var place: UILabel!
 	
 	@IBOutlet weak var thumbnail: UIImageView!
+	
+	@IBOutlet weak var searchFavButton: UIButton!
+	
+	@IBAction func searchFavButtonTouchUp(_ sender: Any) {
+		let index = searchFavButton.tag
+		let event = DataMapper().events.findOneBy(id:index)
+		if DataMapper().isFav(event: event!) {
+			print("remove fav")
+			DataMapper().removeFav(event: event!)
+			searchFavButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
+		}
+		else if !DataMapper().isFav(event: event!) {
+			print("add fav")
+			DataMapper().addFav(event: event!)
+			searchFavButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
+	}
+	
 }

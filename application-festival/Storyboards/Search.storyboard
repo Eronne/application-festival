@@ -219,6 +219,14 @@
                                                                         <rect key="frame" x="113" y="29" width="90" height="90"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QV3-bq-Elz">
+                                                                        <rect key="frame" x="8" y="8" width="40" height="38"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal" backgroundImage="fav_actif"/>
+                                                                        <connections>
+                                                                            <action selector="searchFavButtonTouchUp:" destination="eXk-Mq-RYR" eventType="touchUpInside" id="UwX-TL-iiE"/>
+                                                                        </connections>
+                                                                    </button>
                                                                 </subviews>
                                                             </view>
                                                             <blurEffect style="light"/>
@@ -228,7 +236,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiG-c4-tfO">
-                                                                    <rect key="frame" x="8" y="8" width="272" height="26.5"/>
+                                                                    <rect key="frame" x="8" y="8" width="272" height="27"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Now-Bold" family="Now" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -286,6 +294,7 @@
                                             <outlet property="eventName" destination="yiG-c4-tfO" id="EZG-J9-L3L"/>
                                             <outlet property="excerpt" destination="vyu-cf-M6y" id="9WT-Kg-sDt"/>
                                             <outlet property="place" destination="zpq-FF-h4d" id="JGd-LV-Uy8"/>
+                                            <outlet property="searchFavButton" destination="QV3-bq-Elz" id="PDT-XR-X89"/>
                                             <outlet property="thumbnail" destination="5oU-Ho-aPP" id="DMy-bB-fRe"/>
                                             <outlet property="time" destination="Edm-8q-3LC" id="JJy-Dz-41C"/>
                                         </connections>
@@ -409,6 +418,7 @@
     <resources>
         <image name="close" width="27" height="27"/>
         <image name="day3" width="375" height="447"/>
+        <image name="fav_actif" width="40" height="35"/>
         <image name="icon-search" width="34" height="34"/>
     </resources>
 </document>
