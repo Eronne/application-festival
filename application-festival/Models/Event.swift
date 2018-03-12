@@ -73,13 +73,13 @@ class Event: NSObject, NSCoding, Decodable {
 		case "Volet professionnel"?:
 			imgName = "volet_pro"
 		case "Autour des films"?:
-			imgName = "secret_fab"
+			imgName = "autour_films"
 		case "Salon des nouvelles écritures"?:
 			imgName = "salon_nouvelle_ecriture"
 		case "Cube animé"?:
-			imgName = "secret_fab"
+			imgName = "cube_anime"
 		case "Focus"?:
-			imgName = "secret_fab"
+			imgName = "focus"
 		default:
 			imgName = "longs_metrages"
 		}
