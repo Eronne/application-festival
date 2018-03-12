@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,9 +15,6 @@
         </array>
         <array key="Now-Bold.otf">
             <string>Now-Bold</string>
-        </array>
-        <array key="Now-Regular.otf">
-            <string>Now-Regular</string>
         </array>
         <array key="Raleway-Regular.ttf">
             <string>Raleway-Regular</string>
@@ -33,18 +29,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-favorite" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-eC-TtZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="330"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="eBR-eC-TtZ" secondAttribute="height" multiplier="25:22" id="DqH-fA-Y9j"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_fav" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-eC-TtZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-fh-Xlz">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2IZ-4R-Uft" customClass="UPCarouselFlowLayout" customModule="application_festival" customModuleProvider="target">
-                                    <size key="itemSize" width="320" height="509"/>
+                                    <size key="itemSize" width="320" height="460"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -59,29 +52,29 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavCollectionViewCell" id="PEz-Uk-R5g" userLabel="FavCollectionViewCell" customClass="FavCollectionViewCell" customModule="application_festival" customModuleProvider="target">
-                                        <rect key="frame" x="27.5" y="0.0" width="320" height="509"/>
+                                        <rect key="frame" x="27.5" y="0.0" width="320" height="460"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="509"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l9O-U4-pUI">
-                                                    <rect key="frame" x="-1" y="0.0" width="321" height="448"/>
+                                                    <rect key="frame" x="-1" y="0.0" width="321" height="418"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXh-0X-urF" userLabel="Thumbnail_content">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-Kg-2XH">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="kyq-Nz-27n">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EB7-eb-zBU">
-                                                                                <rect key="frame" x="110" y="54" width="99" height="100"/>
+                                                                                <rect key="frame" x="110" y="54" width="99" height="81"/>
                                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                                             </imageView>
@@ -100,55 +93,62 @@
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-VB-vpi" userLabel="Description_content">
-                                                            <rect key="frame" x="0.0" y="208" width="320" height="240"/>
+                                                            <rect key="frame" x="0.0" y="178" width="320" height="240"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyi-Dj-GIF">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyi-Dj-GIF">
                                                                     <rect key="frame" x="16" y="8" width="288" height="50"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="18"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exerpt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-CF-q83">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exerpt" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-CF-q83">
                                                                     <rect key="frame" x="16" y="57" width="288" height="40"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" name="Now-Regular" family="Now" pointSize="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rb-ay-Plv">
-                                                                    <rect key="frame" x="16" y="105" width="288" height="21"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <rect key="frame" x="16" y="105" width="288" height="20"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-PL-35M">
-                                                                    <rect key="frame" x="16" y="128" width="288" height="21"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Director" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-PL-35M">
+                                                                    <rect key="frame" x="16" y="126" width="288" height="20"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-Ng-2x0">
-                                                                    <rect key="frame" x="16" y="150" width="288" height="21"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Producer" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-Ng-2x0">
+                                                                    <rect key="frame" x="16" y="148" width="288" height="20"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7r-sr-avb">
-                                                                    <rect key="frame" x="16" y="202" width="87" height="30"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <rect key="frame" x="16" y="202" width="214" height="30"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Now-Bold" family="Now" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Aa-q0O">
-                                                                    <rect key="frame" x="122" y="202" width="181" height="30"/>
+                                                                    <rect key="frame" x="202" y="202" width="101" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Now-Bold" family="Now" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-ww-YmS">
+                                                                    <rect key="frame" x="16" y="171" width="288" height="20"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -164,7 +164,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX1-bI-ATt">
-                                                    <rect key="frame" x="0.0" y="468" width="320" height="21"/>
+                                                    <rect key="frame" x="0.0" y="424" width="320" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -177,6 +177,7 @@
                                             <outlet property="buttonFav" destination="nEl-Mr-Xjk" id="Rsm-hI-ZuZ"/>
                                             <outlet property="countdown" destination="eX1-bI-ATt" id="08g-mZ-pd9"/>
                                             <outlet property="director" destination="tKP-PL-35M" id="99v-is-wnj"/>
+                                            <outlet property="duration" destination="Nzb-ww-YmS" id="EAG-Bn-vnH"/>
                                             <outlet property="exerpt" destination="UWo-CF-q83" id="GZ9-8e-P2t"/>
                                             <outlet property="hours" destination="T7r-sr-avb" id="pHR-FJ-mQC"/>
                                             <outlet property="place" destination="4LP-Aa-q0O" id="oo5-c5-yQB"/>
@@ -192,27 +193,28 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dK-JH-Mc8">
-                                <rect key="frame" x="15" y="40" width="20" height="20"/>
+                                <rect key="frame" x="20" y="60" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="close"/>
+                                <state key="normal" backgroundImage="close_white"/>
                                 <connections>
                                     <action selector="dismissViewController:" destination="woc-dY-gw6" eventType="touchUpInside" id="IWx-KF-jvB"/>
                                     <segue destination="2hp-xn-T0x" kind="unwind" unwindAction="backAction:" id="Ufw-8b-S1U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAVORIS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8f-rd-DSv">
-                                <rect key="frame" x="0.0" y="111" width="375" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="60"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="55"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="trailing" secondItem="fRv-JR-Af4" secondAttribute="trailing" id="Bmc-Kf-g79"/>
-                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="top" secondItem="fRv-JR-Af4" secondAttribute="top" id="sTs-Qj-EkW"/>
-                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="leading" secondItem="fRv-JR-Af4" secondAttribute="leading" id="wPF-LW-tzJ"/>
+                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="top" secondItem="fRv-JR-Af4" secondAttribute="top" id="Avo-OK-cey"/>
+                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="bottom" secondItem="fRv-JR-Af4" secondAttribute="bottom" id="GeV-lF-xlJ"/>
+                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="leading" secondItem="fRv-JR-Af4" secondAttribute="leading" id="YN3-So-myr"/>
+                            <constraint firstItem="eBR-eC-TtZ" firstAttribute="trailing" secondItem="fRv-JR-Af4" secondAttribute="trailing" id="gyB-Rm-lDi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fRv-JR-Af4"/>
                     </view>
@@ -228,8 +230,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg-favorite" width="600" height="639"/>
-        <image name="close" width="27" height="27"/>
+        <image name="bg_fav" width="375" height="629"/>
+        <image name="close_white" width="200" height="200"/>
         <image name="fav_actif" width="40" height="35"/>
     </resources>
 </document>

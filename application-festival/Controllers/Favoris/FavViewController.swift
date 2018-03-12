@@ -12,8 +12,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var favTitle: UILabel!
-	@IBOutlet weak var favPlaceholder: UILabel!
-	@IBOutlet weak var noFavoriteView: UIView!
 	
 	var lastContentOffset: CGFloat = 0
 	let events = DataMapper().getFav()
@@ -36,6 +34,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		let event = events[indexPath.row]
 		cell.buttonFav.tag = event.id!
+	
 		
 		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )
@@ -58,7 +57,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 			cell.director.text = "Aucun directeur associé"
 			
 		} else {
-			cell.director.text = event.director
+			cell.director.text = "Directeur(s): \(event.director ?? "")"
 		}
 		
 		//PRODUCER
@@ -66,7 +65,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 			cell.producer.text = "Aucun producteur associé"
 			
 		} else {
-			cell.producer.text = event.producer
+			cell.producer.text = "Producteur(s): \(event.producer ?? "")"
 		}
 		
 		
@@ -93,15 +92,12 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		
 		
 		//DURATION
-		var minutes = ""
-//		if (event.duration?.minute!)! < 10 {
-//			minutes = "0" + (event.duration?.minute?.description)!
-//		}
-//		else {
-//			minutes = (event.duration?.minute?.description)!
-//		}
-//		let hours = (event.duration?.hour?.description)! + "h" + minutes
-		cell.hours.text = event.getDuration()
+		cell.duration.text = "Durée: \(event.getDuration())"
+		
+		let startingHour = event.getFullStartingHour()
+		let endingHour = event.getFullEndingHour() 
+		
+		cell.hours.text = "\(startingHour) - \(endingHour)"
 	
 		return cell
 	

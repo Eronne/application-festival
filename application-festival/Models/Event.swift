@@ -88,11 +88,11 @@ class Event: NSObject, NSCoding, Decodable {
 	}
 	
 	func getFullStartingHour() -> String {
-		return "\(startingDate.hour)H\(getMinutes(minutes: startingDate.minute))"
+		return "\(startingDate.hour ?? 0)H\(getMinutes(minutes: startingDate.minute))"
 	}
 	
 	func getFullEndingHour() -> String {
-		return "\(endingDate.hour)H\(getMinutes(minutes: endingDate.minute))"
+		return "\(endingDate.hour ?? 0)H\(getMinutes(minutes: endingDate.minute))"
 	}
 	
 	func getMinutes(minutes: Int) -> String {
