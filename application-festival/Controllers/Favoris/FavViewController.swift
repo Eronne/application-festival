@@ -13,6 +13,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var favTitle: UILabel!
 	@IBOutlet weak var favPlaceholder: UILabel!
+	@IBOutlet weak var noFavoriteView: UIView!
 	
 	var lastContentOffset: CGFloat = 0
 	let events = DataMapper().getFav()
@@ -41,9 +42,9 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		cell.title.text = event.name?.uppercased()
 		
 		if(event.excerpt != "" ) {
-			cell.author.text = event.excerpt
+			cell.exerpt.text = event.excerpt
 		} else {
-			cell.author.text = "Pas d'informations supplémentaires"
+			cell.exerpt.text = "Pas d'informations supplémentaires"
 		}
 
 		
@@ -55,7 +56,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let nowDate = dateFormatter.date(from: nowDateString)
 		
 		let components = Calendar.current.dateComponents([.month, .day, .hour, .minute], from: nowDate!, to: eventStartingDate)
-		let countdown = "Débute dans \(components.month ?? 0)m \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
+		let countdown = "Débute dans \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
 		
 		cell.countdown.text = countdown
 		cell.place.text = event.place?.name
@@ -77,13 +78,17 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+//		noFavoriteView.layer.borderWidth = 2;
+//		noFavoriteView.layer.borderColor = UIColor.black.cgColor;
+		
 //		self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-favorite.png")!)
-		if events.count == 0 {
-			print("pas de favoris")
-			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
-		} else {
-			favPlaceholder.isHidden = true;
-		}
+//		if events.count == 0 {
+//			print("pas de favoris")
+//			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
+//		} else {
+//			noFavoriteView.isHidden = true;
+//		}
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
 		

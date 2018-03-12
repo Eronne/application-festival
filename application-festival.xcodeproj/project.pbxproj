@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0685BC3861622791869B824A /* Pods_application_festivalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */; };
+		234E6748205687A700577592 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E673F205687A500577592 /* Raleway-Thin.ttf */; };
+		234E6749205687A700577592 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6740205687A500577592 /* Raleway-Bold.ttf */; };
+		234E674A205687A700577592 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6741205687A600577592 /* Raleway-SemiBold.ttf */; };
+		234E674B205687A700577592 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6742205687A600577592 /* Raleway-ExtraBold.ttf */; };
+		234E674C205687A700577592 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6743205687A600577592 /* Raleway-Black.ttf */; };
+		234E674D205687A700577592 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6744205687A600577592 /* Raleway-Regular.ttf */; };
+		234E674E205687A700577592 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6745205687A600577592 /* Raleway-Medium.ttf */; };
+		234E674F205687A700577592 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6746205687A600577592 /* Raleway-Light.ttf */; };
+		234E6750205687A700577592 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E6747205687A700577592 /* Raleway-ExtraLight.ttf */; };
+		234E675A2056881C00577592 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67512056881B00577592 /* Montserrat-SemiBold.ttf */; };
+		234E675B2056881C00577592 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67522056881B00577592 /* Montserrat-Thin.ttf */; };
+		234E675C2056881C00577592 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67532056881B00577592 /* Montserrat-Medium.ttf */; };
+		234E675D2056881C00577592 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67542056881B00577592 /* Montserrat-Black.ttf */; };
+		234E675E2056881C00577592 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67552056881B00577592 /* Montserrat-Regular.ttf */; };
+		234E675F2056881C00577592 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67562056881B00577592 /* Montserrat-Light.ttf */; };
+		234E67602056881C00577592 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67572056881C00577592 /* Montserrat-ExtraLight.ttf */; };
+		234E67612056881C00577592 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67582056881C00577592 /* Montserrat-ExtraBold.ttf */; };
+		234E67622056881C00577592 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67592056881C00577592 /* Montserrat-Bold.ttf */; };
 		236B1E45203436D000CAB129 /* DateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1E44203436D000CAB129 /* DateEvents.swift */; };
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
@@ -90,6 +108,24 @@
 
 /* Begin PBXFileReference section */
 		05626ADAA2B6DCF27176A7E4 /* Pods-application-festivalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalTests/Pods-application-festivalTests.release.xcconfig"; sourceTree = "<group>"; };
+		234E673F205687A500577592 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		234E6740205687A500577592 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		234E6741205687A600577592 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		234E6742205687A600577592 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		234E6743205687A600577592 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		234E6744205687A600577592 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		234E6745205687A600577592 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		234E6746205687A600577592 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		234E6747205687A700577592 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		234E67512056881B00577592 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		234E67522056881B00577592 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		234E67532056881B00577592 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		234E67542056881B00577592 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		234E67552056881B00577592 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		234E67562056881B00577592 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		234E67572056881C00577592 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		234E67582056881C00577592 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		234E67592056881C00577592 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		236B1E44203436D000CAB129 /* DateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEvents.swift; sourceTree = "<group>"; };
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
@@ -191,6 +227,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		234E67322056868900577592 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				234E6743205687A600577592 /* Raleway-Black.ttf */,
+				234E6740205687A500577592 /* Raleway-Bold.ttf */,
+				234E6742205687A600577592 /* Raleway-ExtraBold.ttf */,
+				234E6747205687A700577592 /* Raleway-ExtraLight.ttf */,
+				234E6746205687A600577592 /* Raleway-Light.ttf */,
+				234E6745205687A600577592 /* Raleway-Medium.ttf */,
+				234E6744205687A600577592 /* Raleway-Regular.ttf */,
+				234E6741205687A600577592 /* Raleway-SemiBold.ttf */,
+				234E673F205687A500577592 /* Raleway-Thin.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		234E673E2056874000577592 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				234E67542056881B00577592 /* Montserrat-Black.ttf */,
+				234E67592056881C00577592 /* Montserrat-Bold.ttf */,
+				234E67582056881C00577592 /* Montserrat-ExtraBold.ttf */,
+				234E67572056881C00577592 /* Montserrat-ExtraLight.ttf */,
+				234E67562056881B00577592 /* Montserrat-Light.ttf */,
+				234E67532056881B00577592 /* Montserrat-Medium.ttf */,
+				234E67552056881B00577592 /* Montserrat-Regular.ttf */,
+				234E67512056881B00577592 /* Montserrat-SemiBold.ttf */,
+				234E67522056881B00577592 /* Montserrat-Thin.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
 		4C08FA7EE9FE3E6F3389A36B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +297,8 @@
 		B53F68881FE8683C00650440 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				234E673E2056874000577592 /* Montserrat */,
+				234E67322056868900577592 /* Raleway */,
 				B53F68951FE8696700650440 /* Now */,
 			);
 			path = Fonts;
@@ -519,26 +589,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234E675F2056881C00577592 /* Montserrat-Light.ttf in Resources */,
+				234E674B205687A700577592 /* Raleway-ExtraBold.ttf in Resources */,
 				2375BC81200BDC9600483678 /* categories.json in Resources */,
+				234E675E2056881C00577592 /* Montserrat-Regular.ttf in Resources */,
+				234E6750205687A700577592 /* Raleway-ExtraLight.ttf in Resources */,
 				2375BC82200BDC9600483678 /* events.json in Resources */,
+				234E674F205687A700577592 /* Raleway-Light.ttf in Resources */,
 				2375BC83200BDC9600483678 /* places.json in Resources */,
 				B53F689C1FE869F200650440 /* Now-Black.otf in Resources */,
 				B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */,
 				B53F689E1FE869F200650440 /* Now-Light.otf in Resources */,
+				234E6748205687A700577592 /* Raleway-Thin.ttf in Resources */,
 				B53F689F1FE869F200650440 /* Now-Medium.otf in Resources */,
+				234E67602056881C00577592 /* Montserrat-ExtraLight.ttf in Resources */,
 				B53F68A01FE869F200650440 /* Now-Regular.otf in Resources */,
 				B53F68A11FE869F200650440 /* Now-Thin.otf in Resources */,
+				234E675B2056881C00577592 /* Montserrat-Thin.ttf in Resources */,
+				234E675C2056881C00577592 /* Montserrat-Medium.ttf in Resources */,
 				B57439BD2031E043008FE158 /* Info.plist in Resources */,
 				B541748A1FE415B100842B38 /* Calendar.storyboard in Resources */,
+				234E674E205687A700577592 /* Raleway-Medium.ttf in Resources */,
 				B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */,
 				B54174951FE41D6800842B38 /* Fav.storyboard in Resources */,
 				B565C19A1FDEA0430037D567 /* Assets.xcassets in Resources */,
 				DF5997BD2031E50E004A4607 /* filters.json in Resources */,
 				B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */,
+				234E674A205687A700577592 /* Raleway-SemiBold.ttf in Resources */,
 				B565C1981FDEA0430037D567 /* Main.storyboard in Resources */,
 				B54174931FE41D5500842B38 /* Infos.storyboard in Resources */,
+				234E675A2056881C00577592 /* Montserrat-SemiBold.ttf in Resources */,
+				234E6749205687A700577592 /* Raleway-Bold.ttf in Resources */,
 				B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */,
+				234E67622056881C00577592 /* Montserrat-Bold.ttf in Resources */,
+				234E675D2056881C00577592 /* Montserrat-Black.ttf in Resources */,
+				234E674D205687A700577592 /* Raleway-Regular.ttf in Resources */,
 				B541748D1FE41D0C00842B38 /* Map.storyboard in Resources */,
+				234E674C205687A700577592 /* Raleway-Black.ttf in Resources */,
+				234E67612056881C00577592 /* Montserrat-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
