@@ -34,35 +34,66 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
-		
 		let event = events[indexPath.row]
-		
 		cell.buttonFav.tag = event.id!
+		
+		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )
+		
+		//TITLE
 		cell.title.text = event.name?.uppercased()
 		
+		//AGE
+		let ageNumber = "\(event.age ?? 0)"
+		var age = ""
+		if (ageNumber != "0") {
+			age = "Age : \(ageNumber) ans"
+		} else {
+			age = "Ce programme convient à tous les âges"
+		}
+		cell.age.text = age
+		
+		//DIRECTOR
+		if (event.director == "") {
+			cell.director.text = "Aucun directeur associé"
+			
+		} else {
+			cell.director.text = event.director
+		}
+		
+		//PRODUCER
+		if (event.director == "") {
+			cell.producer.text = "Aucun producteur associé"
+			
+		} else {
+			cell.producer.text = event.producer
+		}
+		
+		
+		//DESCRIPTION
 		if(event.excerpt != "" ) {
 			cell.exerpt.text = event.excerpt
 		} else {
 			cell.exerpt.text = "Pas d'informations supplémentaires"
 		}
 
-		
+		//COUNTDOWN
 		let eventStartingDate = event.startingDate.getDateEvents()
 		let now = Date()
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
 		let nowDateString = dateFormatter.string(from: now)
 		let nowDate = dateFormatter.date(from: nowDateString)
-		
 		let components = Calendar.current.dateComponents([.month, .day, .hour, .minute], from: nowDate!, to: eventStartingDate)
 		let countdown = "Débute dans \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
-		
 		cell.countdown.text = countdown
+		
+		//PLACE
 		cell.place.text = event.place?.name
 		
+		
+		//DURATION
 		var minutes = ""
-	
 //		if (event.duration?.minute!)! < 10 {
 //			minutes = "0" + (event.duration?.minute?.description)!
 //		}
