@@ -12,7 +12,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var favTitle: UILabel!
-	@IBOutlet weak var favPlaceholder: UILabel!
 	
 	var lastContentOffset: CGFloat = 0
 	let events = DataMapper().getFav()
@@ -33,43 +32,72 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
-		
 		let event = events[indexPath.row]
-		
 		cell.buttonFav.tag = event.id!
+	
+		
+		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )
+		
+		//TITLE
 		cell.title.text = event.name?.uppercased()
 		
-		if(event.excerpt != "" ) {
-			cell.author.text = event.excerpt
+		//AGE
+		let ageNumber = "\(event.age ?? 0)"
+		var age = ""
+		if (ageNumber != "0") {
+			age = "Age : \(ageNumber) ans"
 		} else {
-			cell.author.text = "Pas d'informations supplémentaires"
+			age = "Ce programme convient à tous les âges"
+		}
+		cell.age.text = age
+		
+		//DIRECTOR
+		if (event.director == "") {
+			cell.director.text = "Aucun directeur associé"
+			
+		} else {
+			cell.director.text = "Directeur(s): \(event.director ?? "")"
+		}
+		
+		//PRODUCER
+		if (event.director == "") {
+			cell.producer.text = "Aucun producteur associé"
+			
+		} else {
+			cell.producer.text = "Producteur(s): \(event.producer ?? "")"
+		}
+		
+		
+		//DESCRIPTION
+		if(event.excerpt != "" ) {
+			cell.exerpt.text = event.excerpt
+		} else {
+			cell.exerpt.text = "Pas d'informations supplémentaires"
 		}
 
-		
+		//COUNTDOWN
 		let eventStartingDate = event.startingDate.getDateEvents()
 		let now = Date()
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
 		let nowDateString = dateFormatter.string(from: now)
 		let nowDate = dateFormatter.date(from: nowDateString)
-		
 		let components = Calendar.current.dateComponents([.month, .day, .hour, .minute], from: nowDate!, to: eventStartingDate)
-		let countdown = "Débute dans \(components.month ?? 0)m \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
-		
+		let countdown = "Débute dans \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
 		cell.countdown.text = countdown
+		
+		//PLACE
 		cell.place.text = event.place?.name
 		
-		var minutes = ""
-	
-//		if (event.duration?.minute!)! < 10 {
-//			minutes = "0" + (event.duration?.minute?.description)!
-//		}
-//		else {
-//			minutes = (event.duration?.minute?.description)!
-//		}
-//		let hours = (event.duration?.hour?.description)! + "h" + minutes
-		cell.hours.text = event.getDuration()
+		
+		//DURATION
+		cell.duration.text = "Durée: \(event.getDuration())"
+		
+		let startingHour = event.getFullStartingHour()
+		let endingHour = event.getFullEndingHour() 
+		
+		cell.hours.text = "\(startingHour) - \(endingHour)"
 	
 		return cell
 	
@@ -77,13 +105,17 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+//		noFavoriteView.layer.borderWidth = 2;
+//		noFavoriteView.layer.borderColor = UIColor.black.cgColor;
+		
 //		self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-favorite.png")!)
-		if events.count == 0 {
-			print("pas de favoris")
-			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
-		} else {
-			favPlaceholder.isHidden = true;
-		}
+//		if events.count == 0 {
+//			print("pas de favoris")
+//			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
+//		} else {
+//			noFavoriteView.isHidden = true;
+//		}
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
 		

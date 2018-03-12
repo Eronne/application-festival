@@ -73,13 +73,13 @@ class Event: NSObject, NSCoding, Decodable {
 		case "Volet professionnel"?:
 			imgName = "volet_pro"
 		case "Autour des films"?:
-			imgName = "secret_fab"
+			imgName = "autour_films"
 		case "Salon des nouvelles écritures"?:
 			imgName = "salon_nouvelle_ecriture"
 		case "Cube animé"?:
-			imgName = "secret_fab"
+			imgName = "cube_anime"
 		case "Focus"?:
-			imgName = "secret_fab"
+			imgName = "focus"
 		default:
 			imgName = "longs_metrages"
 		}
@@ -88,11 +88,11 @@ class Event: NSObject, NSCoding, Decodable {
 	}
 	
 	func getFullStartingHour() -> String {
-		return "\(startingDate.hour)H\(getMinutes(minutes: startingDate.minute))"
+		return "\(startingDate.hour ?? 0)H\(getMinutes(minutes: startingDate.minute))"
 	}
 	
 	func getFullEndingHour() -> String {
-		return "\(endingDate.hour)H\(getMinutes(minutes: endingDate.minute))"
+		return "\(endingDate.hour ?? 0)H\(getMinutes(minutes: endingDate.minute))"
 	}
 	
 	func getMinutes(minutes: Int) -> String {
