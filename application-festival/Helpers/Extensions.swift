@@ -143,12 +143,21 @@ extension Array where Element == Event {
 		}
 		return self
 	}
-
-//	func findBy(category: Category) -> [Event]? {
-//		return self.filter({ (event) -> Bool in
-//			return event.category == category
-//		})
-//	}
+	
+	func filterBy(ages: [Int]) -> [Event]? {
+		if (ages.count > 0) {
+			var result: [Event] = []
+			ages.forEach { (age) in
+				let results = self.filter({ (event) -> Bool in
+					return event.age == Int(age)
+				})
+				result.append(contentsOf: results)
+			}
+			return result
+		}
+		return self
+	}
+	
 }
 
 extension Array where Element == Filter {

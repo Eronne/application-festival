@@ -104,5 +104,13 @@ class Event: NSObject, NSCoding, Decodable {
 		}
 		return minutesOutput;
 	}
+	
+	func getAge() -> String {
+		if age == 0 {
+			return "Tous les âges";
+		} else {
+			return "À partir de \(age ?? 3) ans"
+		}
+	}
 }
 
