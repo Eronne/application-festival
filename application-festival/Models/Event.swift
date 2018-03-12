@@ -14,51 +14,77 @@ class Event: NSObject, NSCoding, Decodable {
 	var excerpt: String?;
 	var place: Place?;
 	var category: String?;
-	var img: String?;
 	var startingDate: DateEvents;
 	var endingDate: DateEvents;
-	var duration: Duration?;
+	var link: String?;
+	var director: String?;
+	var producer: String?;
+	var age: Int?;
 	
 	required init?(coder aDecoder: NSCoder) {
 		self.id = aDecoder.decodeObject(forKey: "id") as! Int?
 		self.name = aDecoder.decodeObject(forKey: "name") as! String?
 		self.excerpt = aDecoder.decodeObject(forKey: "excerpt") as! String?
-		self.img = aDecoder.decodeObject(forKey: "img") as! String?
 		self.place = aDecoder.decodeObject(forKey: "place") as! Place?
 		self.category = aDecoder.decodeObject(forKey: "category") as! String?
 		self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! DateEvents
 		self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! DateEvents
-		self.duration = aDecoder.decodeObject(forKey: "duration") as! Duration?
+		self.link = aDecoder.decodeObject(forKey: "link") as! String?
+		self.director = aDecoder.decodeObject(forKey: "director") as! String?
+		self.producer = aDecoder.decodeObject(forKey: "producer") as! String?
+		self.age = aDecoder.decodeObject(forKey: "age") as! Int?
 	}
 	
 	func encode(with aCoder: NSCoder) {
 		aCoder.encode(id, forKey: "id")
 		aCoder.encode(name, forKey: "name")
 		aCoder.encode(excerpt, forKey: "excerpt")
-		aCoder.encode(img, forKey: "img")
 		aCoder.encode(place, forKey: "place")
 		aCoder.encode(category, forKey: "category")
 		aCoder.encode(startingDate, forKey: "startingDate")
 		aCoder.encode(endingDate, forKey: "endingDate")
-		aCoder.encode(duration, forKey: "duration")
-	}
-}
-
-
-
-class Duration: NSObject, NSCoding, Decodable {
-	
-	var hour: Int?;
-	var minute: Int?;
-	
-	required init?(coder aDecoder: NSCoder) {
-		self.hour = aDecoder.decodeObject(forKey: "hour") as! Int?
-		self.minute = aDecoder.decodeObject(forKey: "minute") as! Int?
+		aCoder.encode(link, forKey: "link")
+		aCoder.encode(director, forKey: "director")
+		aCoder.encode(producer, forKey: "producer")
+		aCoder.encode(age, forKey: "age")
 	}
 	
-	func encode(with aCoder: NSCoder) {
-		aCoder.encode(hour, forKey: "hour")
-		aCoder.encode(minute, forKey: "minute")
+	func getDuration() -> String {
+		let eventStartingDate = startingDate.getDateEvents()
+		let eventEndingDate = endingDate.getDateEvents()
+		let calendar = Calendar.current
+		let components = calendar.dateComponents([.hour , .minute], from: eventStartingDate, to: eventEndingDate)
+		var minutes : String = "";
+		if(components.minute != nil &&  components.minute! < 10) {
+			minutes = "0\(components.minute ?? 0)"
+		} else {
+			minutes = "\(components.minute ?? 0)"
+		}
+		return "\(components.hour ?? 0)H\(minutes)"
+	}
+	
+	func getImgName() -> String {
+		var imgName : String = "";
+		switch category {
+		case "Compétition et panorama"?:
+			imgName = "competitions_selections"
+		case "Séance spéciale"?:
+			imgName = "seance_speciale"
+		case "Volet professionnel"?:
+			imgName = "volet_pro"
+		case "Autour des films"?:
+			imgName = "secret_fab"
+		case "Salon des nouvelles écritures"?:
+			imgName = "salon_nouvelle_ecriture"
+		case "Cube animé"?:
+			imgName = "secret_fab"
+		case "Focus"?:
+			imgName = "secret_fab"
+		default:
+			imgName = "longs_metrages"
+		}
+		
+		return imgName;
 	}
 }
 

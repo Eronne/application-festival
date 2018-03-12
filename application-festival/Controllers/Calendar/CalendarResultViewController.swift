@@ -76,7 +76,7 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 		cell.favButton.tag = events![indexPath.row].id!
 		cell.startingDateHourLabel.text = (events![indexPath.row].startingDate.hour?.description)! + "h"
 		cell.startingDateMinuteLabel.text = events![indexPath.row].startingDate.minute?.description
-		cell.backgroundImage.image = UIImage(named: events![indexPath.row].img!)
+		cell.backgroundImage.image = UIImage(named: events![indexPath.row].getImgName())
 		cell.bottomContent.sizeToFit()
 		cell.nameLabel.text = events![indexPath.row].name
 		if events![indexPath.row].excerpt != "" {
@@ -84,7 +84,7 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 		} else {
 			cell.excerptLabel.text = "Pas d'informations supplémentaires"
 		}
-		cell.durationLabel.text = (events![indexPath.row].duration?.hour?.description)! + "h" + (events![indexPath.row].duration?.minute?.description)!
+		cell.durationLabel.text = events![indexPath.row].getDuration()
 		cell.placeLabel.text = events![indexPath.row].place!.name
 
 		return cell

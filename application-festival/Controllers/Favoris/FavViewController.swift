@@ -38,7 +38,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let event = events[indexPath.row]
 		
 		cell.buttonFav.tag = event.id!
-		cell.thumbnail.image = UIImage(named:event.img!)
+		cell.thumbnail.image = UIImage(named: event.getImgName() )
 		cell.title.text = event.name?.uppercased()
 		
 		if(event.excerpt != "" ) {
@@ -63,14 +63,14 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		
 		var minutes = ""
 	
-		if (event.duration?.minute!)! < 10 {
-			minutes = "0" + (event.duration?.minute?.description)!
-		}
-		else {
-			minutes = (event.duration?.minute?.description)!
-		}
-		let hours = (event.duration?.hour?.description)! + "h" + minutes
-		cell.hours.text = hours
+//		if (event.duration?.minute!)! < 10 {
+//			minutes = "0" + (event.duration?.minute?.description)!
+//		}
+//		else {
+//			minutes = (event.duration?.minute?.description)!
+//		}
+//		let hours = (event.duration?.hour?.description)! + "h" + minutes
+		cell.hours.text = event.getDuration()
 	
 		return cell
 	
