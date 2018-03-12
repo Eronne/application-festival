@@ -73,9 +73,9 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 			cell.excerpt.text = "Pas d'informations supplémentaires"
 		}
 		
-		cell.time.text = (event?.startingDate.hour.description)! + "h" + (event?.startingDate.minute?.description)!
+		cell.time.text = event?.getDuration()
 		cell.place.text = event?.place?.name
-		cell.thumbnail.image = UIImage(named:(event?.img)!)
+		cell.thumbnail.image = UIImage(named:(event?.getImgName())!)
 		
 		return cell;
 	}
