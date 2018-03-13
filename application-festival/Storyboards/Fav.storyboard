@@ -146,7 +146,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Aa-q0O">
-                                                                    <rect key="frame" x="202" y="202" width="101" height="30"/>
+                                                                    <rect key="frame" x="201" y="202" width="102" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Now-Bold" family="Now" pointSize="15"/>
                                                                     <nil key="textColor"/>
