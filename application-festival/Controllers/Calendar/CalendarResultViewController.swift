@@ -76,15 +76,35 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 		cell.favButton.tag = events![indexPath.row].id!
 		cell.startingDateHourLabel.text = (events![indexPath.row].startingDate.hour?.description)! + "h"
 		cell.startingDateMinuteLabel.text = events![indexPath.row].startingDate.minute?.description
-		cell.backgroundImage.image = UIImage(named: events![indexPath.row].getImgName())
+		cell.categoryLabel.text = events![indexPath.row].category?.uppercased()
+		cell.categoryIcon.image = UIImage(named: events![indexPath.row].getImgName())
 		cell.bottomContent.sizeToFit()
-		cell.nameLabel.text = events![indexPath.row].name
+		cell.nameLabel.text = events![indexPath.row].name?.uppercased()
 		if events![indexPath.row].excerpt != "" {
 			cell.excerptLabel.text = events![indexPath.row].excerpt
 		} else {
 			cell.excerptLabel.text = "Pas d'informations supplémentaires"
 		}
-		cell.durationLabel.text = events![indexPath.row].getDuration()
+		
+		if events![indexPath.row].age != 0 {
+			cell.ageLabel.text = "Age : " + String(describing: events![indexPath.row].age!) + " ans"
+		} else {
+			cell.ageLabel.text = "Ce programme convient à tous les âges"
+		}
+		
+		if events![indexPath.row].director != "" {
+			cell.directorLabel.text = events![indexPath.row].director
+		} else {
+			cell.directorLabel.text = "Aucun directeur associé"
+		}
+		
+		if events![indexPath.row].producer != "" {
+			cell.producerLabel.text = events![indexPath.row].producer
+		} else {
+			cell.producerLabel.text = "Aucun producteur associé"
+		}
+		
+		cell.durationLabel.text = "Durée : " + events![indexPath.row].getDuration()
 		cell.placeLabel.text = events![indexPath.row].place!.name
 
 		return cell
