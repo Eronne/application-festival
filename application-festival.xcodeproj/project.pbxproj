@@ -30,6 +30,8 @@
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
+		23A6F90020580B9F00ABE884 /* InfosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6F8FF20580B9F00ABE884 /* InfosTableViewController.swift */; };
+		23A6F90220580BBB00ABE884 /* InfosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6F90120580BBB00ABE884 /* InfosTableViewCell.swift */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
 		B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */; };
@@ -60,7 +62,6 @@
 		B57439B82031DFCA008FE158 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57439B72031DFCA008FE158 /* Character.swift */; };
 		B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */; };
 		B57439BD2031E043008FE158 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57439BB2031E042008FE158 /* Info.plist */; };
-		B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580216D1FEBB11B00E8D882 /* InfosViewController.swift */; };
 		B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580216F1FEBB16000E8D882 /* WebView.storyboard */; };
 		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
 		B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021731FEBB83200E8D882 /* FavViewController.swift */; };
@@ -131,6 +132,8 @@
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
+		23A6F8FF20580B9F00ABE884 /* InfosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewController.swift; sourceTree = "<group>"; };
+		23A6F90120580BBB00ABE884 /* InfosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewCell.swift; sourceTree = "<group>"; };
 		2459763EE6FCC42D816C516F /* Pods-application-festivalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -172,7 +175,6 @@
 		B57439B72031DFCA008FE158 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		B57439BB2031E042008FE158 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B580216D1FEBB11B00E8D882 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		B580216F1FEBB16000E8D882 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		B58021731FEBB83200E8D882 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,15 @@
 				4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		230C023A2057E44000BE47D8 /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				23A6F8FF20580B9F00ABE884 /* InfosTableViewController.swift */,
+				23A6F90120580BBB00ABE884 /* InfosTableViewCell.swift */,
+			);
+			path = Infos;
 			sourceTree = "<group>";
 		};
 		234E67322056868900577592 /* Raleway */ = {
@@ -451,12 +462,12 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				230C023A2057E44000BE47D8 /* Infos */,
 				DF5997B52031AD90004A4607 /* Search */,
 				5026E79A203194040064F2DB /* Favoris */,
 				B55B9BCB1FF2EDD100618339 /* Calendar */,
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
-				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
 				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
 				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
@@ -812,15 +823,16 @@
 				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,
 				B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */,
-				B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */,
 				B5666647200D686F00B57389 /* Category.swift in Sources */,
 				B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */,
 				B5D876E220331CE900C5FD87 /* Extensions.swift in Sources */,
 				B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */,
 				B565C1951FDEA0430037D567 /* ViewController.swift in Sources */,
+				23A6F90220580BBB00ABE884 /* InfosTableViewCell.swift in Sources */,
 				B55B9BC71FF2DD1A00618339 /* CalendarCollectionViewCell.swift in Sources */,
 				236B1E45203436D000CAB129 /* DateEvents.swift in Sources */,
 				B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */,
+				23A6F90020580B9F00ABE884 /* InfosTableViewController.swift in Sources */,
 				DF5997B92031AE54004A4607 /* SearchViewController.swift in Sources */,
 				B5D14F6E200CFD78004B9B7F /* DataMapper.swift in Sources */,
 				B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */,
