@@ -42,6 +42,9 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )
 		
+		//CATEGORY
+		cell.category.text = event.category?.uppercased()
+		
 		//TITLE
 		cell.title.text = event.name?.uppercased()
 		
@@ -97,9 +100,9 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		//DURATION
 		cell.duration.text = "Durée: \(event.getDuration())"
 		
+		//HOURS
 		let startingHour = event.getFullStartingHour()
-		let endingHour = event.getFullEndingHour() 
-		
+		let endingHour = event.getFullEndingHour()
 		cell.hours.text = "\(startingHour) - \(endingHour)"
 	
 		return cell

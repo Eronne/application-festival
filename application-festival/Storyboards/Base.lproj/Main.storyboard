@@ -48,9 +48,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="30" id="3gu-Po-vay"/>
-                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="20" id="Gnx-JT-jLh"/>
                             <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="16" id="aNA-7q-sbZ"/>
-                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" id="mZc-mQ-xjM"/>
+                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="20" id="mZc-mQ-xjM"/>
                             <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="28" id="wNI-jJ-ebe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGw-3b-qHJ"/>
@@ -122,6 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fav" width="1238" height="1080"/>
+        <image name="fav" width="40" height="35"/>
     </resources>
 </document>
