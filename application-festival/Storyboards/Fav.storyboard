@@ -118,14 +118,14 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Director" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-PL-35M">
-                                                                    <rect key="frame" x="16" y="126" width="288" height="20"/>
+                                                                    <rect key="frame" x="16" y="123" width="288" height="20"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Producer" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-Ng-2x0">
-                                                                    <rect key="frame" x="16" y="148" width="288" height="20"/>
+                                                                    <rect key="frame" x="16" y="141" width="288" height="20"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
@@ -146,7 +146,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-ww-YmS">
-                                                                    <rect key="frame" x="16" y="171" width="288" height="20"/>
+                                                                    <rect key="frame" x="16" y="159" width="288" height="20"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                                                     <nil key="textColor"/>
