@@ -22,6 +22,6 @@ class CalendarCollectionViewCell: UICollectionViewCell {
 	}
 	
 	@IBAction func calendarCellTouched(_ sender: Any) {
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CellTouched"), object: nil, userInfo: ["day" : "\(cellButton.tag)"])
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CellTouched"), object: nil, userInfo: ["day" : "\(cellButton.tag)", "dayNumber": "\(String(describing: image.tag))"])
 	}
 }

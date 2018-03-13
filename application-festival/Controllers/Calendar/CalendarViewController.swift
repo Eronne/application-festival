@@ -22,9 +22,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		// Install observers
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "CellTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
-				if let day = userInfo["day"] as? String {
+				if let day = userInfo["day"] as? String, let dayNumber = userInfo["dayNumber"] as? String {
 					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "resultId") as? CalendarResultViewController {
 						resultController.day = day
+						resultController.dayNumber = dayNumber
 						self.present(resultController, animated: true, completion: nil)
 					}
 				}
@@ -47,6 +48,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		cell.dayLabel.text = labelTextArray[indexPath.row].uppercased()
 		
 		cell.image.image = backgroundArray[indexPath.row]
+		cell.image.tag = indexPath.row + 1
 		
 		cell.day.text = daysArray[indexPath.row]
 		cell.day.layer.shadowColor = UIColor.black.cgColor

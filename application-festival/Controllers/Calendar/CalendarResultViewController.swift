@@ -10,15 +10,19 @@ import UIKit
 
 class CalendarResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
 
 	var day: String = ""
+	var dayNumber: String = ""
 	private var events: [Event]? = nil
 	private var favorites : [Event] = []
 
 
     override func viewDidLoad() {
+		backgroundImage.image = UIImage(named: "day" + dayNumber)
+		
 		flowLayout.spacingMode = .overlap(visibleOffset: 80)
 
 		events = DataMapper().events.findByDay(day: Int(day)!)
