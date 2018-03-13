@@ -14,8 +14,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var favTitle: UILabel!
 	@IBOutlet weak var noFavorite: UIView!
 	@IBOutlet weak var noFavoritePlaceholder: UILabel!
-	
-	
+    
 	var lastContentOffset: CGFloat = 0
 	let events = DataMapper().getFav()
 	
@@ -37,7 +36,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavCollectionViewCell", for: indexPath) as! FavCollectionViewCell
 		let event = events[indexPath.row]
 		cell.buttonFav.tag = event.id!
-	
 		
 		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )

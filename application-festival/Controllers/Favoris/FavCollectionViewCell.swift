@@ -36,7 +36,6 @@ class FavCollectionViewCell: UICollectionViewCell {
 			DataMapper().addFav(event: event!)
 			buttonFav.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
 		}
-		
 	}
 	
 }
