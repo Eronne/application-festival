@@ -29,7 +29,6 @@
 		236B1E45203436D000CAB129 /* DateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1E44203436D000CAB129 /* DateEvents.swift */; };
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
-		2375BC83200BDC9600483678 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7C200BC29500483678 /* places.json */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
 		B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */; };
@@ -129,7 +128,6 @@
 		236B1E44203436D000CAB129 /* DateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEvents.swift; sourceTree = "<group>"; };
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
-		2375BC7C200BC29500483678 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		2459763EE6FCC42D816C516F /* Pods-application-festivalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application-festivalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4299881C39058AA722BF52DD /* Pods_application_festivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -286,7 +284,6 @@
 			children = (
 				2375BC7A200BC29400483678 /* categories.json */,
 				2375BC7B200BC29500483678 /* events.json */,
-				2375BC7C200BC29500483678 /* places.json */,
 				DF5997BC2031E50E004A4607 /* filters.json */,
 				B53F68881FE8683C00650440 /* Fonts */,
 				B565C1991FDEA0430037D567 /* Assets.xcassets */,
@@ -596,7 +593,6 @@
 				234E6750205687A700577592 /* Raleway-ExtraLight.ttf in Resources */,
 				2375BC82200BDC9600483678 /* events.json in Resources */,
 				234E674F205687A700577592 /* Raleway-Light.ttf in Resources */,
-				2375BC83200BDC9600483678 /* places.json in Resources */,
 				B53F689C1FE869F200650440 /* Now-Black.otf in Resources */,
 				B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */,
 				B53F689E1FE869F200650440 /* Now-Light.otf in Resources */,
