@@ -32,7 +32,8 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 				.filterBy(locations: selectedFilters["location"]!)?
 				.filterBy(categories: selectedFilters["category"]!)?
 				.filterBy(times: selectedFilters["time"]!)?
-				.filterBy(days: selectedFilters["day"]!);
+				.filterBy(days: selectedFilters["day"]!)?
+				.filterBy(ages: selectedFilters["age"]!);
 		}
 		
 		if events?.count != 0 {

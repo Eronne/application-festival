@@ -162,6 +162,8 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
 				filtersList += activeFilter.name! + ", "
 			}
 		}
+		
+		print(filtersList)
 
 		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "filtersFormSubmitted"), object: nil, userInfo: ["filterBy": filterBy, "searchInName" : searchField.text!, "selectedFilters": selectedFilters, "filtersList": filtersList]);
 	}
