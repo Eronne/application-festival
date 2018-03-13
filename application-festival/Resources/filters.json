@@ -5,7 +5,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "3"
   },
   {
   "id": 2,
@@ -13,7 +13,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "4"
   },
   {
   "id": 3,
@@ -21,7 +21,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "5"
   },
   {
   "id": 4,
@@ -29,7 +29,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "6"
   },
   {
   "id": 5,
@@ -37,7 +37,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "7"
   },
   {
   "id": 6,
@@ -45,7 +45,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-  "filterValue" : "child"
+  "filterValue" : "8"
   },
   {
   "id": 7,
@@ -53,7 +53,7 @@
   "imageIndex": 0,
   "filterType" : "age",
   "isSelected": false,
-   "filterValue" : "adult"
+   "filterValue" : "10"
   },
   {
   "id": 8,
@@ -137,11 +137,11 @@
   },
   {
   "id": 18,
-  "name": "atelier",
+  "name": "Cube",
   "imageIndex": 4,
   "filterType" : "category",
   "isSelected": false,
-   "filterValue" : "Atelier secret Fab"
+   "filterValue" : "Cube animé"
   },
   {
   "id": 19,
@@ -153,11 +153,11 @@
   },
   {
   "id": 20,
-  "name": "rencontre",
+  "name": "Long métrage",
   "imageIndex": 4,
   "filterType" : "category",
   "isSelected": false,
-   "filterValue" : "Longs métrages et rencontres"
+   "filterValue" : "Long métrage"
   },
   {
   "id": 22,
@@ -189,6 +189,31 @@
   "imageIndex": 4,
   "filterType" : "category",
   "isSelected": false,
-   "filterValue" : "Compétitions et sélections"
-  }
+   "filterValue" : "Compétition et panorama"
+  },
+  {
+  "id": 26,
+  "name": "Autour",
+  "imageIndex": 4,
+  "filterType" : "category",
+  "isSelected": false,
+  "filterValue" : "Autour des films"
+  },
+  {
+  "id": 27,
+  "name": "Films",
+  "imageIndex": 4,
+  "filterType" : "category",
+  "isSelected": false,
+  "filterValue" : "Autour des films"
+  },
+  {
+  "id": 28,
+  "name": "Focus",
+  "imageIndex": 4,
+  "filterType" : "category",
+  "isSelected": false,
+  "filterValue" : "Focus"
+  },
+  
 ]

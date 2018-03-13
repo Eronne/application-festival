@@ -144,7 +144,7 @@ extension Array where Element == Event {
 		return self
 	}
 	
-	func filterBy(ages: [Int]) -> [Event]? {
+	func filterBy(ages: [String]) -> [Event]? {
 		if (ages.count > 0) {
 			var result: [Event] = []
 			ages.forEach { (age) in
