@@ -10,6 +10,9 @@ import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
+	
+	let daysArray = ["4", "5", "6", "7", "8"]
+	var labelTextArray = ["Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
 	var backgroundArray = [UIImage(named: "day1"), UIImage(named: "day2"), UIImage(named: "day3"), UIImage(named: "day4"), UIImage(named: "day5")]
 	
 	override func viewDidLoad() {
@@ -41,7 +44,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as! CalendarCollectionViewCell
 		
-		let daysArray = ["4", "5", "6", "7", "8"]
+		cell.dayLabel.text = labelTextArray[indexPath.row].uppercased()
+		
+		cell.image.image = backgroundArray[indexPath.row]
+		
 		cell.day.text = daysArray[indexPath.row]
 		cell.day.layer.shadowColor = UIColor.black.cgColor
 		cell.day.layer.shadowRadius = 3.0
@@ -49,10 +55,11 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 		cell.day.layer.shadowOffset = CGSize(width: 4, height: 4)
 		cell.day.layer.masksToBounds = false
 		
-		cell.image.image = backgroundArray[indexPath.row]
+		let eventsNumber = DataMapper().events.findByDay(day: Int(daysArray[indexPath.row])!)!.count
+		cell.eventsCountsLabel.text = String(describing: eventsNumber)
 		
 		cell.cellButton.tag = Int(daysArray[indexPath.row])!
- 
+
 		return cell
 	}
 

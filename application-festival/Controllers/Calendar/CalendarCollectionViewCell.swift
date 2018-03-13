@@ -12,6 +12,8 @@ class CalendarCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var day: UILabel!
 	@IBOutlet weak var image: UIImageView!
 	@IBOutlet weak var cellButton: UIButton!
+	@IBOutlet weak var dayLabel: UILabel!
+	@IBOutlet weak var eventsCountsLabel: UILabel!
 	
 	static let identifier = "CalendarCollectionViewCell"
 	
