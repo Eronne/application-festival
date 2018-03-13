@@ -7,79 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0010148E538FF8CB61D27FB77F904B6E /* Pods-application-festivalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBACF89D35B9C385F2A6606BD6AB5916 /* Pods-application-festivalUITests-dummy.m */; };
-		09E6C306257B8A167B45937A11726EF4 /* UPCarouselFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2C16DC0450A8B67627D4A72FF97869 /* UPCarouselFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D8AE35190B0577561CBA6C86AF6437E /* Pods-application-festival-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA8DAB9367DDE410F3FCEDD1E087B3E /* Pods-application-festival-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0010148E538FF8CB61D27FB77F904B6E /* Pods-application-festivalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A212E8FA569429BD28BFAE7B970871C /* Pods-application-festivalUITests-dummy.m */; };
+		1E86103BDFD9B02F537769BBDC042252 /* AEAccordion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2919486D28DAF395B9FF15DD763D1A0 /* AEAccordion-dummy.m */; };
 		344A038E37C57E22E955196494400704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3C0E61DD8BE3A015D120713B7CE42E0C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = B08740037578CD9455D327C72D85D4B0 /* Info.plist */; };
-		55C2E9146F90C7C0FF59814235851B23 /* Pods-application-festivalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C516E12E02D0646229D52F46CD3C5D6 /* Pods-application-festivalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		627BF3F4D44A998E1CC8BD219DDFC565 /* Pods-application-festivalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF00301E598E6AA7123F92BC434BB17 /* Pods-application-festivalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E18CADBF84D8CD17947A8AEA485AE6A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8B23AD877AEE6CC9C46C94D21752F0 /* UPCarouselFlowLayout.swift */; };
+		367B90D148109A0DFCA799E6F9B1792F /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECD7DE5A8F3F541E1ACF63EF429B203 /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C537CF5774BD7AB21EE0C46974016C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		46D36546C559EF80D37BEA58A3279A20 /* Pods-application-festival-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04014424B9F12324375ED6FD4C569D19 /* Pods-application-festival-dummy.m */; };
+		4E0E3523E8E7CD73972B79270D277254 /* UPCarouselFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE570379E96208798633A0B68989CD04 /* UPCarouselFlowLayout-dummy.m */; };
+		4F3F58E6807ABD88F3750F3BBD89B2AD /* AccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FE1EA0CCACD58E1BC4161DDD17F28 /* AccordionTableViewCell.swift */; };
+		52EED4375AA19BF7BB67006737EE098A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		546F219EA4486E02E0467D635983A79D /* Pods-application-festival-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12BDD17397C26C18ABB37058A662C87C /* Pods-application-festival-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55C2E9146F90C7C0FF59814235851B23 /* Pods-application-festivalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A0C4EB21AF8AC19280BC1CA9466881 /* Pods-application-festivalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626E99963E732E717BFD1C788C166E96 /* AccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0BF34072ED4F38BD547041D5D2190 /* AccordionTableViewController.swift */; };
+		627BF3F4D44A998E1CC8BD219DDFC565 /* Pods-application-festivalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BBDFD17B451732885673189FE47EE3 /* Pods-application-festivalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B3EA73C69E193D6F5D8338B572651B8 /* AEAccordion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D26E90CAF0A70D4ABF2A656181835848 /* AEAccordion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8217B908EF99673C97C948636FAF01A2 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0CF2687A4B6DD7EDEF139787814D4 /* UPCarouselFlowLayout.swift */; };
 		B0CB4DD9A2BEA33C5864B0A260F73017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B67E8F90BE83729DC452293F550EF5B4 /* Pods-application-festivalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 084693D2C5339E73018E45BD9DCBFFA3 /* Pods-application-festivalTests-dummy.m */; };
-		C28BEDC77BC7C716EFD026143EB3597D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C4B7464AD4DAB13B909909F46AAA3E41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D720EC8629C04A5D0B6C5074A0E95678 /* UPCarouselFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D652B78B514CDF57916DF51CC0657F68 /* UPCarouselFlowLayout-dummy.m */; };
-		E680D6AEBB2FD99FFB9E42FD640250BC /* Pods-application-festival-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D01563877B89310ED75359BA54031 /* Pods-application-festival-dummy.m */; };
-		F323CBCF727E685832020F9C390D111F /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 205B6F7CA40272BAD10776650D31525F /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67E8F90BE83729DC452293F550EF5B4 /* Pods-application-festivalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A063D17E477BDE665008FEF8589CC /* Pods-application-festivalTests-dummy.m */; };
+		C4FBCF3C1E02546E6CD4BD48D0992F76 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F4B3CC1131B368EF068F4FF001035376 /* Info.plist */; };
+		CA43D0ED7AEC600824C53D4A34905B8E /* UPCarouselFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2278B6FE96FE609EFE1B157EDF183280 /* UPCarouselFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5FF26A1495B24D2F092E9D10FB167B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9E61FF4C3A6158E7FBBCAF51AEC9AFAB /* PBXContainerItemProxy */ = {
+		93ED927D2C4BE21B2C1F10BABE331031 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E1FF16F9402D7004F5C1899E38DB8DED;
+			remoteGlobalIDString = 7B571A13AEF4E3F769EB28B9FFB1C480;
 			remoteInfo = UPCarouselFlowLayout;
+		};
+		AED43FA62E4FB10ED51C9FEF838284F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61DB1F828118755AA1C6E910D1C410AB;
+			remoteInfo = AEAccordion;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		084693D2C5339E73018E45BD9DCBFFA3 /* Pods-application-festivalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festivalTests-dummy.m"; sourceTree = "<group>"; };
-		1A9488F276466596597EC49EEE0B0343 /* Pods-application-festivalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festivalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		205B6F7CA40272BAD10776650D31525F /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
-		27CB35F054D43A3608669E017D289616 /* Pods-application-festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festival.debug.xcconfig"; sourceTree = "<group>"; };
-		2E2DDCF2BBA14C92C96D107492A8AF54 /* Pods-application-festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festival.release.xcconfig"; sourceTree = "<group>"; };
-		352C8E0633C2FDFB5819773773A35A21 /* Pods-application-festivalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalTests-frameworks.sh"; sourceTree = "<group>"; };
-		3C516E12E02D0646229D52F46CD3C5D6 /* Pods-application-festivalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festivalTests-umbrella.h"; sourceTree = "<group>"; };
-		46B0467964750163A66549CE9A62C48A /* UPCarouselFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.xcconfig; sourceTree = "<group>"; };
-		4F6D01563877B89310ED75359BA54031 /* Pods-application-festival-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festival-dummy.m"; sourceTree = "<group>"; };
-		5190BE8469468F09E7A8561C3B191415 /* Pods-application-festivalTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalTests-resources.sh"; sourceTree = "<group>"; };
-		53A4A66F90D0398A408E132C38C15616 /* Pods-application-festivalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festivalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C66407ADFE39643EB94CC6CC6F20FF4 /* Pods-application-festival-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festival-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C8B23AD877AEE6CC9C46C94D21752F0 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		04014424B9F12324375ED6FD4C569D19 /* Pods-application-festival-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festival-dummy.m"; sourceTree = "<group>"; };
+		088E21B8BD29F7E1D8A761D5DB0BECEB /* Pods-application-festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festival.release.xcconfig"; sourceTree = "<group>"; };
+		0F2B2E647C8193183FED9CF162E26031 /* Pods-application-festival-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festival-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12BDD17397C26C18ABB37058A662C87C /* Pods-application-festival-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festival-umbrella.h"; sourceTree = "<group>"; };
+		1A4FE1EA0CCACD58E1BC4161DDD17F28 /* AccordionTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccordionTableViewCell.swift; path = Sources/AccordionTableViewCell.swift; sourceTree = "<group>"; };
+		1AFE4BA11F91417A9EDB8F3DF5819207 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festivalTests.framework; path = "Pods-application-festivalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2278B6FE96FE609EFE1B157EDF183280 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		2ECD7DE5A8F3F541E1ACF63EF429B203 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		316A29435768387597C2FAF80128E6FE /* Pods-application-festivalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festivalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37E2287CC8824AA02285B4ECF04478CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F242E9BCF7704BD064D7D38CFEDC3E /* Pods_application_festivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festivalUITests.framework; path = "Pods-application-festivalUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415ACC31E16065BABD8FC38D0D12EE1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45471F84D49F4D558C92D5793316E037 /* AEAccordion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AEAccordion.framework; path = AEAccordion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48401451F428D014D0FE53D9F5879FE1 /* Pods-application-festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festival.debug.xcconfig"; sourceTree = "<group>"; };
+		4D2A063D17E477BDE665008FEF8589CC /* Pods-application-festivalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festivalTests-dummy.m"; sourceTree = "<group>"; };
+		5ABAD671F21C9264EC964AFBABC381F6 /* Pods-application-festival-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festival-frameworks.sh"; sourceTree = "<group>"; };
+		5D0AA4F07E2198710470353AE0BEC227 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DAC4452B25EA89142DF866FF727F7F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651564BCE252D3A6A86848779EBA974A /* Pods-application-festivalTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalTests-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		680D9F68A5200120071230810A4D59B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F192270FFA8E54E8750C9E7C6F750EC /* Pods-application-festivalUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalUITests-resources.sh"; sourceTree = "<group>"; };
-		75E8BEF97A5E03E164AC72070DAE5F6C /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
-		779A8A4A924A25B549643DE20BDC9803 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festivalTests.framework; path = "Pods-application-festivalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BE41D6059D0978C96F85E0EA2C2326C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CA8DAB9367DDE410F3FCEDD1E087B3E /* Pods-application-festival-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festival-umbrella.h"; sourceTree = "<group>"; };
-		89E0A213E7A657215F0C38AA0D119122 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
+		66B52C41E24584B5DA929A6F25C28694 /* Pods_application_festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festival.framework; path = "Pods-application-festival.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F1662BE7C2DF341F6FCBE277F71D4D /* Pods-application-festivalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalTests.release.xcconfig"; sourceTree = "<group>"; };
+		73272E3AFEBC55E8E87B03584D623989 /* Pods-application-festivalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festivalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F89D6D82C249E6A61C974BB722D7417 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
+		8338CABDCA33139BD95B36C9BF1A4A8C /* Pods-application-festival-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festival-resources.sh"; sourceTree = "<group>"; };
+		8897531F74FA7C3E61FA8AB6B3CEBB4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A212E8FA569429BD28BFAE7B970871C /* Pods-application-festivalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festivalUITests-dummy.m"; sourceTree = "<group>"; };
+		8C4918F4FB08CB5B76AFBF4708EDD054 /* UPCarouselFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.xcconfig; sourceTree = "<group>"; };
+		918C3974F6F377CD754738F724C470CC /* Pods-application-festivalUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalUITests-resources.sh"; sourceTree = "<group>"; };
+		91BBDFD17B451732885673189FE47EE3 /* Pods-application-festivalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festivalUITests-umbrella.h"; sourceTree = "<group>"; };
+		92C203315F6748E1C84CCA9BC7ABBCFD /* AEAccordion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEAccordion-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C2993B3F2A81B96279A47C2C65A72CB /* Pods_application_festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festival.framework; path = "Pods-application-festival.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF00301E598E6AA7123F92BC434BB17 /* Pods-application-festivalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festivalUITests-umbrella.h"; sourceTree = "<group>"; };
-		A8EAD615B030DB57D6AC9F069D498743 /* Pods-application-festivalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festivalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE26883CC2CADB44537327F060618FEC /* Pods-application-festival.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-application-festival.modulemap"; sourceTree = "<group>"; };
-		B08740037578CD9455D327C72D85D4B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UPCarouselFlowLayout/Info.plist; sourceTree = "<group>"; };
-		B29E1FE57564E89497912707F7C807E1 /* Pods-application-festivalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalTests.release.xcconfig"; sourceTree = "<group>"; };
-		B400E35A8FB680EB8FEE5FB97DED40E8 /* Pods_application_festivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_application_festivalUITests.framework; path = "Pods-application-festivalUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB12BA3B9E49FB08D42157FE5F3AF401 /* Pods-application-festivalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CDCEB08F53C9AAA8B8651313364ABD10 /* Pods-application-festivalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-application-festivalTests.modulemap"; sourceTree = "<group>"; };
-		D12F8718A2960CACB056E45D35D2FE99 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D21F9DFAB10B33E6627E4A78F116710C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D652B78B514CDF57916DF51CC0657F68 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
-		D75170C30B7127FB75B3170909A71F33 /* Pods-application-festivalUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalUITests-frameworks.sh"; sourceTree = "<group>"; };
-		D9ED5115B4E2155549465ED4752D9A1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDE603EB5D7245E9CC2620704287DD5F /* Pods-application-festivalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E0CE067BCD592D855DC9620ACBD033EA /* Pods-application-festivalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E47A129A8599725BD62A30F4EF83F71A /* Pods-application-festival-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festival-frameworks.sh"; sourceTree = "<group>"; };
-		EE2AFF987D4FC7FFCAAEA6BE8DE9F59E /* Pods-application-festival-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festival-resources.sh"; sourceTree = "<group>"; };
-		EF2C16DC0450A8B67627D4A72FF97869 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
-		F295D73617A364F7A95CADE6DB1BDFFB /* Pods-application-festival-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festival-acknowledgements.plist"; sourceTree = "<group>"; };
-		F967836DDF47C4CCA66A964D91D748DA /* Pods-application-festivalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-application-festivalUITests.modulemap"; sourceTree = "<group>"; };
-		FBACF89D35B9C385F2A6606BD6AB5916 /* Pods-application-festivalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-application-festivalUITests-dummy.m"; sourceTree = "<group>"; };
-		FF36BD0696C146FB8B9949289B60CA99 /* Pods-application-festivalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festivalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		972DDED9A5E8CDC99693362735266F6D /* Pods-application-festivalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98A0C4EB21AF8AC19280BC1CA9466881 /* Pods-application-festivalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-application-festivalTests-umbrella.h"; sourceTree = "<group>"; };
+		A27C4AD15A37201463064DF7F461819D /* AEAccordion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEAccordion.xcconfig; sourceTree = "<group>"; };
+		A6BC221EA103FBCDCB31615F3FFB291F /* Pods-application-festivalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festivalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD67A58499432BFA2C1F1461D291F51C /* Pods-application-festival-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-application-festival-acknowledgements.plist"; sourceTree = "<group>"; };
+		B89377A4B4A9BD0D424AC97C6C6606A0 /* Pods-application-festivalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalTests-frameworks.sh"; sourceTree = "<group>"; };
+		BA0DCC39D225C0A62BD56FBC8C49B543 /* Pods-application-festivalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB1011EACAD76BE634C93D41B8B0729F /* Pods-application-festival.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-application-festival.modulemap"; sourceTree = "<group>"; };
+		BDEE75D68FEA0A9535FF9F29EC37D5CE /* Pods-application-festivalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-application-festivalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C2919486D28DAF395B9FF15DD763D1A0 /* AEAccordion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEAccordion-dummy.m"; sourceTree = "<group>"; };
+		C6C728CCA4F2A8F0D5BCF26CCE0FB495 /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		C8C6E1E1690C3E45A5253D227870290E /* Pods-application-festivalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-application-festivalTests.modulemap"; sourceTree = "<group>"; };
+		CBF4448EEC7CC3174E8FA46F0F4DCE44 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D212133C8ED9B0CC4503B53565BAD2C2 /* Pods-application-festivalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-application-festivalUITests.modulemap"; sourceTree = "<group>"; };
+		D26E90CAF0A70D4ABF2A656181835848 /* AEAccordion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEAccordion-umbrella.h"; sourceTree = "<group>"; };
+		D6A0CF2687A4B6DD7EDEF139787814D4 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		E9D0BF34072ED4F38BD547041D5D2190 /* AccordionTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccordionTableViewController.swift; path = Sources/AccordionTableViewController.swift; sourceTree = "<group>"; };
+		EDB739CCA7D83ED88DA18D2154EAE8C1 /* Pods-application-festivalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-application-festivalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2A9A2D27E5D32831FBCEB3BD1426B2C /* AEAccordion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AEAccordion.modulemap; sourceTree = "<group>"; };
+		F4B3CC1131B368EF068F4FF001035376 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UPCarouselFlowLayout/Info.plist; sourceTree = "<group>"; };
+		F9D0CEF2DD98512E46B644B7D01FF003 /* Pods-application-festivalUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-application-festivalUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FE570379E96208798633A0B68989CD04 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +112,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AB922EF05B8949ACC949232C417314C /* Frameworks */ = {
+		2EE56B2E1B377BA55E40057F9AA8B507 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28BEDC77BC7C716EFD026143EB3597D /* Foundation.framework in Frameworks */,
+				52EED4375AA19BF7BB67006737EE098A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C38899247CE9D0D586C877C3F19E61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FF26A1495B24D2F092E9D10FB167B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EE9F1E2FC758A49C589F3E076D796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C537CF5774BD7AB21EE0C46974016C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,52 +144,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6D5CFE49F4BC44C158B76860210D942 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4B7464AD4DAB13B909909F46AAA3E41 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32DAA17A9D6F9FF0B0DFB2AC040E0DBE /* Products */ = {
+		3B163215508CC14CB96477FF404FCC50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C2993B3F2A81B96279A47C2C65A72CB /* Pods_application_festival.framework */,
-				779A8A4A924A25B549643DE20BDC9803 /* Pods_application_festivalTests.framework */,
-				B400E35A8FB680EB8FEE5FB97DED40E8 /* Pods_application_festivalUITests.framework */,
-				D12F8718A2960CACB056E45D35D2FE99 /* UPCarouselFlowLayout.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3DF2343C3462741B800C84DFCC5600F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BFD9B449EEEF063588AABCEF346052B3 /* UPCarouselFlowLayout */,
+				B06DBA8924689C93E46AB274C2D26B11 /* AEAccordion */,
+				92FD7EA32B4F167B37066B7682DE5E87 /* UPCarouselFlowLayout */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		70451DACA8E138E2882987CD08C8DC9C /* Pods-application-festival */ = {
+		59799445C373792CBF423F4085C362EA /* Pods-application-festivalTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BE41D6059D0978C96F85E0EA2C2326C /* Info.plist */,
-				AE26883CC2CADB44537327F060618FEC /* Pods-application-festival.modulemap */,
-				5C66407ADFE39643EB94CC6CC6F20FF4 /* Pods-application-festival-acknowledgements.markdown */,
-				F295D73617A364F7A95CADE6DB1BDFFB /* Pods-application-festival-acknowledgements.plist */,
-				4F6D01563877B89310ED75359BA54031 /* Pods-application-festival-dummy.m */,
-				E47A129A8599725BD62A30F4EF83F71A /* Pods-application-festival-frameworks.sh */,
-				EE2AFF987D4FC7FFCAAEA6BE8DE9F59E /* Pods-application-festival-resources.sh */,
-				7CA8DAB9367DDE410F3FCEDD1E087B3E /* Pods-application-festival-umbrella.h */,
-				27CB35F054D43A3608669E017D289616 /* Pods-application-festival.debug.xcconfig */,
-				2E2DDCF2BBA14C92C96D107492A8AF54 /* Pods-application-festival.release.xcconfig */,
+				415ACC31E16065BABD8FC38D0D12EE1F /* Info.plist */,
+				C8C6E1E1690C3E45A5253D227870290E /* Pods-application-festivalTests.modulemap */,
+				73272E3AFEBC55E8E87B03584D623989 /* Pods-application-festivalTests-acknowledgements.markdown */,
+				A6BC221EA103FBCDCB31615F3FFB291F /* Pods-application-festivalTests-acknowledgements.plist */,
+				4D2A063D17E477BDE665008FEF8589CC /* Pods-application-festivalTests-dummy.m */,
+				B89377A4B4A9BD0D424AC97C6C6606A0 /* Pods-application-festivalTests-frameworks.sh */,
+				651564BCE252D3A6A86848779EBA974A /* Pods-application-festivalTests-resources.sh */,
+				98A0C4EB21AF8AC19280BC1CA9466881 /* Pods-application-festivalTests-umbrella.h */,
+				EDB739CCA7D83ED88DA18D2154EAE8C1 /* Pods-application-festivalTests.debug.xcconfig */,
+				69F1662BE7C2DF341F6FCBE277F71D4D /* Pods-application-festivalTests.release.xcconfig */,
 			);
-			name = "Pods-application-festival";
-			path = "Target Support Files/Pods-application-festival";
+			name = "Pods-application-festivalTests";
+			path = "Target Support Files/Pods-application-festivalTests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -160,24 +179,77 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3DF2343C3462741B800C84DFCC5600F2 /* Pods */,
-				32DAA17A9D6F9FF0B0DFB2AC040E0DBE /* Products */,
+				3B163215508CC14CB96477FF404FCC50 /* Pods */,
+				816A8C802C22D682018FD8FF64C72E69 /* Products */,
 				E811E78CC77D40B2EA3EC539E653BBB5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		805A5F588630E1D8C38BE8F09CAB155A /* Support Files */ = {
+		816A8C802C22D682018FD8FF64C72E69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D21F9DFAB10B33E6627E4A78F116710C /* Info.plist */,
-				89E0A213E7A657215F0C38AA0D119122 /* UPCarouselFlowLayout.modulemap */,
-				46B0467964750163A66549CE9A62C48A /* UPCarouselFlowLayout.xcconfig */,
-				D652B78B514CDF57916DF51CC0657F68 /* UPCarouselFlowLayout-dummy.m */,
-				75E8BEF97A5E03E164AC72070DAE5F6C /* UPCarouselFlowLayout-prefix.pch */,
-				EF2C16DC0450A8B67627D4A72FF97869 /* UPCarouselFlowLayout-umbrella.h */,
+				45471F84D49F4D558C92D5793316E037 /* AEAccordion.framework */,
+				66B52C41E24584B5DA929A6F25C28694 /* Pods_application_festival.framework */,
+				1AFE4BA11F91417A9EDB8F3DF5819207 /* Pods_application_festivalTests.framework */,
+				37F242E9BCF7704BD064D7D38CFEDC3E /* Pods_application_festivalUITests.framework */,
+				CBF4448EEC7CC3174E8FA46F0F4DCE44 /* UPCarouselFlowLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92FD7EA32B4F167B37066B7682DE5E87 /* UPCarouselFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3CC1131B368EF068F4FF001035376 /* Info.plist */,
+				2ECD7DE5A8F3F541E1ACF63EF429B203 /* UPCarouselFlowLayout.h */,
+				D6A0CF2687A4B6DD7EDEF139787814D4 /* UPCarouselFlowLayout.swift */,
+				9DF0873EC44374BD5A5DD18646D0ADDC /* Support Files */,
+			);
+			name = UPCarouselFlowLayout;
+			path = UPCarouselFlowLayout;
+			sourceTree = "<group>";
+		};
+		9DF0873EC44374BD5A5DD18646D0ADDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC4452B25EA89142DF866FF727F7F5 /* Info.plist */,
+				7F89D6D82C249E6A61C974BB722D7417 /* UPCarouselFlowLayout.modulemap */,
+				8C4918F4FB08CB5B76AFBF4708EDD054 /* UPCarouselFlowLayout.xcconfig */,
+				FE570379E96208798633A0B68989CD04 /* UPCarouselFlowLayout-dummy.m */,
+				C6C728CCA4F2A8F0D5BCF26CCE0FB495 /* UPCarouselFlowLayout-prefix.pch */,
+				2278B6FE96FE609EFE1B157EDF183280 /* UPCarouselFlowLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UPCarouselFlowLayout";
+			sourceTree = "<group>";
+		};
+		B06DBA8924689C93E46AB274C2D26B11 /* AEAccordion */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FE1EA0CCACD58E1BC4161DDD17F28 /* AccordionTableViewCell.swift */,
+				E9D0BF34072ED4F38BD547041D5D2190 /* AccordionTableViewController.swift */,
+				F4B0F3435226154820BEC38EEB7574E6 /* Support Files */,
+			);
+			name = AEAccordion;
+			path = AEAccordion;
+			sourceTree = "<group>";
+		};
+		B2A824DC0E3C2835A9771279A932EAB5 /* Pods-application-festivalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8897531F74FA7C3E61FA8AB6B3CEBB4F /* Info.plist */,
+				D212133C8ED9B0CC4503B53565BAD2C2 /* Pods-application-festivalUITests.modulemap */,
+				BDEE75D68FEA0A9535FF9F29EC37D5CE /* Pods-application-festivalUITests-acknowledgements.markdown */,
+				316A29435768387597C2FAF80128E6FE /* Pods-application-festivalUITests-acknowledgements.plist */,
+				8A212E8FA569429BD28BFAE7B970871C /* Pods-application-festivalUITests-dummy.m */,
+				F9D0CEF2DD98512E46B644B7D01FF003 /* Pods-application-festivalUITests-frameworks.sh */,
+				918C3974F6F377CD754738F724C470CC /* Pods-application-festivalUITests-resources.sh */,
+				91BBDFD17B451732885673189FE47EE3 /* Pods-application-festivalUITests-umbrella.h */,
+				972DDED9A5E8CDC99693362735266F6D /* Pods-application-festivalUITests.debug.xcconfig */,
+				BA0DCC39D225C0A62BD56FBC8C49B543 /* Pods-application-festivalUITests.release.xcconfig */,
+			);
+			name = "Pods-application-festivalUITests";
+			path = "Target Support Files/Pods-application-festivalUITests";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -186,36 +258,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BFD9B449EEEF063588AABCEF346052B3 /* UPCarouselFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				B08740037578CD9455D327C72D85D4B0 /* Info.plist */,
-				205B6F7CA40272BAD10776650D31525F /* UPCarouselFlowLayout.h */,
-				5C8B23AD877AEE6CC9C46C94D21752F0 /* UPCarouselFlowLayout.swift */,
-				805A5F588630E1D8C38BE8F09CAB155A /* Support Files */,
-			);
-			name = UPCarouselFlowLayout;
-			path = UPCarouselFlowLayout;
-			sourceTree = "<group>";
-		};
-		C1DF9C98BAD8CA9F8DAB32FB30CEED11 /* Pods-application-festivalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D9ED5115B4E2155549465ED4752D9A1C /* Info.plist */,
-				F967836DDF47C4CCA66A964D91D748DA /* Pods-application-festivalUITests.modulemap */,
-				1A9488F276466596597EC49EEE0B0343 /* Pods-application-festivalUITests-acknowledgements.markdown */,
-				A8EAD615B030DB57D6AC9F069D498743 /* Pods-application-festivalUITests-acknowledgements.plist */,
-				FBACF89D35B9C385F2A6606BD6AB5916 /* Pods-application-festivalUITests-dummy.m */,
-				D75170C30B7127FB75B3170909A71F33 /* Pods-application-festivalUITests-frameworks.sh */,
-				6F192270FFA8E54E8750C9E7C6F750EC /* Pods-application-festivalUITests-resources.sh */,
-				9FF00301E598E6AA7123F92BC434BB17 /* Pods-application-festivalUITests-umbrella.h */,
-				DDE603EB5D7245E9CC2620704287DD5F /* Pods-application-festivalUITests.debug.xcconfig */,
-				E0CE067BCD592D855DC9620ACBD033EA /* Pods-application-festivalUITests.release.xcconfig */,
-			);
-			name = "Pods-application-festivalUITests";
-			path = "Target Support Files/Pods-application-festivalUITests";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -229,39 +271,54 @@
 		E811E78CC77D40B2EA3EC539E653BBB5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				70451DACA8E138E2882987CD08C8DC9C /* Pods-application-festival */,
-				EABF9EB3E46D2B725D77F66A2F08C941 /* Pods-application-festivalTests */,
-				C1DF9C98BAD8CA9F8DAB32FB30CEED11 /* Pods-application-festivalUITests */,
+				E8AFC0D07960A88C86CF8DC3F0062FD9 /* Pods-application-festival */,
+				59799445C373792CBF423F4085C362EA /* Pods-application-festivalTests */,
+				B2A824DC0E3C2835A9771279A932EAB5 /* Pods-application-festivalUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EABF9EB3E46D2B725D77F66A2F08C941 /* Pods-application-festivalTests */ = {
+		E8AFC0D07960A88C86CF8DC3F0062FD9 /* Pods-application-festival */ = {
 			isa = PBXGroup;
 			children = (
-				680D9F68A5200120071230810A4D59B4 /* Info.plist */,
-				CDCEB08F53C9AAA8B8651313364ABD10 /* Pods-application-festivalTests.modulemap */,
-				53A4A66F90D0398A408E132C38C15616 /* Pods-application-festivalTests-acknowledgements.markdown */,
-				FF36BD0696C146FB8B9949289B60CA99 /* Pods-application-festivalTests-acknowledgements.plist */,
-				084693D2C5339E73018E45BD9DCBFFA3 /* Pods-application-festivalTests-dummy.m */,
-				352C8E0633C2FDFB5819773773A35A21 /* Pods-application-festivalTests-frameworks.sh */,
-				5190BE8469468F09E7A8561C3B191415 /* Pods-application-festivalTests-resources.sh */,
-				3C516E12E02D0646229D52F46CD3C5D6 /* Pods-application-festivalTests-umbrella.h */,
-				BB12BA3B9E49FB08D42157FE5F3AF401 /* Pods-application-festivalTests.debug.xcconfig */,
-				B29E1FE57564E89497912707F7C807E1 /* Pods-application-festivalTests.release.xcconfig */,
+				37E2287CC8824AA02285B4ECF04478CE /* Info.plist */,
+				BB1011EACAD76BE634C93D41B8B0729F /* Pods-application-festival.modulemap */,
+				0F2B2E647C8193183FED9CF162E26031 /* Pods-application-festival-acknowledgements.markdown */,
+				AD67A58499432BFA2C1F1461D291F51C /* Pods-application-festival-acknowledgements.plist */,
+				04014424B9F12324375ED6FD4C569D19 /* Pods-application-festival-dummy.m */,
+				5ABAD671F21C9264EC964AFBABC381F6 /* Pods-application-festival-frameworks.sh */,
+				8338CABDCA33139BD95B36C9BF1A4A8C /* Pods-application-festival-resources.sh */,
+				12BDD17397C26C18ABB37058A662C87C /* Pods-application-festival-umbrella.h */,
+				48401451F428D014D0FE53D9F5879FE1 /* Pods-application-festival.debug.xcconfig */,
+				088E21B8BD29F7E1D8A761D5DB0BECEB /* Pods-application-festival.release.xcconfig */,
 			);
-			name = "Pods-application-festivalTests";
-			path = "Target Support Files/Pods-application-festivalTests";
+			name = "Pods-application-festival";
+			path = "Target Support Files/Pods-application-festival";
+			sourceTree = "<group>";
+		};
+		F4B0F3435226154820BEC38EEB7574E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2A9A2D27E5D32831FBCEB3BD1426B2C /* AEAccordion.modulemap */,
+				A27C4AD15A37201463064DF7F461819D /* AEAccordion.xcconfig */,
+				C2919486D28DAF395B9FF15DD763D1A0 /* AEAccordion-dummy.m */,
+				92C203315F6748E1C84CCA9BC7ABBCFD /* AEAccordion-prefix.pch */,
+				D26E90CAF0A70D4ABF2A656181835848 /* AEAccordion-umbrella.h */,
+				5D0AA4F07E2198710470353AE0BEC227 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AEAccordion";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4D202AF3E48D5EF448F42BDD84FF250E /* Headers */ = {
+		4D3B749E565A3B676B19CE9C5CE9ECE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8AE35190B0577561CBA6C86AF6437E /* Pods-application-festival-umbrella.h in Headers */,
+				CA43D0ED7AEC600824C53D4A34905B8E /* UPCarouselFlowLayout-umbrella.h in Headers */,
+				367B90D148109A0DFCA799E6F9B1792F /* UPCarouselFlowLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +330,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8580C655B94C646DE94F843E610E8791 /* Headers */ = {
+		CAAE39217C0F5B5EBF85A066B401017D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09E6C306257B8A167B45937A11726EF4 /* UPCarouselFlowLayout-umbrella.h in Headers */,
-				F323CBCF727E685832020F9C390D111F /* UPCarouselFlowLayout.h in Headers */,
+				6B3EA73C69E193D6F5D8338B572651B8 /* AEAccordion-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				627BF3F4D44A998E1CC8BD219DDFC565 /* Pods-application-festivalUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE0F5CBBE732D438D4B0834233B091C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546F219EA4486E02E0467D635983A79D /* Pods-application-festival-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +371,7 @@
 			);
 			name = "Pods-application-festivalUITests";
 			productName = "Pods-application-festivalUITests";
-			productReference = B400E35A8FB680EB8FEE5FB97DED40E8 /* Pods_application_festivalUITests.framework */;
+			productReference = 37F242E9BCF7704BD064D7D38CFEDC3E /* Pods_application_festivalUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		44D31DC9A2A2B1CBDC995FEC2A18B628 /* Pods-application-festivalTests */ = {
@@ -324,34 +388,33 @@
 			);
 			name = "Pods-application-festivalTests";
 			productName = "Pods-application-festivalTests";
-			productReference = 779A8A4A924A25B549643DE20BDC9803 /* Pods_application_festivalTests.framework */;
+			productReference = 1AFE4BA11F91417A9EDB8F3DF5819207 /* Pods_application_festivalTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7A73DA1AE4522D52D946DEEBB62CB02D /* Pods-application-festival */ = {
+		61DB1F828118755AA1C6E910D1C410AB /* AEAccordion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73A9F6BE4F47935BC4565E0B416C933A /* Build configuration list for PBXNativeTarget "Pods-application-festival" */;
+			buildConfigurationList = 4698EAF055B44F92D37E42EAFD4C5DDF /* Build configuration list for PBXNativeTarget "AEAccordion" */;
 			buildPhases = (
-				C8E0C40276E65CACF9B93106A31132C3 /* Sources */,
-				A6D5CFE49F4BC44C158B76860210D942 /* Frameworks */,
-				4D202AF3E48D5EF448F42BDD84FF250E /* Headers */,
+				41DD476AA335CA58307317DD362D9A7F /* Sources */,
+				2EE56B2E1B377BA55E40057F9AA8B507 /* Frameworks */,
+				CAAE39217C0F5B5EBF85A066B401017D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE51D6909086E61572F0746CADBA6A84 /* PBXTargetDependency */,
 			);
-			name = "Pods-application-festival";
-			productName = "Pods-application-festival";
-			productReference = 9C2993B3F2A81B96279A47C2C65A72CB /* Pods_application_festival.framework */;
+			name = AEAccordion;
+			productName = AEAccordion;
+			productReference = 45471F84D49F4D558C92D5793316E037 /* AEAccordion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E1FF16F9402D7004F5C1899E38DB8DED /* UPCarouselFlowLayout */ = {
+		7B571A13AEF4E3F769EB28B9FFB1C480 /* UPCarouselFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D94183342335F2A2630FC6634C4BE174 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */;
+			buildConfigurationList = DD5116CB24A770BE96CE0D8EAD725CCE /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */;
 			buildPhases = (
-				12C998E71C4F6535D96CD30B7727FF75 /* Sources */,
-				4AB922EF05B8949ACC949232C417314C /* Frameworks */,
-				8580C655B94C646DE94F843E610E8791 /* Headers */,
+				9654502E9D11EFBBB8FCA4B7A3FDA3DF /* Sources */,
+				3C38899247CE9D0D586C877C3F19E61D /* Frameworks */,
+				4D3B749E565A3B676B19CE9C5CE9ECE6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -359,7 +422,26 @@
 			);
 			name = UPCarouselFlowLayout;
 			productName = UPCarouselFlowLayout;
-			productReference = D12F8718A2960CACB056E45D35D2FE99 /* UPCarouselFlowLayout.framework */;
+			productReference = CBF4448EEC7CC3174E8FA46F0F4DCE44 /* UPCarouselFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFA0F31DF176F80270E47DBC779768EE /* Pods-application-festival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1FECB4799797FC149CB644026D7065 /* Build configuration list for PBXNativeTarget "Pods-application-festival" */;
+			buildPhases = (
+				B765A0C30DEE6198CF6A1CB57CEBD2DE /* Sources */,
+				844EE9F1E2FC758A49C589F3E076D796 /* Frameworks */,
+				FAE0F5CBBE732D438D4B0834233B091C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3207231F6B56A5D17058C43DD648F934 /* PBXTargetDependency */,
+				CFAEFB15017C1833A71E084586E0C34D /* PBXTargetDependency */,
+			);
+			name = "Pods-application-festival";
+			productName = "Pods-application-festival";
+			productReference = 66B52C41E24584B5DA929A6F25C28694 /* Pods_application_festival.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -368,8 +450,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -379,14 +461,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 32DAA17A9D6F9FF0B0DFB2AC040E0DBE /* Products */;
+			productRefGroup = 816A8C802C22D682018FD8FF64C72E69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A73DA1AE4522D52D946DEEBB62CB02D /* Pods-application-festival */,
+				61DB1F828118755AA1C6E910D1C410AB /* AEAccordion */,
+				FFA0F31DF176F80270E47DBC779768EE /* Pods-application-festival */,
 				44D31DC9A2A2B1CBDC995FEC2A18B628 /* Pods-application-festivalTests */,
 				16C2CF05DBA14B18E51779177B3F1D71 /* Pods-application-festivalUITests */,
-				E1FF16F9402D7004F5C1899E38DB8DED /* UPCarouselFlowLayout */,
+				7B571A13AEF4E3F769EB28B9FFB1C480 /* UPCarouselFlowLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -400,13 +483,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12C998E71C4F6535D96CD30B7727FF75 /* Sources */ = {
+		41DD476AA335CA58307317DD362D9A7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C0E61DD8BE3A015D120713B7CE42E0C /* Info.plist in Sources */,
-				D720EC8629C04A5D0B6C5074A0E95678 /* UPCarouselFlowLayout-dummy.m in Sources */,
-				6E18CADBF84D8CD17947A8AEA485AE6A /* UPCarouselFlowLayout.swift in Sources */,
+				4F3F58E6807ABD88F3750F3BBD89B2AD /* AccordionTableViewCell.swift in Sources */,
+				626E99963E732E717BFD1C788C166E96 /* AccordionTableViewController.swift in Sources */,
+				1E86103BDFD9B02F537769BBDC042252 /* AEAccordion-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,30 +501,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8E0C40276E65CACF9B93106A31132C3 /* Sources */ = {
+		9654502E9D11EFBBB8FCA4B7A3FDA3DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E680D6AEBB2FD99FFB9E42FD640250BC /* Pods-application-festival-dummy.m in Sources */,
+				C4FBCF3C1E02546E6CD4BD48D0992F76 /* Info.plist in Sources */,
+				4E0E3523E8E7CD73972B79270D277254 /* UPCarouselFlowLayout-dummy.m in Sources */,
+				8217B908EF99673C97C948636FAF01A2 /* UPCarouselFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B765A0C30DEE6198CF6A1CB57CEBD2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D36546C559EF80D37BEA58A3279A20 /* Pods-application-festival-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE51D6909086E61572F0746CADBA6A84 /* PBXTargetDependency */ = {
+		3207231F6B56A5D17058C43DD648F934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEAccordion;
+			target = 61DB1F828118755AA1C6E910D1C410AB /* AEAccordion */;
+			targetProxy = AED43FA62E4FB10ED51C9FEF838284F8 /* PBXContainerItemProxy */;
+		};
+		CFAEFB15017C1833A71E084586E0C34D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UPCarouselFlowLayout;
-			target = E1FF16F9402D7004F5C1899E38DB8DED /* UPCarouselFlowLayout */;
-			targetProxy = 9E61FF4C3A6158E7FBBCAF51AEC9AFAB /* PBXContainerItemProxy */;
+			target = 7B571A13AEF4E3F769EB28B9FFB1C480 /* UPCarouselFlowLayout */;
+			targetProxy = 93ED927D2C4BE21B2C1F10BABE331031 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0FBCB90C8532E3B9043E2CA689AAC01D /* Release */ = {
+		0027DB7F67C5D5258628CC118355F170 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0CE067BCD592D855DC9620ACBD033EA /* Pods-application-festivalUITests.release.xcconfig */;
+			baseConfigurationReference = 972DDED9A5E8CDC99693362735266F6D /* Pods-application-festivalUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -465,13 +565,74 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+		0B97660A6D00D77E0F220EC6B0677801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4918F4FB08CB5B76AFBF4708EDD054 /* UPCarouselFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
+				PRODUCT_NAME = UPCarouselFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B37BDC33A44412792A629689D567475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27C4AD15A37201463064DF7F461819D /* AEAccordion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AEAccordion/AEAccordion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEAccordion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEAccordion/AEAccordion.modulemap";
+				PRODUCT_NAME = AEAccordion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -481,10 +642,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -492,6 +655,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -531,10 +695,11 @@
 			};
 			name = Debug;
 		};
-		3F21F89D8E1D956B37D1BBB4FC0402D2 /* Release */ = {
+		407E4A142672F5E7DD9DC1E0DF3FC626 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2DDCF2BBA14C92C96D107492A8AF54 /* Pods-application-festival.release.xcconfig */;
+			baseConfigurationReference = BA0DCC39D225C0A62BD56FBC8C49B543 /* Pods-application-festivalUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -544,20 +709,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-application-festival/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-application-festivalUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-application-festival/Pods-application-festival.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_application_festival;
+				PRODUCT_NAME = Pods_application_festivalUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -565,10 +729,11 @@
 			};
 			name = Release;
 		};
-		539AB0833710C5394D57F627243182A2 /* Debug */ = {
+		5EFAB44263C95E07545C796B7F00BD69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB12BA3B9E49FB08D42157FE5F3AF401 /* Pods-application-festivalTests.debug.xcconfig */;
+			baseConfigurationReference = EDB739CCA7D83ED88DA18D2154EAE8C1 /* Pods-application-festivalTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -597,10 +762,43 @@
 			};
 			name = Debug;
 		};
-		851557FD6CA64D44DCC39F529D998058 /* Debug */ = {
+		8C63639B33BD1C534EE02FF104DFFE61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27CB35F054D43A3608669E017D289616 /* Pods-application-festival.debug.xcconfig */;
+			baseConfigurationReference = 8C4918F4FB08CB5B76AFBF4708EDD054 /* UPCarouselFlowLayout.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
+				PRODUCT_NAME = UPCarouselFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6EA3BA023820FAB4846C005810A7150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48401451F428D014D0FE53D9F5879FE1 /* Pods-application-festival.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -631,7 +829,74 @@
 			};
 			name = Debug;
 		};
-		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+		BC7BDB902FBC15ACCF6761D516B8A59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088E21B8BD29F7E1D8A761D5DB0BECEB /* Pods-application-festival.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-application-festival/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-application-festival/Pods-application-festival.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_application_festival;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C924190B85703BE2B3C5A3D17E33036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27C4AD15A37201463064DF7F461819D /* AEAccordion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AEAccordion/AEAccordion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEAccordion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEAccordion/AEAccordion.modulemap";
+				PRODUCT_NAME = AEAccordion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA33F186435244FD0FD5B7325332656C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -641,10 +906,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -652,6 +919,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -686,73 +954,11 @@
 			};
 			name = Release;
 		};
-		8CF3BC3A9A1E85BAE1021AE9F462819D /* Debug */ = {
+		CA3C43ED8976D6C1275CC785D3BCFCEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46B0467964750163A66549CE9A62C48A /* UPCarouselFlowLayout.xcconfig */;
+			baseConfigurationReference = 69F1662BE7C2DF341F6FCBE277F71D4D /* Pods-application-festivalTests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
-				PRODUCT_NAME = UPCarouselFlowLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		92E6062A3C4036E3F152B73B6832B098 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46B0467964750163A66549CE9A62C48A /* UPCarouselFlowLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
-				PRODUCT_NAME = UPCarouselFlowLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4A160C7F4935A0FEB6552A863E25A3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B29E1FE57564E89497912707F7C807E1 /* Pods-application-festivalTests.release.xcconfig */;
-			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -782,46 +988,14 @@
 			};
 			name = Release;
 		};
-		F6F60A6EC30D72246F411BDF1D5EBF24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDE603EB5D7245E9CC2620704287DD5F /* Pods-application-festivalUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-application-festivalUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-application-festivalUITests/Pods-application-festivalUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_application_festivalUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
-				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+				323A24856F1A4871A780301AF5C02A2A /* Debug */,
+				CA33F186435244FD0FD5B7325332656C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -829,17 +1003,17 @@
 		4348E4831D691DA84CF1E01D4A134933 /* Build configuration list for PBXNativeTarget "Pods-application-festivalUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6F60A6EC30D72246F411BDF1D5EBF24 /* Debug */,
-				0FBCB90C8532E3B9043E2CA689AAC01D /* Release */,
+				0027DB7F67C5D5258628CC118355F170 /* Debug */,
+				407E4A142672F5E7DD9DC1E0DF3FC626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73A9F6BE4F47935BC4565E0B416C933A /* Build configuration list for PBXNativeTarget "Pods-application-festival" */ = {
+		4698EAF055B44F92D37E42EAFD4C5DDF /* Build configuration list for PBXNativeTarget "AEAccordion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				851557FD6CA64D44DCC39F529D998058 /* Debug */,
-				3F21F89D8E1D956B37D1BBB4FC0402D2 /* Release */,
+				2B37BDC33A44412792A629689D567475 /* Debug */,
+				C924190B85703BE2B3C5A3D17E33036E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -847,17 +1021,26 @@
 		83C8FEB2D4D45131CA74F53FFD7060D1 /* Build configuration list for PBXNativeTarget "Pods-application-festivalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				539AB0833710C5394D57F627243182A2 /* Debug */,
-				A4A160C7F4935A0FEB6552A863E25A3F /* Release */,
+				5EFAB44263C95E07545C796B7F00BD69 /* Debug */,
+				CA3C43ED8976D6C1275CC785D3BCFCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D94183342335F2A2630FC6634C4BE174 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */ = {
+		CE1FECB4799797FC149CB644026D7065 /* Build configuration list for PBXNativeTarget "Pods-application-festival" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CF3BC3A9A1E85BAE1021AE9F462819D /* Debug */,
-				92E6062A3C4036E3F152B73B6832B098 /* Release */,
+				A6EA3BA023820FAB4846C005810A7150 /* Debug */,
+				BC7BDB902FBC15ACCF6761D516B8A59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5116CB24A770BE96CE0D8EAD725CCE /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B97660A6D00D77E0F220EC6B0677801 /* Debug */,
+				8C63639B33BD1C534EE02FF104DFFE61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
