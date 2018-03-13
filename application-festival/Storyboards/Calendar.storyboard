@@ -359,6 +359,13 @@
                                                         <action selector="favButtonTouch:" destination="R9R-MR-dYi" eventType="touchUpInside" id="7pc-ju-ugO"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dax-sX-d2j" userLabel="CellButton">
+                                                    <rect key="frame" x="0.0" y="58" width="320" height="383"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="resultCellTouched:" destination="R9R-MR-dYi" eventType="touchUpInside" id="QYd-PD-2Ek"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
