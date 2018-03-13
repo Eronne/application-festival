@@ -12,6 +12,9 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
     @IBOutlet weak var flowLayout: UPCarouselFlowLayout!
     @IBOutlet weak var favTitle: UILabel!
+	@IBOutlet weak var noFavorite: UIView!
+	@IBOutlet weak var noFavoritePlaceholder: UILabel!
+	
 	
 	var lastContentOffset: CGFloat = 0
 	let events = DataMapper().getFav()
@@ -106,16 +109,14 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-//		noFavoriteView.layer.borderWidth = 2;
-//		noFavoriteView.layer.borderColor = UIColor.black.cgColor;
+		noFavorite.layer.borderWidth = 2;
+		noFavorite.layer.borderColor = UIColor.black.cgColor;
 		
-//		self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-favorite.png")!)
-//		if events.count == 0 {
-//			print("pas de favoris")
-//			favPlaceholder.text = "Vous n'avez aucun programme en favoris"
-//		} else {
-//			noFavoriteView.isHidden = true;
-//		}
+		if events.count == 0 {
+			noFavoritePlaceholder.text = "Vous n'avez ajouté aucun programme à vos favoris"
+		} else {
+			noFavorite.isHidden = true;
+		}
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
 		
