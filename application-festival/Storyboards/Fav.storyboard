@@ -90,6 +90,13 @@
                                                                         <action selector="favButtonTouchUp:" destination="PEz-Uk-R5g" eventType="touchUpInside" id="5b2-1W-1O1"/>
                                                                     </connections>
                                                                 </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CATÉGORIE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-qb-3fg">
+                                                                    <rect key="frame" x="8" y="153" width="304" height="25"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="12"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-VB-vpi" userLabel="Description_content">
@@ -175,6 +182,7 @@
                                         <connections>
                                             <outlet property="age" destination="5rb-ay-Plv" id="tpA-Zn-7nE"/>
                                             <outlet property="buttonFav" destination="nEl-Mr-Xjk" id="Rsm-hI-ZuZ"/>
+                                            <outlet property="category" destination="gvq-qb-3fg" id="2de-qC-Q5r"/>
                                             <outlet property="countdown" destination="eX1-bI-ATt" id="08g-mZ-pd9"/>
                                             <outlet property="director" destination="tKP-PL-35M" id="99v-is-wnj"/>
                                             <outlet property="duration" destination="Nzb-ww-YmS" id="EAG-Bn-vnH"/>
@@ -192,9 +200,12 @@
                                     <outlet property="delegate" destination="woc-dY-gw6" id="qxb-Mc-R2F"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dK-JH-Mc8">
-                                <rect key="frame" x="20" y="60" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dK-JH-Mc8">
+                                <rect key="frame" x="20" y="40" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="lZe-PI-dHo"/>
+                                    <constraint firstAttribute="height" constant="30" id="sju-NY-ucf"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="close_white"/>
                                 <connections>
                                     <action selector="dismissViewController:" destination="woc-dY-gw6" eventType="touchUpInside" id="IWx-KF-jvB"/>
@@ -214,7 +225,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vous n'avez ajouté aucun programme à vos favoris" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-dH-p9g">
                                         <rect key="frame" x="48" y="15" width="224" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -232,7 +243,9 @@
                         <constraints>
                             <constraint firstItem="eBR-eC-TtZ" firstAttribute="top" secondItem="fRv-JR-Af4" secondAttribute="top" id="Avo-OK-cey"/>
                             <constraint firstItem="eBR-eC-TtZ" firstAttribute="bottom" secondItem="fRv-JR-Af4" secondAttribute="bottom" id="GeV-lF-xlJ"/>
+                            <constraint firstItem="1dK-JH-Mc8" firstAttribute="leading" secondItem="fRv-JR-Af4" secondAttribute="leading" constant="20" id="Sa6-c2-rB4"/>
                             <constraint firstItem="eBR-eC-TtZ" firstAttribute="leading" secondItem="fRv-JR-Af4" secondAttribute="leading" id="YN3-So-myr"/>
+                            <constraint firstItem="1dK-JH-Mc8" firstAttribute="top" secondItem="fRv-JR-Af4" secondAttribute="top" constant="20" id="Ztd-sk-NpJ"/>
                             <constraint firstItem="eBR-eC-TtZ" firstAttribute="trailing" secondItem="fRv-JR-Af4" secondAttribute="trailing" id="gyB-Rm-lDi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fRv-JR-Af4"/>

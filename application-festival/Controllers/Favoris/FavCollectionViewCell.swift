@@ -21,7 +21,7 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var director: UILabel!
 	@IBOutlet weak var producer: UILabel!
 	@IBOutlet weak var duration: UILabel!
-	
+	@IBOutlet weak var category: UILabel!
 	
 	@IBAction func favButtonTouchUp(_ sender: Any) {
 		let index = buttonFav.tag
