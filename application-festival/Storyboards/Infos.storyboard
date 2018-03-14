@@ -166,12 +166,79 @@
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="IwO-ef-dGB"/>
                                                     </constraints>
                                                 </view>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oxi-kW-FhL" userLabel="TNB View">
+                                                    <rect key="frame" x="0.0" y="500" width="339" height="300"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsQ-PS-kzz" userLabel="Title">
+                                                            <rect key="frame" x="0.0" y="0.0" width="339" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Se restaurer au TNB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbm-uS-7mg">
+                                                                    <rect key="frame" x="8" y="0.0" width="323" height="50"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGG-Im-AzB" userLabel="Content">
+                                                            <rect key="frame" x="0.0" y="48" width="339" height="250"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Le bar-restaurant du TNB, situé au 1er étage est ouvert : " lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-xr-6Ou">
+                                                                    <rect key="frame" x="8" y="17" width="323" height="48"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- les jeudis et vendredis de 12h à 14h" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXi-6w-6sl">
+                                                                    <rect key="frame" x="21" y="59" width="310" height="22"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- le soir à partir de 18h" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XZ-yL-AEk">
+                                                                    <rect key="frame" x="21" y="79" width="310" height="22"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Un goûter au tarif préférentiel de 4€ est disponible mercredi, samedi et dimanche." lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-Wb-pzw">
+                                                                    <rect key="frame" x="8" y="115" width="323" height="39"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Un happy hour gastronomique à 11,50€ est proposé tous les soirs de 20h à 21h." lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQB-vt-vLM">
+                                                                    <rect key="frame" x="8" y="169" width="323" height="39"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.22924423220000001" green="0.27431970830000002" blue="0.79291248319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="akD-RV-n3m"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="top" secondItem="Xoa-q9-ong" secondAttribute="top" id="Hfq-ao-qAk"/>
-                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="leading" secondItem="Xoa-q9-ong" secondAttribute="leading" id="hef-gk-mUc"/>
-                                            <constraint firstAttribute="trailing" secondItem="2ua-e7-mVm" secondAttribute="trailing" id="zqZ-Jl-Bc5"/>
+                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="top" secondItem="Xoa-q9-ong" secondAttribute="top" id="DN1-ta-rrr"/>
+                                            <constraint firstItem="oxi-kW-FhL" firstAttribute="leading" secondItem="Xoa-q9-ong" secondAttribute="leading" id="DxR-mw-4xj"/>
+                                            <constraint firstAttribute="trailing" secondItem="2ua-e7-mVm" secondAttribute="trailing" id="JmU-M7-R0W"/>
+                                            <constraint firstItem="oxi-kW-FhL" firstAttribute="top" secondItem="2ua-e7-mVm" secondAttribute="bottom" id="U8J-a0-N0s"/>
+                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="leading" secondItem="Xoa-q9-ong" secondAttribute="leading" id="f79-rI-CPZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="oxi-kW-FhL" secondAttribute="trailing" id="ww6-w3-iHf"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
