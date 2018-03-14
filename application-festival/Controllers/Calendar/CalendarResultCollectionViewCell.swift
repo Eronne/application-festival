@@ -9,7 +9,9 @@
 import UIKit
 
 class CalendarResultCollectionViewCell: UICollectionViewCell {
-	// Visual Effect content
+    @IBOutlet weak var cellButton: UIButton!
+	
+    // Visual Effect content
 	@IBOutlet weak var startingDateHourLabel: UILabel!
 	@IBOutlet weak var startingDateMinuteLabel: UILabel!
     @IBOutlet weak var categoryIcon: UIImageView!
@@ -30,15 +32,25 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
 		let index = favButton.tag
 		let event = DataMapper().events.findOneBy(id:index)
 		if DataMapper().isFav(event: event!) {
-			print("remove fav")
 			DataMapper().removeFav(event: event!)
 			favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
 		else if !DataMapper().isFav(event: event!) {
-			print("add fav")
 			DataMapper().addFav(event: event!)
 			favButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
 		}
 	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+	}
 
+    @IBAction func resultCellTouched(_ sender: Any) {
+		let index = cellButton.tag
+		let event = DataMapper().events.findOneBy(id:index)!
+		
+		if let url = URL(string: (event.link)!) {
+			UIApplication.shared.open(url)
+		}
+    }
 }

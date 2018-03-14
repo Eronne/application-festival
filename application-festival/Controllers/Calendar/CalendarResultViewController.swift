@@ -27,19 +27,6 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 
 		events = DataMapper().events.findByDay(day: Int(day)!)
 
-		// Install observers
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
-				if let url = userInfo["url"] as? String {
-					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as? WebViewViewController {
-						print(url)
-//						resultController.day = day
-						self.present(resultController, animated: true, completion: nil)
-					}
-				}
-			}
-		}
-
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let row = userInfo["row"]	{
@@ -47,8 +34,7 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 					let indexPath = IndexPath.init(row: indexRow, section: 0)
 
 					if DataMapper().isFav(event: self.events![indexPath.row]) {
-						print("remove fav")
-							DataMapper().removeFav(event: self.events![indexPath.row])
+						DataMapper().removeFav(event: self.events![indexPath.row])
 					}
 //					else {
 //						print("add fav")
@@ -69,9 +55,10 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarResultCollectionViewCell", for: indexPath) as! CalendarResultCollectionViewCell
+		
+		cell.cellButton.tag = events![indexPath.row].id!
 
 		if DataMapper().isFav(event: events![indexPath.row]) {
-			print("etre fav")
 			cell.favButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
 		} else {
 			cell.favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
