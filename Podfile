@@ -7,6 +7,7 @@ target 'application-festival' do
 
   # Pods for application-festival
   pod "UPCarouselFlowLayout"
+  pod "AEAccordion"
 
   target 'application-festivalTests' do
     inherit! :search_paths
