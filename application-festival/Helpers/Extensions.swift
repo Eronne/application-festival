@@ -149,7 +149,13 @@ extension Array where Element == Event {
 			var result: [Event] = []
 			ages.forEach { (age) in
 				let results = self.filter({ (event) -> Bool in
-					return event.age == Int(age)
+					let ageInt = Int(age)
+					if(event.age == ageInt) {
+						return true
+					} else if (event.age == 0) {
+						return true
+					}
+					return false
 				})
 				result.append(contentsOf: results)
 			}

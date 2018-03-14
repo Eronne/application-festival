@@ -21,6 +21,7 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var director: UILabel!
     @IBOutlet weak var producer: UILabel!
 	@IBOutlet weak var duration: UILabel!
+	@IBOutlet weak var cellButton: UIButton!
 	
 	@IBAction func searchFavButtonTouchUp(_ sender: Any) {
 		let index = searchFavButton.tag
@@ -34,6 +35,15 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
 			print("add fav")
 			DataMapper().addFav(event: event!)
 			searchFavButton.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
+		}
+	}
+	
+	@IBAction func resultCellTouched(_ sender: Any) {
+		let index = cellButton.tag
+		let event = DataMapper().events.findOneBy(id:index)!
+		
+		if let url = URL(string: (event.link)!) {
+			UIApplication.shared.open(url)
 		}
 	}
 	
