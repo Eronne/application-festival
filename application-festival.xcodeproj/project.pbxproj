@@ -35,6 +35,11 @@
 		B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */; };
 		B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */; };
 		B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */; };
+		B537901B20597F71004C7A98 /* credits.json in Resources */ = {isa = PBXBuildFile; fileRef = B537901620597F71004C7A98 /* credits.json */; };
+		B537901C20597F71004C7A98 /* partners.json in Resources */ = {isa = PBXBuildFile; fileRef = B537901720597F71004C7A98 /* partners.json */; };
+		B537901D20597F71004C7A98 /* restoration.json in Resources */ = {isa = PBXBuildFile; fileRef = B537901820597F71004C7A98 /* restoration.json */; };
+		B537901E20597F71004C7A98 /* ticketing.json in Resources */ = {isa = PBXBuildFile; fileRef = B537901920597F71004C7A98 /* ticketing.json */; };
+		B537901F20597F71004C7A98 /* access.json in Resources */ = {isa = PBXBuildFile; fileRef = B537901A20597F71004C7A98 /* access.json */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -138,6 +143,11 @@
 		B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
 		B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultViewController.swift; sourceTree = "<group>"; };
+		B537901620597F71004C7A98 /* credits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = credits.json; sourceTree = "<group>"; };
+		B537901720597F71004C7A98 /* partners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partners.json; sourceTree = "<group>"; };
+		B537901820597F71004C7A98 /* restoration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restoration.json; sourceTree = "<group>"; };
+		B537901920597F71004C7A98 /* ticketing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ticketing.json; sourceTree = "<group>"; };
+		B537901A20597F71004C7A98 /* access.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = access.json; sourceTree = "<group>"; };
 		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
 		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
 		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
@@ -285,9 +295,22 @@
 			path = Favoris;
 			sourceTree = "<group>";
 		};
+		B537901520597F71004C7A98 /* infosContent */ = {
+			isa = PBXGroup;
+			children = (
+				B537901620597F71004C7A98 /* credits.json */,
+				B537901720597F71004C7A98 /* partners.json */,
+				B537901820597F71004C7A98 /* restoration.json */,
+				B537901920597F71004C7A98 /* ticketing.json */,
+				B537901A20597F71004C7A98 /* access.json */,
+			);
+			path = infosContent;
+			sourceTree = "<group>";
+		};
 		B53F68861FE867DF00650440 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B537901520597F71004C7A98 /* infosContent */,
 				2375BC7A200BC29400483678 /* categories.json */,
 				2375BC7B200BC29500483678 /* events.json */,
 				DF5997BC2031E50E004A4607 /* filters.json */,
@@ -591,19 +614,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B537901C20597F71004C7A98 /* partners.json in Resources */,
 				234E675F2056881C00577592 /* Montserrat-Light.ttf in Resources */,
 				234E674B205687A700577592 /* Raleway-ExtraBold.ttf in Resources */,
 				2375BC81200BDC9600483678 /* categories.json in Resources */,
+				B537901B20597F71004C7A98 /* credits.json in Resources */,
 				234E675E2056881C00577592 /* Montserrat-Regular.ttf in Resources */,
 				234E6750205687A700577592 /* Raleway-ExtraLight.ttf in Resources */,
 				2375BC82200BDC9600483678 /* events.json in Resources */,
 				234E674F205687A700577592 /* Raleway-Light.ttf in Resources */,
 				B53F689C1FE869F200650440 /* Now-Black.otf in Resources */,
 				B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */,
+				B537901F20597F71004C7A98 /* access.json in Resources */,
 				B53F689E1FE869F200650440 /* Now-Light.otf in Resources */,
 				234E6748205687A700577592 /* Raleway-Thin.ttf in Resources */,
 				B53F689F1FE869F200650440 /* Now-Medium.otf in Resources */,
+				B537901D20597F71004C7A98 /* restoration.json in Resources */,
 				234E67602056881C00577592 /* Montserrat-ExtraLight.ttf in Resources */,
+				B537901E20597F71004C7A98 /* ticketing.json in Resources */,
 				B53F68A01FE869F200650440 /* Now-Regular.otf in Resources */,
 				B53F68A11FE869F200650440 /* Now-Thin.otf in Resources */,
 				234E675B2056881C00577592 /* Montserrat-Thin.ttf in Resources */,
