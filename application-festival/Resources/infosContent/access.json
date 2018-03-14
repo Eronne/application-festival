@@ -1,0 +1,40 @@
+[
+	{
+	"city": "Rennes",
+    "name": "TNB",
+    "address": "1 rue Saint-Hélier",
+    "phone": "02 99 31 55 33",
+    "moreInfos": "Ouverture au grand public à partir de 13h",
+    "bus": ["c1", "c2", "11"],
+    "stop": "Liberté TNB / Métro Charles de Gaulle"
+    },
+    {
+    "city": "Rennes",
+    "name": "Cinéma Arvor",
+    "address": "29 rue d’Antrain",
+    "phone": "02 99 38 78 04",
+    "moreInfos": "",
+    "bus": ["c1", "c5", "9", "12"],
+    "stop": "Sainte-Anne ou Hôtel Dieu / Métro Sainte-Anne"
+    },
+    {
+    "city": "Rennes",
+    "name": "ESRA",
+    "address": "1 rue Xavier Grall",
+    "phone": "02 99 36 64 64",
+    "moreInfos": "",
+    "bus": ["41ex", "50", "70"],
+    "stop": "Pâtis Tatelin"
+    },
+    {
+    "city": "Bruz",
+    "name": "Le Grand Logis et la Médiathèque",
+    "address": "10 avenue du Général de Gaulle",
+    "phone": "02 99 05 30 62 / 02 99 05 30 60",
+    "moreInfos": "30 minutes depuis Rennes",
+    "bus": ["57", "59"],
+    "stop": "Bruz Centre"
+    }
+]
+
+

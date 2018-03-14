@@ -1,0 +1,15 @@
+[
+	{
+	"title": "Tarif tout public",
+    "label1": {
+        "title": "Le bar-restaurant du TNB, situé au 1er étage, est ouvert :",
+        "list": {
+            "item1": "les jeudis et vendredis de 12h à 14h",
+            "item2": "le soir à partir de 18h"
+        }
+    },
+    "label2": "Un goûter au tarif préférentiel de 4€ est disponible mercredi, samedi et dimanche.",
+    "label3": "Un happy hour gastronomique à 11,50€ est proposé tous les soirs de 20h à 21h."
+	}
+]
+
