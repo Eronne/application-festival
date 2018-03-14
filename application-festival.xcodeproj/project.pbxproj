@@ -26,6 +26,7 @@
 		234E67602056881C00577592 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67572056881C00577592 /* Montserrat-ExtraLight.ttf */; };
 		234E67612056881C00577592 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67582056881C00577592 /* Montserrat-ExtraBold.ttf */; };
 		234E67622056881C00577592 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 234E67592056881C00577592 /* Montserrat-Bold.ttf */; };
+		2351A30620591FF200698F31 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351A30520591FF200698F31 /* GeneralViewController.swift */; };
 		236B1E45203436D000CAB129 /* DateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1E44203436D000CAB129 /* DateEvents.swift */; };
 		2375BC81200BDC9600483678 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7A200BC29400483678 /* categories.json */; };
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
@@ -123,6 +124,7 @@
 		234E67572056881C00577592 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		234E67582056881C00577592 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		234E67592056881C00577592 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		2351A30520591FF200698F31 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		236B1E44203436D000CAB129 /* DateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEvents.swift; sourceTree = "<group>"; };
 		2375BC7A200BC29400483678 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		2375BC7B200BC29500483678 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
@@ -251,6 +253,14 @@
 				234E67522056881B00577592 /* Montserrat-Thin.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		2351A30420591FC500698F31 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2351A30520591FF200698F31 /* GeneralViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		4C08FA7EE9FE3E6F3389A36B /* Pods */ = {
@@ -441,6 +451,7 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2351A30420591FC500698F31 /* General */,
 				DF5997B52031AD90004A4607 /* Search */,
 				5026E79A203194040064F2DB /* Favoris */,
 				B55B9BCB1FF2EDD100618339 /* Calendar */,
@@ -793,6 +804,7 @@
 				B57439B82031DFCA008FE158 /* Character.swift in Sources */,
 				D8555C65203B51C80062CE7F /* SearchResultViewController.swift in Sources */,
 				B5666649200D6BC200B57389 /* Event.swift in Sources */,
+				2351A30620591FF200698F31 /* GeneralViewController.swift in Sources */,
 				B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */,
 				DF5997C12031EC1F004A4607 /* Filter.swift in Sources */,
 				B55B9BCA1FF2DE1900618339 /* CalendarViewController.swift in Sources */,

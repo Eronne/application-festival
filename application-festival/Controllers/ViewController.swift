@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     }
 	
 	@IBAction func backAction(_ segue: UIStoryboardSegue) {
-		print("Coucou")
 	}
 }
 

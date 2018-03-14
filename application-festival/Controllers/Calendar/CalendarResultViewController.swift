@@ -26,26 +26,7 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 		flowLayout.spacingMode = .overlap(visibleOffset: 80)
 
 		events = DataMapper().events.findByDay(day: Int(day)!)
-
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
-				if let row = userInfo["row"]	{
-					let indexRow = row as! Int
-					let indexPath = IndexPath.init(row: indexRow, section: 0)
-
-					if DataMapper().isFav(event: self.events![indexPath.row]) {
-						DataMapper().removeFav(event: self.events![indexPath.row])
-					}
-//					else {
-//						print("add fav")
-//						DataMapper().addFav(event: self.events![indexPath.row])
-//					}
-
-					self.collectionView.reloadItems(at: [indexPath])
-
-				}
-			}
-		}
+		
 	}
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

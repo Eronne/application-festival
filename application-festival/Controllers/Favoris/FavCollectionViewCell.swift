@@ -22,21 +22,27 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var producer: UILabel!
 	@IBOutlet weak var duration: UILabel!
 	@IBOutlet weak var category: UILabel!
+	@IBOutlet weak var cellButton: UIButton!
 	
 	@IBAction func favButtonTouchUp(_ sender: Any) {
 		let index = buttonFav.tag
 		let event = DataMapper().events.findOneBy(id:index)
+		buttonFav.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
 		if DataMapper().isFav(event: event!) {
 			print("remove fav")
 			DataMapper().removeFav(event: event!)
-			buttonFav.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
-		else if !DataMapper().isFav(event: event!) {
-			print("add fav")
-			DataMapper().addFav(event: event!)
-			buttonFav.setBackgroundImage(UIImage(named: "fav_actif.png"), for: .normal)
-		}
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "touchFavButton"), object: nil)
+	}
+	
+	@IBAction func cellTouched(_ sender: Any) {
+		print("test click card")
+		let index = cellButton.tag
+		let event = DataMapper().events.findOneBy(id:index)!
 		
+		if let url = URL(string: (event.link)!) {
+			UIApplication.shared.open(url)
+		}
 	}
 	
 }
