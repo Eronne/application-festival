@@ -11,16 +11,16 @@ import UIKit
 class SearchResultCollectionViewCell: UICollectionViewCell {
 	
 	@IBOutlet weak var eventName: UILabel!
-	
 	@IBOutlet weak var excerpt: UILabel!
-	
 	@IBOutlet weak var time: UILabel!
-	
 	@IBOutlet weak var place: UILabel!
-	
 	@IBOutlet weak var thumbnail: UIImageView!
-	
+    @IBOutlet weak var category: UILabel!
 	@IBOutlet weak var searchFavButton: UIButton!
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var director: UILabel!
+    @IBOutlet weak var producer: UILabel!
+	@IBOutlet weak var duration: UILabel!
 	
 	@IBAction func searchFavButtonTouchUp(_ sender: Any) {
 		let index = searchFavButton.tag

@@ -38,49 +38,16 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let event = events[indexPath.row]
 		cell.buttonFav.tag = event.id!
 	
-		
-		//THUMBNAIL
 		cell.thumbnail.image = UIImage(named: event.getImgName() )
-		
-		//CATEGORY
-		cell.category.text = event.category?.uppercased()
-		
-		//TITLE
-		cell.title.text = event.name?.uppercased()
-		
-		//AGE
-		let ageNumber = "\(event.age ?? 0)"
-		var age = ""
-		if (ageNumber != "0") {
-			age = "Age : \(ageNumber) ans"
-		} else {
-			age = "Ce programme convient à tous les âges"
-		}
-		cell.age.text = age
-		
-		//DIRECTOR
-		if (event.director == "") {
-			cell.director.text = "Aucun directeur associé"
-			
-		} else {
-			cell.director.text = "Directeur(s): \(event.director ?? "")"
-		}
-		
-		//PRODUCER
-		if (event.director == "") {
-			cell.producer.text = "Aucun producteur associé"
-			
-		} else {
-			cell.producer.text = "Producteur(s): \(event.producer ?? "")"
-		}
-		
-		
-		//DESCRIPTION
-		if(event.excerpt != "" ) {
-			cell.exerpt.text = event.excerpt
-		} else {
-			cell.exerpt.text = "Pas d'informations supplémentaires"
-		}
+		cell.category.text = event.getCategory()
+		cell.title.text = event.getTitle()
+		cell.age.text = event.getAge()
+		cell.director.text = event.getDirector()
+		cell.producer.text = event.getProducer()
+		cell.exerpt.text = event.getExcerpt()
+		cell.place.text = event.place?.name
+		cell.duration.text = event.getDuration()
+		cell.hours.text = event.getHours()
 
 		//COUNTDOWN
 		let eventStartingDate = event.startingDate.getDateEvents()
@@ -92,18 +59,6 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let components = Calendar.current.dateComponents([.month, .day, .hour, .minute], from: nowDate!, to: eventStartingDate)
 		let countdown = "Débute dans \(components.day ?? 0)j \(components.hour ?? 0)h \(components.minute ?? 0)min"
 		cell.countdown.text = countdown
-		
-		//PLACE
-		cell.place.text = event.place?.name
-		
-		
-		//DURATION
-		cell.duration.text = "Durée: \(event.getDuration())"
-		
-		//HOURS
-		let startingHour = event.getFullStartingHour()
-		let endingHour = event.getFullEndingHour()
-		cell.hours.text = "\(startingHour) - \(endingHour)"
 	
 		return cell
 	
