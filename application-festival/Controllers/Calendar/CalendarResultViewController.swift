@@ -45,39 +45,20 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 			cell.favButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
 
-		cell.favButton.tag = events![indexPath.row].id!
-		cell.startingDateHourLabel.text = (events![indexPath.row].startingDate.hour?.description)! + "h"
-		cell.startingDateMinuteLabel.text = events![indexPath.row].startingDate.minute?.description
-		cell.categoryLabel.text = events![indexPath.row].category?.uppercased()
-		cell.categoryIcon.image = UIImage(named: events![indexPath.row].getImgName())
+		let event = events![indexPath.row]
+		cell.favButton.tag = event.id!
+		cell.startingDateHourLabel.text = (event.startingDate.hour?.description)! + "h"
+		cell.startingDateMinuteLabel.text = event.getMinutes(minutes: event.startingDate.minute)
+		cell.categoryLabel.text = event.category?.uppercased()
+		cell.categoryIcon.image = UIImage(named: event.getImgName())
 		cell.bottomContent.sizeToFit()
-		cell.nameLabel.text = events![indexPath.row].name?.uppercased()
-		if events![indexPath.row].excerpt != "" {
-			cell.excerptLabel.text = events![indexPath.row].excerpt
-		} else {
-			cell.excerptLabel.text = "Pas d'informations supplémentaires"
-		}
-		
-		if events![indexPath.row].age != 0 {
-			cell.ageLabel.text = "Age : " + String(describing: events![indexPath.row].age!) + " ans"
-		} else {
-			cell.ageLabel.text = "Ce programme convient à tous les âges"
-		}
-		
-		if events![indexPath.row].director != "" {
-			cell.directorLabel.text = events![indexPath.row].director
-		} else {
-			cell.directorLabel.text = "Aucun directeur associé"
-		}
-		
-		if events![indexPath.row].producer != "" {
-			cell.producerLabel.text = events![indexPath.row].producer
-		} else {
-			cell.producerLabel.text = "Aucun producteur associé"
-		}
-		
-		cell.durationLabel.text = "Durée : " + events![indexPath.row].getDuration()
-		cell.placeLabel.text = events![indexPath.row].place!.name
+		cell.nameLabel.text = event.getTitle()
+		cell.excerptLabel.text = event.getExcerpt()
+		cell.ageLabel.text = event.getAge()
+		cell.directorLabel.text = event.getDirector()
+		cell.producerLabel.text = event.getProducer()
+		cell.durationLabel.text = event.getDuration()
+		cell.placeLabel.text = event.place!.name
 
 		return cell
     }

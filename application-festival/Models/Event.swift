@@ -60,7 +60,7 @@ class Event: NSObject, NSCoding, Decodable {
 		} else {
 			minutes = "\(components.minute ?? 0)"
 		}
-		return "\(components.hour ?? 0)H\(minutes)"
+		return "Durée : \(components.hour ?? 0)H\(minutes)"
 	}
 	
 	func getImgName() -> String {
@@ -87,6 +87,10 @@ class Event: NSObject, NSCoding, Decodable {
 		return imgName;
 	}
 	
+	func getHours() -> String {
+		return "\(getFullStartingHour()) - \(getFullEndingHour())"
+	}
+	
 	func getFullStartingHour() -> String {
 		return "\(startingDate.hour ?? 0)H\(getMinutes(minutes: startingDate.minute))"
 	}
@@ -107,10 +111,51 @@ class Event: NSObject, NSCoding, Decodable {
 	
 	func getAge() -> String {
 		if age == 0 {
-			return "Tous les âges";
+			return "Ce programme convient à tous les âges";
 		} else {
 			return "À partir de \(age ?? 3) ans"
 		}
+	}
+	
+	func getDirector() -> String {
+		if (director != "") {
+			return "Directeur(s): \(director ?? "")"
+		} else {
+			return "Aucun directeur associé"
+		}
+	}
+	
+	func getProducer() -> String {
+		if (director != "") {
+			return "Producteur(s): \(producer ?? "")"
+		} else {
+			return "Aucun producteur associé"
+		}
+	}
+	
+	func getDescription() -> String {
+		if(excerpt != "" ) {
+			return excerpt!
+		} else {
+			return "Pas d'informations supplémentaires"
+		}
+	}
+	
+	func getExcerpt() -> String {
+		if(excerpt != "" ) {
+			return excerpt!
+		} else {
+			return "Pas d'informations supplémentaires"
+		}
+	}
+	
+	func getTitle() -> String {
+		
+		return (name?.uppercased())!
+	}
+	
+	func getCategory() -> String {
+		return (category?.uppercased())!
 	}
 }
 

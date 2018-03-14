@@ -22,8 +22,7 @@ class FavCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var producer: UILabel!
 	@IBOutlet weak var duration: UILabel!
 	@IBOutlet weak var category: UILabel!
-	
-	
+	@IBOutlet weak var cellButton: UIButton!
 	
 	@IBAction func favButtonTouchUp(_ sender: Any) {
 		let index = buttonFav.tag
@@ -34,6 +33,16 @@ class FavCollectionViewCell: UICollectionViewCell {
 			DataMapper().removeFav(event: event!)
 		}
 		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "touchFavButton"), object: nil)
+	}
+	
+	@IBAction func cellTouched(_ sender: Any) {
+		print("test click card")
+		let index = cellButton.tag
+		let event = DataMapper().events.findOneBy(id:index)!
+		
+		if let url = URL(string: (event.link)!) {
+			UIApplication.shared.open(url)
+		}
 	}
 	
 }

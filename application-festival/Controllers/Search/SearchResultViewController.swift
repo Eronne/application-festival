@@ -37,7 +37,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		}
 		
 		if events?.count != 0 {
-			noEventsView.isHidden = true;
+//			noEventsView.isHidden = true;
 		} else {
 			collectionView.isHidden = true;
 			newSearchButton.layer.borderWidth = 2
@@ -68,15 +68,15 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 			cell.searchFavButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
 		
-		if event?.excerpt != "" {
-			cell.excerpt.text = event?.excerpt
-		} else {
-			cell.excerpt.text = "Pas d'informations supplémentaires"
-		}
-		
-		cell.time.text = event?.getDuration()
+		cell.excerpt.text = event?.getTitle()
+		cell.time.text = event?.getHours()
 		cell.place.text = event?.place?.name
 		cell.thumbnail.image = UIImage(named:(event?.getImgName())!)
+		cell.category.text = event?.getCategory()
+		cell.age.text = event?.getAge()
+		cell.director.text = event?.getDirector()
+		cell.producer.text = event?.getProducer()
+		cell.duration.text = event?.getDuration()
 		
 		return cell;
 	}
