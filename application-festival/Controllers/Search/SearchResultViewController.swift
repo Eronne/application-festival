@@ -37,7 +37,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		}
 		
 		if events?.count != 0 {
-			noEventsView.isHidden = true;
+//			noEventsView.isHidden = true;
 		} else {
 			collectionView.isHidden = true;
 			newSearchButton.layer.borderWidth = 2
