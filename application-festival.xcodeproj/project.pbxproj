@@ -31,9 +31,15 @@
 		2375BC82200BDC9600483678 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2375BC7B200BC29500483678 /* events.json */; };
 		5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026E79B2031944A0064F2DB /* FavCollectionViewCell.swift */; };
 		6084D58A1264FDD1371F551F /* Pods_application_festivalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */; };
+		8625E72716CF6020C2610DD0 /* Pods_application_festival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBB2A20BAC0A0336F8D07B8 /* Pods_application_festival.framework */; };
 		B50F9B222035845300D261BC /* CalendarResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F9B212035845300D261BC /* CalendarResultCollectionViewCell.swift */; };
 		B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */; };
 		B5350ECB20348E7600436BF3 /* CalendarResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */; };
+		B5379010205968EA004C7A98 /* ticketing.json in Resources */ = {isa = PBXBuildFile; fileRef = B537900B205968E9004C7A98 /* ticketing.json */; };
+		B5379011205968EA004C7A98 /* restoration.json in Resources */ = {isa = PBXBuildFile; fileRef = B537900C205968E9004C7A98 /* restoration.json */; };
+		B5379012205968EA004C7A98 /* access.json in Resources */ = {isa = PBXBuildFile; fileRef = B537900D205968EA004C7A98 /* access.json */; };
+		B5379013205968EA004C7A98 /* partners.json in Resources */ = {isa = PBXBuildFile; fileRef = B537900E205968EA004C7A98 /* partners.json */; };
+		B5379014205968EA004C7A98 /* credits.json in Resources */ = {isa = PBXBuildFile; fileRef = B537900F205968EA004C7A98 /* credits.json */; };
 		B53F689C1FE869F200650440 /* Now-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689A1FE8696700650440 /* Now-Black.otf */; };
 		B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F68991FE8696700650440 /* Now-Bold.otf */; };
 		B53F689E1FE869F200650440 /* Now-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53F689B1FE8696700650440 /* Now-Light.otf */; };
@@ -136,6 +142,11 @@
 		B531A1C570FA0875178899F4 /* Pods_application_festivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application_festivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
 		B5350ECA20348E7600436BF3 /* CalendarResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarResultViewController.swift; sourceTree = "<group>"; };
+		B537900B205968E9004C7A98 /* ticketing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ticketing.json; sourceTree = "<group>"; };
+		B537900C205968E9004C7A98 /* restoration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restoration.json; sourceTree = "<group>"; };
+		B537900D205968EA004C7A98 /* access.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = access.json; sourceTree = "<group>"; };
+		B537900E205968EA004C7A98 /* partners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partners.json; sourceTree = "<group>"; };
+		B537900F205968EA004C7A98 /* credits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = credits.json; sourceTree = "<group>"; };
 		B53F68961FE8696700650440 /* Now-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Medium.otf"; sourceTree = "<group>"; };
 		B53F68971FE8696700650440 /* Now-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Regular.otf"; sourceTree = "<group>"; };
 		B53F68981FE8696700650440 /* Now-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Now-Thin.otf"; sourceTree = "<group>"; };
@@ -189,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5350EC720347BFE00436BF3 /* UPCarouselFlowLayout.framework in Frameworks */,
+				8625E72716CF6020C2610DD0 /* Pods_application_festival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +287,37 @@
 			path = Favoris;
 			sourceTree = "<group>";
 		};
+		B537900120593AE1004C7A98 /* CollapsibleTableSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollapsibleTableSection;
+			sourceTree = "<group>";
+		};
+		B537900620593FF1004C7A98 /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
+			);
+			path = Infos;
+			sourceTree = "<group>";
+		};
+		B537900920595E23004C7A98 /* infosContent */ = {
+			isa = PBXGroup;
+			children = (
+				B537900D205968EA004C7A98 /* access.json */,
+				B537900F205968EA004C7A98 /* credits.json */,
+				B537900E205968EA004C7A98 /* partners.json */,
+				B537900C205968E9004C7A98 /* restoration.json */,
+				B537900B205968E9004C7A98 /* ticketing.json */,
+			);
+			path = infosContent;
+			sourceTree = "<group>";
+		};
 		B53F68861FE867DF00650440 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B537900920595E23004C7A98 /* infosContent */,
 				2375BC7A200BC29400483678 /* categories.json */,
 				2375BC7B200BC29500483678 /* events.json */,
 				DF5997BC2031E50E004A4607 /* filters.json */,
@@ -327,6 +367,7 @@
 		B548A92220347BBE009B3BC9 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B537900120593AE1004C7A98 /* CollapsibleTableSection */,
 				B5350EC620347BFE00436BF3 /* UPCarouselFlowLayout.framework */,
 				B57439B92031E042008FE158 /* UPCarouselFlowLayout */,
 			);
@@ -441,12 +482,12 @@
 		B5AAEADA1FE7C5B700FB3345 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DF5997B52031AD90004A4607 /* Search */,
 				5026E79A203194040064F2DB /* Favoris */,
 				B55B9BCB1FF2EDD100618339 /* Calendar */,
+				DF5997B52031AD90004A4607 /* Search */,
+				B537900620593FF1004C7A98 /* Infos */,
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
-				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
 				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
 			path = Controllers;
@@ -586,8 +627,10 @@
 				234E675E2056881C00577592 /* Montserrat-Regular.ttf in Resources */,
 				234E6750205687A700577592 /* Raleway-ExtraLight.ttf in Resources */,
 				2375BC82200BDC9600483678 /* events.json in Resources */,
+				B5379012205968EA004C7A98 /* access.json in Resources */,
 				234E674F205687A700577592 /* Raleway-Light.ttf in Resources */,
 				B53F689C1FE869F200650440 /* Now-Black.otf in Resources */,
+				B5379011205968EA004C7A98 /* restoration.json in Resources */,
 				B53F689D1FE869F200650440 /* Now-Bold.otf in Resources */,
 				B53F689E1FE869F200650440 /* Now-Light.otf in Resources */,
 				234E6748205687A700577592 /* Raleway-Thin.ttf in Resources */,
@@ -598,6 +641,7 @@
 				234E675B2056881C00577592 /* Montserrat-Thin.ttf in Resources */,
 				234E675C2056881C00577592 /* Montserrat-Medium.ttf in Resources */,
 				B57439BD2031E043008FE158 /* Info.plist in Resources */,
+				B5379013205968EA004C7A98 /* partners.json in Resources */,
 				B541748A1FE415B100842B38 /* Calendar.storyboard in Resources */,
 				234E674E205687A700577592 /* Raleway-Medium.ttf in Resources */,
 				B565C19D1FDEA0430037D567 /* LaunchScreen.storyboard in Resources */,
@@ -607,11 +651,13 @@
 				234E674A205687A700577592 /* Raleway-SemiBold.ttf in Resources */,
 				B565C1981FDEA0430037D567 /* Main.storyboard in Resources */,
 				B54174931FE41D5500842B38 /* Infos.storyboard in Resources */,
+				B5379010205968EA004C7A98 /* ticketing.json in Resources */,
 				234E675A2056881C00577592 /* Montserrat-SemiBold.ttf in Resources */,
 				234E6749205687A700577592 /* Raleway-Bold.ttf in Resources */,
 				B541748F1FE41D2E00842B38 /* Search.storyboard in Resources */,
 				234E67622056881C00577592 /* Montserrat-Bold.ttf in Resources */,
 				234E675D2056881C00577592 /* Montserrat-Black.ttf in Resources */,
+				B5379014205968EA004C7A98 /* credits.json in Resources */,
 				234E674D205687A700577592 /* Raleway-Regular.ttf in Resources */,
 				B541748D1FE41D0C00842B38 /* Map.storyboard in Resources */,
 				234E674C205687A700577592 /* Raleway-Black.ttf in Resources */,
@@ -992,7 +1038,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gobelins.application-festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1014,7 +1060,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gobelins.application-festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
