@@ -196,7 +196,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="woc-dY-gw6" id="5Mn-Ox-zGJ"/>
+                                    <outlet property="dataSource" destination="woc-dY-gw6" id="ykq-C8-FFI"/>
                                     <outlet property="delegate" destination="woc-dY-gw6" id="qxb-Mc-R2F"/>
                                 </connections>
                             </collectionView>
@@ -251,6 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="fRv-JR-Af4"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="ZZc-fh-Xlz" id="JQX-Do-mUG"/>
                         <outlet property="favTitle" destination="F8f-rd-DSv" id="CXM-mt-vnI"/>
                         <outlet property="flowLayout" destination="2IZ-4R-Uft" id="m4V-qg-g43"/>
                         <outlet property="noFavorite" destination="5VG-iW-uhe" id="BeC-ex-M0E"/>

@@ -14,10 +14,12 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var favTitle: UILabel!
 	@IBOutlet weak var noFavorite: UIView!
 	@IBOutlet weak var noFavoritePlaceholder: UILabel!
-	
+    @IBOutlet weak var collectionView: UICollectionView!
+    
 	
 	var lastContentOffset: CGFloat = 0
-	let events = DataMapper().getFav()
+	var events = DataMapper().getFav()
+	
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		if (self.lastContentOffset < scrollView.contentOffset.y) {
@@ -26,8 +28,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 			favTitle.isHidden = false
 		}
 	}
-	
-	
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return events.count ?? 0
 	}
@@ -104,7 +105,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		let startingHour = event.getFullStartingHour()
 		let endingHour = event.getFullEndingHour()
 		cell.hours.text = "\(startingHour) - \(endingHour)"
-	
+
 		return cell
 	
 	}
@@ -122,9 +123,15 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
 		}
 		flowLayout.spacingMode = .overlap(visibleOffset: 50)
         // Do any additional setup after loading the view.
+	
+		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "touchFavButton"), object: nil, queue: nil) { (notif) in
+			self.collectionView.reloadData()
+			self.events = DataMapper().getFav()
+			print("reload")
+		}
 		
     }
-
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -133,16 +140,5 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBAction func dismissViewController(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
