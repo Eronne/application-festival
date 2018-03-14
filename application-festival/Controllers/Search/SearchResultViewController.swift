@@ -37,9 +37,9 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		}
 		
 		if events?.count != 0 {
-//			noEventsView.isHidden = true;
+			noEventsView.isHidden = true
 		} else {
-			collectionView.isHidden = true;
+			collectionView.isHidden = true
 			newSearchButton.layer.borderWidth = 2
 			newSearchButton.layer.borderColor = UIColor.black.cgColor
 		}
@@ -58,7 +58,8 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchResultCollectionViewCell", for: indexPath) as! SearchResultCollectionViewCell
 		
 		let event = events?[indexPath.row]
-		cell.eventName.text = event?.name
+		cell.cellButton.tag = (event?.id)!
+		cell.eventName.text = event?.getTitle()
 		
 		cell.searchFavButton.tag = (event?.id!)!
 		if DataMapper().isFav(event: events![indexPath.row]) {
@@ -68,7 +69,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
 			cell.searchFavButton.setBackgroundImage(UIImage(named: "fav.png"), for: .normal)
 		}
 		
-		cell.excerpt.text = event?.getTitle()
+		cell.excerpt.text = event?.excerpt
 		cell.time.text = event?.getHours()
 		cell.place.text = event?.place?.name
 		cell.thumbnail.image = UIImage(named:(event?.getImgName())!)

@@ -24,10 +24,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sHa-s7-zX4" firstAttribute="top" secondItem="ihu-CG-AYo" secondAttribute="top" id="8Fk-El-MFE"/>
-                            <constraint firstItem="sHa-s7-zX4" firstAttribute="leading" secondItem="2LD-NA-wyH" secondAttribute="leading" id="FMB-86-ftn"/>
-                            <constraint firstItem="sHa-s7-zX4" firstAttribute="bottom" secondItem="2LD-NA-wyH" secondAttribute="bottom" id="igQ-sd-q5d"/>
-                            <constraint firstItem="sHa-s7-zX4" firstAttribute="trailing" secondItem="2LD-NA-wyH" secondAttribute="trailing" id="uvK-Z9-EmX"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="trailing" secondItem="2LD-NA-wyH" secondAttribute="trailing" id="3uB-7y-O7d"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="top" secondItem="ihu-CG-AYo" secondAttribute="top" id="Gsh-Az-MRE"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="bottom" secondItem="2LD-NA-wyH" secondAttribute="bottom" id="pqT-5U-Vsv"/>
+                            <constraint firstItem="sHa-s7-zX4" firstAttribute="leading" secondItem="2LD-NA-wyH" secondAttribute="leading" id="z4Y-3M-DXk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2LD-NA-wyH"/>
                     </view>

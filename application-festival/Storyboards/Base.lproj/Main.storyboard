@@ -47,8 +47,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="28" id="c4K-5p-qul"/>
                             <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="20" id="mZc-mQ-xjM"/>
-                            <constraint firstItem="kVW-lg-RJO" firstAttribute="leading" secondItem="eGw-3b-qHJ" secondAttribute="leading" constant="307" id="zkq-hr-Wy6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGw-3b-qHJ"/>
                     </view>
