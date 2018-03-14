@@ -27,19 +27,6 @@ class CalendarResultViewController: UIViewController, UICollectionViewDelegate, 
 
 		events = DataMapper().events.findByDay(day: Int(day)!)
 
-		// Install observers
-		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, queue: nil) { (notif) in
-			if let userInfo = notif.userInfo	{
-				if let url = userInfo["url"] as? String {
-					if let resultController = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as? WebViewViewController {
-						print(url)
-//						resultController.url = url
-//						self.present(resultController, animated: true, completion: nil)
-					}
-				}
-			}
-		}
-
 		NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "favButtonTouched"), object: nil, queue: nil) { (notif) in
 			if let userInfo = notif.userInfo	{
 				if let row = userInfo["row"]	{

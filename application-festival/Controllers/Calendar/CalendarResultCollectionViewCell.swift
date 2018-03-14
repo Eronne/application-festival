@@ -48,6 +48,9 @@ class CalendarResultCollectionViewCell: UICollectionViewCell {
     @IBAction func resultCellTouched(_ sender: Any) {
 		let index = cellButton.tag
 		let event = DataMapper().events.findOneBy(id:index)!
-		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ResultCellTouched"), object: nil, userInfo: ["url" : event.link ?? "http://www.festival-film-animation.fr/"])
+		
+		if let url = URL(string: (event.link)!) {
+			UIApplication.shared.open(url)
+		}
     }
 }

@@ -60,8 +60,6 @@
 		B57439BC2031E043008FE158 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */; };
 		B57439BD2031E043008FE158 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57439BB2031E042008FE158 /* Info.plist */; };
 		B580216E1FEBB11B00E8D882 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580216D1FEBB11B00E8D882 /* InfosViewController.swift */; };
-		B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580216F1FEBB16000E8D882 /* WebView.storyboard */; };
-		B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021711FEBB7E000E8D882 /* WebViewViewController.swift */; };
 		B58021741FEBB83200E8D882 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58021731FEBB83200E8D882 /* FavViewController.swift */; };
 		B5AAEADE1FE80C2D00FB3345 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */; };
 		B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D14F6B200CFCD4004B9B7F /* Place.swift */; };
@@ -170,8 +168,6 @@
 		B57439BA2031E042008FE158 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		B57439BB2031E042008FE158 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B580216D1FEBB11B00E8D882 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
-		B580216F1FEBB16000E8D882 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
-		B58021711FEBB7E000E8D882 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		B58021731FEBB83200E8D882 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 		B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5D14F6B200CFCD4004B9B7F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -324,7 +320,6 @@
 				B541748E1FE41D2E00842B38 /* Search.storyboard */,
 				B54174921FE41D5500842B38 /* Infos.storyboard */,
 				B54174941FE41D6800842B38 /* Fav.storyboard */,
-				B580216F1FEBB16000E8D882 /* WebView.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -452,7 +447,6 @@
 				B565C1941FDEA0430037D567 /* ViewController.swift */,
 				B5AAEADD1FE80C2D00FB3345 /* MapViewController.swift */,
 				B580216D1FEBB11B00E8D882 /* InfosViewController.swift */,
-				B58021711FEBB7E000E8D882 /* WebViewViewController.swift */,
 				B5D14F6D200CFD78004B9B7F /* DataMapper.swift */,
 			);
 			path = Controllers;
@@ -610,7 +604,6 @@
 				B54174951FE41D6800842B38 /* Fav.storyboard in Resources */,
 				B565C19A1FDEA0430037D567 /* Assets.xcassets in Resources */,
 				DF5997BD2031E50E004A4607 /* filters.json in Resources */,
-				B58021701FEBB16000E8D882 /* WebView.storyboard in Resources */,
 				234E674A205687A700577592 /* Raleway-SemiBold.ttf in Resources */,
 				B565C1981FDEA0430037D567 /* Main.storyboard in Resources */,
 				B54174931FE41D5500842B38 /* Infos.storyboard in Resources */,
@@ -818,7 +811,6 @@
 				B5D14F6C200CFCD4004B9B7F /* Place.swift in Sources */,
 				D8EA4C50203C640E005A18F5 /* SearchResultCollectionViewCell.swift in Sources */,
 				5026E79C2031944A0064F2DB /* FavCollectionViewCell.swift in Sources */,
-				B58021721FEBB7E000E8D882 /* WebViewViewController.swift in Sources */,
 				DF5997BB2031AEF9004A4607 /* SearchCollectionViewCell.swift in Sources */,
 				B565C1931FDEA0430037D567 /* AppDelegate.swift in Sources */,
 			);
