@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-ExtraBold.ttf">
+            <string>Montserrat-ExtraBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Fav-->
         <scene sceneID="Gxz-d0-R1o">
@@ -34,9 +39,11 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-lg-RJO">
-                                <rect key="frame" x="307" y="40" width="40" height="35"/>
+                                <rect key="frame" x="300" y="50" width="40" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="FAB-Tb-DUs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="RMf-vI-L4B"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="sJC-8z-4my"/>
                                     <constraint firstAttribute="height" constant="35" id="sSN-bT-GyB"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="fav"/>
@@ -44,14 +51,42 @@
                                     <segue destination="9Yx-4K-yuf" kind="show" id="tON-7O-dAZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gm8-Kx-aUw">
+                                <rect key="frame" x="325" y="35" width="30" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Cq-hrb">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.066660103649999997" blue="0.1181381031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="oBI-Kx-mmy"/>
+                                    <constraint firstAttribute="height" constant="30" id="sWu-at-iRe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="28" id="c4K-5p-qul"/>
-                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="20" id="mZc-mQ-xjM"/>
+                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="kVW-lg-RJO" secondAttribute="trailing" constant="35" id="BJV-i3-sMY"/>
+                            <constraint firstItem="kVW-lg-RJO" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="30" id="nxi-zn-uEn"/>
+                            <constraint firstItem="Gm8-Kx-aUw" firstAttribute="top" secondItem="eGw-3b-qHJ" secondAttribute="top" constant="15" id="p8S-xp-dWY"/>
+                            <constraint firstItem="eGw-3b-qHJ" firstAttribute="trailing" secondItem="Gm8-Kx-aUw" secondAttribute="trailing" constant="20" id="zWG-eI-lQg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGw-3b-qHJ"/>
                     </view>
+                    <connections>
+                        <outlet property="circleFavNumber" destination="Gm8-Kx-aUw" id="m8O-KY-uvT"/>
+                        <outlet property="favNumber" destination="Zob-Cq-hrb" id="fpv-2n-05z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qod-Yb-SWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -102,6 +102,7 @@ class FavViewController: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     @IBAction func dismissViewController(_ sender: Any) {
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "closeFav"), object: nil)
         dismiss(animated: true, completion: nil)
     }
 
