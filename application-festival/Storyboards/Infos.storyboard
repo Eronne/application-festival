@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-ExtraBold.ttf">
+            <string>Montserrat-ExtraBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Infos-->
         <scene sceneID="szJ-0W-V5Z">
@@ -18,23 +23,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Infos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQN-3o-1Yi">
-                                <rect key="frame" x="166" y="323" width="38" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFOS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqG-KH-BSc">
+                                <rect key="frame" x="174.5" y="100" width="180.5" height="67.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuQ-ze-YCg">
-                                <rect key="frame" x="140" y="545" width="95" height="30"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-bw-jE1">
+                                <rect key="frame" x="16" y="175" width="339" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="En savoir plus"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aT9-Yx-o2G">
+                                    <size key="itemSize" width="339" height="2348"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfosCollectionViewCell" id="Xoa-q9-ong" customClass="InfosCollectionViewCell" customModule="application_festival" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="2348"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="339" height="2348"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ua-e7-mVm" userLabel="Tarif View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="339" height="410"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TARIFS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBx-pu-Jup">
+                                                            <rect key="frame" x="8" y="0.0" width="323" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="20"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.22924423220000001" green="0.27431970830000002" blue="0.79291248319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="IwO-ef-dGB"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="top" secondItem="Xoa-q9-ong" secondAttribute="top" id="Hfq-ao-qAk"/>
+                                            <constraint firstItem="2ua-e7-mVm" firstAttribute="leading" secondItem="Xoa-q9-ong" secondAttribute="leading" id="hef-gk-mUc"/>
+                                            <constraint firstAttribute="trailing" secondItem="2ua-e7-mVm" secondAttribute="trailing" id="zqZ-Jl-Bc5"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <action selector="clickAction:" destination="Zqv-C4-gcv" eventType="touchUpInside" id="NqD-rS-lRi"/>
+                                    <outlet property="dataSource" destination="Zqv-C4-gcv" id="cMO-7t-Ppb"/>
+                                    <outlet property="delegate" destination="Zqv-C4-gcv" id="Cqg-Sz-ljS"/>
                                 </connections>
-                            </button>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sl0-1D-DTb" firstAttribute="trailing" secondItem="xqG-KH-BSc" secondAttribute="trailing" constant="20" id="3Ov-ny-GMH"/>
+                            <constraint firstItem="xqG-KH-BSc" firstAttribute="top" secondItem="Sl0-1D-DTb" secondAttribute="top" constant="80" id="DA2-U7-sqa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Sl0-1D-DTb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Infos" image="icon-infos" id="0ah-f3-miZ"/>
@@ -42,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9u-rj-HqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="320"/>
+            <point key="canvasLocation" x="-7.2000000000000002" y="319.79010494752629"/>
         </scene>
     </scenes>
     <resources>

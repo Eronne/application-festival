@@ -8,12 +8,24 @@
 
 import UIKit
 
-class InfosViewController: UIViewController {
+class InfosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return 1
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InfosCollectionViewCell", for: indexPath) as! InfosCollectionViewCell
+
+		return cell
+
+	}
+	
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +38,5 @@ class InfosViewController: UIViewController {
 		let viewController = storyboard.instantiateViewController(withIdentifier: "WebView")
 		self.present(viewController, animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
