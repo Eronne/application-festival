@@ -30,7 +30,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_fav" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-eC-TtZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-fav" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-eC-TtZ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-fh-Xlz">
@@ -277,7 +277,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_fav" width="375" height="629"/>
+        <image name="bg-fav" width="375" height="629"/>
         <image name="close_white" width="200" height="200"/>
         <image name="fav_actif" width="40" height="35"/>
     </resources>
